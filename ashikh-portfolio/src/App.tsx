@@ -213,7 +213,8 @@ export default function App() {
       id: "06.",
       name: "Plug N Go Web",
       desc: "Full website design & development for Plug N Go EV charging network",
-      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1777500000/plugngo-website-hero_qx9vdr.jpg",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1778436065/Screenshot_2026-05-10_at_10.00.49_PM_pnvz6j.png",
+      detailImage: "https://res.cloudinary.com/dijfcvpio/image/upload/v1778436002/Screenshot_2026-05-10_at_9.58.37_PM_afvw74.png",
       position: "object-top",
       list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "Plug N Go Web"],
       client: "Abu Dhabi Mobility",
@@ -229,9 +230,10 @@ export default function App() {
         { value: "100%", label: "Responsive" }
       ],
       gallery: [
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1777500000/plugngo-website-hero_qx9vdr.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1777500000/plugngo-website-services_zk3mfp.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1777500000/plugngo-website-locations_bv2nrt.jpg"
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1778436001/Screenshot_2026-05-10_at_9.58.54_PM_n3fmgn.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1778437109/Screenshot_2026-05-10_at_10.18.14_PM_wrkpwi.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1778436000/Screenshot_2026-05-10_at_9.59.21_PM_cmbydx.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1778437062/Screenshot_2026-05-10_at_10.17.20_PM_ixitrb.png"
       ],
       liveUrl: "https://37q2sur77lrcy.kimi.page"
     }
@@ -508,7 +510,7 @@ export default function App() {
                 initial={{ scale: 1.1, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 1.2, ease: "easeOut" }}
-                src={projects[selectedProject].image} 
+                src={projects[selectedProject].detailImage || projects[selectedProject].image} 
                 alt={projects[selectedProject].name}
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
@@ -689,6 +691,16 @@ export default function App() {
                   © 2026 Ashikh Rahman. All rights reserved.
                 </div>
               </div>
+              {projects[selectedProject].liveUrl && (
+                <a 
+                  href={projects[selectedProject].liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-bold uppercase tracking-widest hover:text-neon transition-colors flex items-center gap-2"
+                >
+                  View Live Site <ArrowUpRight className="w-4 h-4" />
+                </a>
+              )}
               {projects[selectedProject].liveUrl && (
                 <a 
                   href={projects[selectedProject].liveUrl}
