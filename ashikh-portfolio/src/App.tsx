@@ -208,6 +208,32 @@ export default function App() {
         "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392692/X14_digital_profile-v4_Page_5_i1scvc.jpg",
         "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392693/X14_digital_profile-v4_Page_6_odigq3.jpg"
       ]
+    },
+    {
+      id: "06.",
+      name: "Plug N Go Web",
+      desc: "Full website design & development for Plug N Go EV charging network",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1777500000/plugngo-website-hero_qx9vdr.jpg",
+      position: "object-top",
+      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "Plug N Go Web"],
+      client: "Abu Dhabi Mobility",
+      role: "Web Designer & Developer",
+      year: "2025",
+      overview: "A comprehensive website design and development project for Plug N Go, the UAE's fastest growing EV charging network. The website serves as the digital hub for 50+ charging stations across Dubai, Sharjah, Abu Dhabi, and Ajman. Built with a modern, responsive design featuring real-time station locators, service showcases, customer testimonials, and an intuitive user experience that reflects the brand's tech-forward identity.",
+      challenges: "Creating a website that effectively communicates the scale and reliability of the charging network while providing an intuitive experience for EV drivers searching for nearby stations. The site needed to work seamlessly across all devices and load quickly despite rich visual content.",
+      solutions: "Developed a clean, modern single-page website with smooth scroll animations, an interactive station locator section, and a responsive card-based layout. Used optimized assets and lazy loading for fast performance. The green and dark color scheme aligns with the Plug N Go brand identity while ensuring high readability.",
+      resultsText: "The website successfully established Plug N Go's digital presence, providing a professional platform that showcases the network's coverage and services while offering an intuitive experience for EV drivers across the UAE.",
+      resultsStats: [
+        { value: "50+", label: "Stations Listed" },
+        { value: "4", label: "Cities Covered" },
+        { value: "100%", label: "Responsive" }
+      ],
+      gallery: [
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1777500000/plugngo-website-hero_qx9vdr.jpg",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1777500000/plugngo-website-services_zk3mfp.jpg",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1777500000/plugngo-website-locations_bv2nrt.jpg"
+      ],
+      liveUrl: "https://37q2sur77lrcy.kimi.page"
     }
   ];
 
@@ -321,6 +347,13 @@ export default function App() {
       setIsLoading(false);
     }, 3500);
     return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    fetch("/api/health")
+      .then((res) => res.json())
+      .then((data) => console.log("API Connection:", data))
+      .catch((err) => console.error("API Error:", err));
   }, []);
 
   useEffect(() => {
@@ -656,6 +689,16 @@ export default function App() {
                   © 2026 Ashikh Rahman. All rights reserved.
                 </div>
               </div>
+              {projects[selectedProject].liveUrl && (
+                <a 
+                  href={projects[selectedProject].liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-bold uppercase tracking-widest hover:text-neon transition-colors flex items-center gap-2"
+                >
+                  View Live Site <ArrowUpRight className="w-4 h-4" />
+                </a>
+              )}
               <button 
                 onClick={() => {
                   setSelectedProject(null);
