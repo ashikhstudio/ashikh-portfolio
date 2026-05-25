@@ -897,7 +897,7 @@ export default function App() {
           className="absolute inset-0 w-full h-full object-cover z-0 opacity-25 pointer-events-none"
           preload="auto"
         >
-          <source src="https://res.cloudinary.com/dijfcvpio/video/upload/v1779047417/BG_Video_01_ocy2gj.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dijfcvpio/video/upload/v1779718375/BG_03_wtliuv.mp4" type="video/mp4" />
         </video>
         
         {/* Top Section */}
