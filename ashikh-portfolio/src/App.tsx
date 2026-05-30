@@ -1,14 +1,4 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
-import { motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
 import { ArrowUpRight, ArrowLeft, ArrowRight } from "lucide-react";
 
@@ -25,7 +15,6 @@ export default function App() {
   useEffect(() => {
     const video = videoRef.current;
     if (video) {
-      // Direct property assignment is most reliable for mobile autoplay
       video.muted = true;
       video.defaultMuted = true;
       video.playsInline = true;
@@ -34,9 +23,6 @@ export default function App() {
         const playPromise = video.play();
         if (playPromise !== undefined) {
           playPromise.catch(() => {
-            // Autoplay was prevented
-            // We show the video at slightly higher opacity if it's ready but waiting
-            // And use any user interaction to start it
             const startVideo = () => {
               video.play().then(() => {
                 document.removeEventListener('mousedown', startVideo);
@@ -49,7 +35,6 @@ export default function App() {
         }
       };
 
-      // Try playing immediately, and also on load
       attemptPlay();
       video.addEventListener('loadedmetadata', attemptPlay);
       
@@ -70,16 +55,49 @@ export default function App() {
   const projects = [
     {
       id: "01.",
+      name: "ARXEN",
+      desc: "Premium product landing page for open-ear wireless earbuds — scroll-driven animations, video background, parallax",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1780088827/single-profile-2_gn1jyq.png",
+      detailImage: "https://res.cloudinary.com/dijfcvpio/image/upload/v1780088827/screenshot-charging_c67zgo.png",
+      position: "object-center",
+      list: ["ARXEN", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "Plug N Go Web"],
+      client: "ARXEN",
+      role: "Frontend Developer & UI Designer",
+      year: "2025",
+      overview: (
+        <>
+          A premium product landing page for ARXEN Open-Ear Concha Clip Wireless Earbuds. Built as a single-file, production-ready HTML experience with scroll-driven animations, parallax effects, video background, drag-to-scroll gallery, and IntersectionObserver-powered reveal animations — all powered by vanilla JavaScript with zero external dependencies.
+        </>
+      ),
+      challenges: "Create a cinematic, scroll-driven landing page that feels like a flagship product page from a tier-1 tech brand. The experience needed to be fully responsive, run at 60fps on all devices, and deliver premium interactions without any external libraries. All in a single HTML file.",
+      solutions: "Architected a mobile-first responsive layout with CSS custom properties for a consistent design token system. Implemented IntersectionObserver for performant scroll-triggered animations, requestAnimationFrame for smooth count-up counters, and native mouse/touch events for the drag-to-scroll gallery. The video background uses playsinline and muted attributes for reliable mobile autoplay.",
+      resultsText: "A complete, deployment-ready product landing page with 12 sections, zero dependencies, and smooth 60fps animations throughout. The single-file architecture makes it incredibly portable.",
+      resultsStats: [
+        { value: "12", label: "Sections" },
+        { value: "1 File", label: "Zero Dependencies" },
+        { value: "60fps", label: "Animations" }
+      ],
+      gallery: [
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1780088825/screenshot-hero_fzrti6.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1780088825/screenshot-specs_m7ecuk.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1780088827/screenshot-charging_c67zgo.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1780088826/screenshot-cta_hjdfeb.png"
+      ],
+      projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1780084035/ARXEN_BG_01_kgywm9.mp4",
+      liveUrl: "/arxen/"
+    },
+    {
+      id: "02.",
       name: "SDT",
       desc: "Distinctive, government-grade vehicle wrap for Abu Dhabi Mobility",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775415196/Screenshot_2026-04-05_at_9.16.04_PM_awyc9s.jpg",
-      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14"],
+      list: ["ARXEN", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "Plug N Go Web"],
       client: "Abu Dhabi Mobility",
       role: "Lead Designer",
       year: "2024",
       overview: (
         <>
-          This project involved designing the full vehicle livery for Abu Dhabi's Smart Driving Test program, operated under the Abu Dhabi Mobility authority (<a href="https://admobility.gov.ae" target="_blank" rel="noopener noreferrer" className="text-neon hover:underline">admobility.gov.ae</a>). The goal was to create a distinctive, government-grade vehicle wrap for a Toyota Corolla fleet that would be immediately recognizable on the road, communicate the program's smart and tech-forward identity, and maintain visual coherence with the existing brand system.
+          This project involved designing the full vehicle livery for Abu Dhabi&apos;s Smart Driving Test program, operated under the Abu Dhabi Mobility authority (<a href="https://admobility.gov.ae" target="_blank" rel="noopener noreferrer" className="text-neon hover:underline">admobility.gov.ae</a>). The goal was to create a distinctive, government-grade vehicle wrap for a Toyota Corolla fleet that would be immediately recognizable on the road, communicate the program&apos;s smart and tech-forward identity, and maintain visual coherence with the existing brand system.
         </>
       ),
       challenges: "The vehicle needed to feel modern, authoritative, and intelligent — reflecting the program's position at the intersection of government service and smart technology. It also had to function effectively in two environments: full daylight and low-light nighttime conditions.",
@@ -97,12 +115,12 @@ export default function App() {
       ]
     },
     {
-      id: "02.",
+      id: "03.",
       name: "Plug N Go",
       desc: "Logo branding for Abu Dhabi Mobility EV charging app and chargers",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1777495590/003_1_weyfcd.jpg",
       position: "object-center",
-      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14"],
+      list: ["ARXEN", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "Plug N Go Web"],
       client: "Abu Dhabi Mobility",
       role: "Lead Graphic Designer",
       year: "2025",
@@ -124,16 +142,16 @@ export default function App() {
       ]
     },
     {
-      id: "03.",
+      id: "04.",
       name: "SDTS",
       desc: "AI-powered driver licensing and evaluation system",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775379354/Screenshot_2026-04-05_at_12.12.16_PM_aq3yxq.png",
       position: "object-[15%_center]",
-      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14"],
+      list: ["ARXEN", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "Plug N Go Web"],
       client: "Abu Dhabi Mobility",
       role: "Motion Graphics Designer & Animator",
       year: "2024",
-      overview: "A comprehensive motion graphics explainer video produced for the Smart Driving Test application — an AI-powered driver licensing and evaluation system developed in partnership with Abu Dhabi Mobility. The project required translating a highly technical, multi-layered system into a visually compelling narrative accessible to government stakeholders, smart city audiences, and the general public. Key sections covered include the Smart Test Vehicle, Smart Monitoring Bus, Central Control Room, and the end-to-end user journey. Tools used: Adobe Illustrator, After Effects, and Premiere Pro.",
+      overview: "A comprehensive motion graphics explainer video produced for the Smart Driving Test application — an AI-powered driver licensing and evaluation system developed in partnership with Abu Dhabi Mobility. The project required translating a highly technical, multi-layered system into a visually compelling narrative accessible to government stakeholders, smart city audiences, and the general public.",
       challenges: "The primary challenge was distilling a complex, multi-layered AI evaluation system into a narrative that government officials and the public could easily understand. The old documentation was purely technical and lacked a storytelling element that could showcase the system's efficiency and fairness.",
       solutions: "I developed a high-fidelity motion graphics video that visualizes the entire ecosystem. By using custom 3D-style illustrations and dynamic data overlays, I was able to explain the 21 primary criteria and 48 sub-criteria in a way that felt intuitive and technologically advanced.",
       resultsText: "The video successfully served as the primary presentation tool for high-level government meetings, leading to a broader rollout of the system across the region.",
@@ -154,15 +172,15 @@ export default function App() {
       projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1776881517/smart_driving_test_training_ruujs0.mp4"
     },
     {
-      id: "04.",
+      id: "05.",
       name: "Al Sarooj",
       desc: "Motion graphics infographic video for a 4.5 km road connectivity corridor",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775387741/Screenshot_2026-04-05_at_1.45.43_PM_olv4pq.png",
-      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14"],
+      list: ["ARXEN", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "Plug N Go Web"],
       client: "ADM",
       role: "Motion Graphics Designer & Animator",
       year: "2023",
-      overview: "A motion graphics infographic video showcasing a 4.5 km road connectivity corridor linking Al Rouge and Al, featuring a 120-meter tunnel. The video combines aerial footage, 3D architectural renderings, construction visuals, and animated map interfaces to communicate the project's scope and impact—including dedicated pedestrian and cycling paths, upgraded intersections, and improved traffic flow. Produced for TIR/Tatweer to highlight infrastructure development aimed at building smarter, safer, and more connected cities.",
+      overview: "A motion graphics infographic video showcasing a 4.5 km road connectivity corridor linking Al Rouge and Al, featuring a 120-meter tunnel. The video combines aerial footage, 3D architectural renderings, construction visuals, and animated map interfaces to communicate the project's scope and impact.",
       challenges: "Communicating the scope and impact of a complex 4.5 km road project, including a tunnel and various upgrades, in a concise 56-second video.",
       solutions: "Combining aerial footage, 3D renderings, and animated map interfaces to create a visually compelling narrative.",
       resultsText: "The video effectively highlighted the infrastructure development, showcasing the project's impact on urban connectivity and safety.",
@@ -182,12 +200,12 @@ export default function App() {
       projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1776881076/Al_Sarooj_i72obc.mp4"
     },
     {
-      id: "05.",
+      id: "06.",
       name: "X14",
       desc: "Brand Collateral & Digital Brochure",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392696/X14_digital_profile-v4_Page_1_wdsbtm.jpg",
       position: "object-top",
-      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14"],
+      list: ["ARXEN", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "Plug N Go Web"],
       client: "X14 Holding",
       role: "Sole Designer",
       year: "2023",
@@ -210,13 +228,13 @@ export default function App() {
       ]
     },
     {
-      id: "06.",
+      id: "07.",
       name: "Plug N Go Web",
       desc: "Full website design & development for Plug N Go EV charging network",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1778436065/Screenshot_2026-05-10_at_10.00.49_PM_pnvz6j.png",
       detailImage: "https://res.cloudinary.com/dijfcvpio/image/upload/v1778436002/Screenshot_2026-05-10_at_9.58.37_PM_afvw74.png",
       position: "object-top",
-      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "Plug N Go Web"],
+      list: ["ARXEN", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "Plug N Go Web"],
       client: "Abu Dhabi Mobility",
       role: "Web Designer & Developer",
       year: "2025",
@@ -352,13 +370,6 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    fetch("/api/health")
-      .then((res) => res.json())
-      .then((data) => console.log("API Connection:", data))
-      .catch((err) => console.error("API Error:", err));
-  }, []);
-
-  useEffect(() => {
     if (selectedProject !== null) {
       window.scrollTo(0, 0);
     }
@@ -450,7 +461,6 @@ export default function App() {
             }}
           />
         ))}
-        {/* Horizontal Lines */}
         {[...Array(4)].map((_, i) => (
           <motion.div
             key={`h-${i}`}
@@ -497,7 +507,7 @@ export default function App() {
                 }}
                 className="text-xs font-bold uppercase tracking-widest flex items-center gap-2 hover:text-neon transition-colors"
               >
-                <span>←</span> Back to Home
+                <span>&#8592;</span> Back to Home
               </button>
               <div className="text-xs font-bold uppercase tracking-widest opacity-50">
                 Project {projects[selectedProject].id}
@@ -688,19 +698,9 @@ export default function App() {
                   referrerPolicy="no-referrer"
                 />
                 <div className="text-[10px] font-bold uppercase tracking-widest opacity-40">
-                  © 2026 Ashikh Rahman. All rights reserved.
+                  &copy; 2026 Ashikh Rahman. All rights reserved.
                 </div>
               </div>
-              {projects[selectedProject].liveUrl && (
-                <a 
-                  href={projects[selectedProject].liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xs font-bold uppercase tracking-widest hover:text-neon transition-colors flex items-center gap-2"
-                >
-                  View Live Site <ArrowUpRight className="w-4 h-4" />
-                </a>
-              )}
               {projects[selectedProject].liveUrl && (
                 <a 
                   href={projects[selectedProject].liveUrl}
@@ -767,7 +767,7 @@ export default function App() {
             whileTap={{ scale: 0.98 }}
             className="px-8 py-3 rounded-full border border-white/20 text-[10px] font-bold uppercase tracking-[0.2em] transition-colors"
           >
-            Let's Talk
+            Let&apos;s Talk
           </motion.a>
 
           {/* Hamburger Menu */}
@@ -1122,7 +1122,7 @@ export default function App() {
       <section id="about" className="relative w-full min-h-screen p-6 md:p-12 flex flex-col justify-center bg-black border-t border-white/5 overflow-hidden">
         <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center relative">
           
-          {/* Signature where image was */}
+          {/* Signature */}
           <div className="md:col-span-4 flex justify-center items-center relative h-full min-h-[400px]">
             <motion.div
               initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
@@ -1242,7 +1242,6 @@ export default function App() {
                   />
                 </div>
               ))}
-              {/* Duplicate for seamless loop */}
               {[
                 "https://res.cloudinary.com/dijfcvpio/image/upload/v1775391527/AD-Mobility-Master-Bilingual-Identity-Full-Colour-V2_zgj8zz.png",
                 "https://res.cloudinary.com/dijfcvpio/image/upload/v1775391586/x14_holding_e7eawa.png",
@@ -1304,7 +1303,7 @@ export default function App() {
                   className="relative group shrink-0 w-[85vw] md:w-[45vw] lg:w-[320px] xl:w-[350px] h-[550px] lg:h-[600px] rounded-[3rem] overflow-hidden cursor-pointer bg-neutral-900 border border-white/5 snap-start"
                   onClick={() => setSelectedProject(index)}
                 >
-                  {/* Background Image with optimized loading */}
+                  {/* Background Image */}
                   <div className="absolute inset-0 transform transition-transform duration-1000 group-hover:scale-110">
                     <img 
                       src={project.image} 
@@ -1346,7 +1345,7 @@ export default function App() {
               ))}
             </div>
 
-            {/* Scroll Buttons - Moved to bottom */}
+            {/* Scroll Buttons */}
             <div className="flex items-center justify-center gap-6 mt-12 pb-12 border-b border-white/5">
               <button 
                 onClick={() => {
@@ -1508,7 +1507,7 @@ export default function App() {
             <div className="space-y-8 mt-24 lg:mt-0">
               <div className="space-y-2">
                 <h3 className="text-xl font-bold uppercase tracking-tight">Got Questions?</h3>
-                <p className="text-sm opacity-50 max-w-xs">Need help with something? I'm here to make things easy. Don't hesitate to reach out.</p>
+                <p className="text-sm opacity-50 max-w-xs">Need help with something? I&apos;m here to make things easy. Don&apos;t hesitate to reach out.</p>
               </div>
               <button className="group flex items-center justify-center gap-4 bg-white text-black w-full max-w-sm py-6 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-neon transition-all duration-300">
                 Book a call
@@ -1573,10 +1572,10 @@ export default function App() {
                 </div>
                 <div className="space-y-6 max-w-xs">
                   <p className="text-xs font-bold uppercase tracking-widest leading-relaxed">
-                    Let's create something extraordinary together.
+                    Let&apos;s create something extraordinary together.
                   </p>
                   <p className="text-[10px] opacity-40 uppercase tracking-tight leading-relaxed">
-                    Hit me up if you're looking for a fast, reliable creative strategist who can bring your vision to life
+                    Hit me up if you&apos;re looking for a fast, reliable creative strategist who can bring your vision to life
                   </p>
                 </div>
               </div>
@@ -1625,7 +1624,7 @@ export default function App() {
                 referrerPolicy="no-referrer"
               />
               <div className="text-[10px] font-bold uppercase tracking-widest opacity-40">
-                © 2026 Ashikh Rahman. All rights reserved.
+                &copy; 2026 Ashikh Rahman. All rights reserved.
               </div>
             </div>
           </div>
