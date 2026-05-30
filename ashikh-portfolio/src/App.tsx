@@ -103,13 +103,11 @@ export default function App() {
         { value: "Gov", label: "Grade" }
       ],
       gallery: [
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1780128708/Screenshot_2026-05-30_at_12.06.08_PM_g0fyyh.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1780128710/Screenshot_2026-05-30_at_12.06.35_PM_x3sdkn.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1780128711/Screenshot_2026-05-30_at_12.07.26_PM_lsvohf.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1780128715/Screenshot_2026-05-30_at_12.09.23_PM_uqomcm.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1780128712/Screenshot_2026-05-30_at_12.08.43_PM_q4zdvd.png"
+        "https://res.cloudinary.com/dijfcvpio/video/upload/v1780136559/hf_20260226_103951_c62999f9-0a45-429a-b582-b56f50ee6834_1_c1ewuu.mp4",
+        "https://res.cloudinary.com/dijfcvpio/video/upload/v1780136559/hf_20260225_080405_07ead2a8-a73f-4de4-8620-1ede865401b4_1_u4kses.mp4",
+        "https://res.cloudinary.com/dijfcvpio/video/upload/v1780136557/hf_20260225_081727_baaac101-cec2-4e85-883f-eb9426a25b67_1_fv3e4g.mp4",
+        "https://res.cloudinary.com/dijfcvpio/video/upload/v1780136557/hf_20260225_041914_93a014d4-b50c-49eb-875a-d396cb3eb35c_1_ssmyv3.mp4"
       ],
-      projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1780131777/Dmt_Overview_V2_qegexx.mp4"
     },
     {
       id: "03.",
@@ -621,7 +619,7 @@ export default function App() {
 
             {/* Gallery */}
             <div className="w-full space-y-12 pb-24">
-              {projects[selectedProject].gallery.map((img, i) => (
+              {projects[selectedProject].gallery.map((item, i) => (
                 <div key={i} className="max-w-7xl mx-auto px-6 md:px-12">
                   <motion.div 
                     initial={{ opacity: 0, y: 50 }}
@@ -629,12 +627,25 @@ export default function App() {
                     viewport={{ once: true }}
                     className="aspect-video overflow-hidden rounded-2xl border border-white/10 bg-white/5"
                   >
-                    <img 
-                      src={img} 
-                      alt={`Gallery ${i}`} 
-                      className="w-full h-full object-cover"
-                      referrerPolicy="no-referrer"
-                    />
+                    {item.endsWith('.mp4') ? (
+                      <video 
+                        src={item} 
+                        controls 
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="w-full h-full object-cover"
+                        poster={projects[selectedProject].image}
+                      />
+                    ) : (
+                      <img 
+                        src={item} 
+                        alt={`Gallery ${i}`} 
+                        className="w-full h-full object-cover"
+                        referrerPolicy="no-referrer"
+                      />
+                    )}
                   </motion.div>
                 </div>
               ))}
