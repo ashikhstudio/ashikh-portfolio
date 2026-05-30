@@ -60,7 +60,7 @@ export default function App() {
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1780088827/single-profile-2_gn1jyq.png",
       detailImage: "https://res.cloudinary.com/dijfcvpio/image/upload/v1780088827/screenshot-charging_c67zgo.png",
       position: "object-center",
-      list: ["ARXEN", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "Plug N Go Web"],
+      list: ["ARXEN", "IDD Overview", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "Plug N Go Web"],
       client: "ARXEN",
       role: "Frontend Developer & UI Designer",
       year: "2025",
@@ -88,10 +88,39 @@ export default function App() {
     },
     {
       id: "02.",
+      name: "IDD Overview",
+      desc: "Infrastructure design & delivery overview — road pavements, bridges, tunnels, drainage, public lighting, urban landscaping",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1780128708/Screenshot_2026-05-30_at_12.06.08_PM_g0fyyh.png",
+      detailImage: "https://res.cloudinary.com/dijfcvpio/image/upload/v1780128708/Screenshot_2026-05-30_at_12.06.08_PM_g0fyyh.png",
+      position: "object-top",
+      list: ["ARXEN", "IDD Overview", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "Plug N Go Web"],
+      client: "ADM",
+      role: "Motion Graphic Design",
+      year: "2026",
+      overview: "A comprehensive infrastructure design and delivery overview covering road pavements across all types and classifications, and associated structures including bridges, tunnels, retaining walls, culverts, and similar facilities. The scope extends to pedestrian walkways, cycling paths, road furniture, vehicle parking facilities, rest areas, and farm access gates. It further encompasses stormwater drainage networks, public lighting systems, and irrigation networks with all related components, as well as centralized control and monitoring systems governing these networks. The project also covers public spaces and urban landscaping works including natural beautification, public parks, and recreational facilities.",
+      challenges: "Communicating the full scope of a massive infrastructure portfolio in a single, visually compelling document that government stakeholders could quickly understand and reference. The content was highly technical and spanned multiple disciplines — from road engineering to urban landscaping.",
+      solutions: "Created a structured motion graphic presentation with clean typography, iconography, and visual hierarchy that breaks down each infrastructure category into digestible sections. Used ADM's brand guidelines to maintain consistency with existing government communications.",
+      resultsText: "The final deliverable serves as a clear, authoritative reference document for ADM's infrastructure scope, used in government meetings and public communications to showcase the breadth of services and facilities under their mandate.",
+      resultsStats: [
+        { value: "Multi", label: "Discipline" },
+        { value: "Full", label: "Scope Coverage" },
+        { value: "Gov", label: "Grade" }
+      ],
+      gallery: [
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1780128708/Screenshot_2026-05-30_at_12.06.08_PM_g0fyyh.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1780128710/Screenshot_2026-05-30_at_12.06.35_PM_x3sdkn.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1780128711/Screenshot_2026-05-30_at_12.07.26_PM_lsvohf.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1780128715/Screenshot_2026-05-30_at_12.09.23_PM_uqomcm.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1780128712/Screenshot_2026-05-30_at_12.08.43_PM_q4zdvd.png"
+      ],
+      projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1780131777/Dmt_Overview_V2_qegexx.mp4"
+    },
+    {
+      id: "03.",
       name: "SDT",
       desc: "Distinctive, government-grade vehicle wrap for Abu Dhabi Mobility",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775415196/Screenshot_2026-04-05_at_9.16.04_PM_awyc9s.jpg",
-      list: ["ARXEN", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "Plug N Go Web"],
+      list: ["ARXEN", "IDD Overview", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "Plug N Go Web"],
       client: "Abu Dhabi Mobility",
       role: "Lead Designer",
       year: "2024",
@@ -115,12 +144,12 @@ export default function App() {
       ]
     },
     {
-      id: "03.",
+      id: "04.",
       name: "Plug N Go",
       desc: "Logo branding for Abu Dhabi Mobility EV charging app and chargers",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1777495590/003_1_weyfcd.jpg",
       position: "object-center",
-      list: ["ARXEN", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "Plug N Go Web"],
+      list: ["ARXEN", "IDD Overview", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "Plug N Go Web"],
       client: "Abu Dhabi Mobility",
       role: "Lead Graphic Designer",
       year: "2025",
@@ -142,12 +171,12 @@ export default function App() {
       ]
     },
     {
-      id: "04.",
+      id: "05.",
       name: "SDTS",
       desc: "AI-powered driver licensing and evaluation system",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775379354/Screenshot_2026-04-05_at_12.12.16_PM_aq3yxq.png",
       position: "object-[15%_center]",
-      list: ["ARXEN", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "Plug N Go Web"],
+      list: ["ARXEN", "IDD Overview", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "Plug N Go Web"],
       client: "Abu Dhabi Mobility",
       role: "Motion Graphics Designer & Animator",
       year: "2024",
@@ -172,11 +201,11 @@ export default function App() {
       projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1776881517/smart_driving_test_training_ruujs0.mp4"
     },
     {
-      id: "05.",
+      id: "06.",
       name: "Al Sarooj",
       desc: "Motion graphics infographic video for a 4.5 km road connectivity corridor",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775387741/Screenshot_2026-04-05_at_1.45.43_PM_olv4pq.png",
-      list: ["ARXEN", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "Plug N Go Web"],
+      list: ["ARXEN", "IDD Overview", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "Plug N Go Web"],
       client: "ADM",
       role: "Motion Graphics Designer & Animator",
       year: "2023",
@@ -199,34 +228,7 @@ export default function App() {
       ],
       projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1776881076/Al_Sarooj_i72obc.mp4"
     },
-    {
-      id: "06.",
-      name: "X14",
-      desc: "Brand Collateral & Digital Brochure",
-      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392696/X14_digital_profile-v4_Page_1_wdsbtm.jpg",
-      position: "object-top",
-      list: ["ARXEN", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "Plug N Go Web"],
-      client: "X14 Holding",
-      role: "Sole Designer",
-      year: "2023",
-      overview: "X14 is a digital media start-up founded and based in Abu Dhabi, specializing in online reputation management, media analytics, and information management. As part of their early brand-building efforts, a digital company profile was needed to communicate their identity, services, and value proposition to potential clients across both the government and private sectors.",
-      challenges: "The brief was to create a professional, visually compelling digital brochure that could serve as X14's primary introductory document — something that felt credible, modern, and reflective of a company positioning itself as a thought leader in the Abu Dhabi media landscape.",
-      solutions: "I developed a comprehensive 6-page digital profile using a two-tone navy and amber palette to balance authority with dynamism. The layout follows a structured grid system with clean typography, custom iconography, and humanizing illustrations to break up dense text sections while maintaining a professional consultancy aesthetic.",
-      resultsText: "The final deliverable is a polished, print-ready and screen-optimized digital profile that X14 can use across client pitches, email outreach, and digital platforms. The design positions X14 as a credible, world-class consultancy operating out of Abu Dhabi with global reach and capability.",
-      resultsStats: [
-        { value: "06", label: "Pages" },
-        { value: "100%", label: "Custom Design" },
-        { value: "Print", label: "Ready" }
-      ],
-      gallery: [
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392696/X14_digital_profile-v4_Page_1_wdsbtm.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392690/X14_digital_profile-v4_Page_2_xtp4cb.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392688/X14_digital_profile-v4_Page_3_gvgfj9.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392689/X14_digital_profile-v4_Page_4_njvs3y.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392692/X14_digital_profile-v4_Page_5_i1scvc.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392693/X14_digital_profile-v4_Page_6_odigq3.jpg"
-      ]
-    },
+    // X14 removed - moved to archive
     {
       id: "07.",
       name: "Plug N Go Web",
@@ -234,7 +236,7 @@ export default function App() {
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1778436065/Screenshot_2026-05-10_at_10.00.49_PM_pnvz6j.png",
       detailImage: "https://res.cloudinary.com/dijfcvpio/image/upload/v1778436002/Screenshot_2026-05-10_at_9.58.37_PM_afvw74.png",
       position: "object-top",
-      list: ["ARXEN", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "Plug N Go Web"],
+      list: ["ARXEN", "IDD Overview", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "Plug N Go Web"],
       client: "Abu Dhabi Mobility",
       role: "Web Designer & Developer",
       year: "2025",
@@ -254,7 +256,7 @@ export default function App() {
         "https://res.cloudinary.com/dijfcvpio/image/upload/v1778437062/Screenshot_2026-05-10_at_10.17.20_PM_ixitrb.png"
       ],
       liveUrl: "https://37q2sur77lrcy.kimi.page"
-    }
+    },
   ];
 
   const faqs = [
