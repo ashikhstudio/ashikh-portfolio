@@ -64,11 +64,7 @@ export default function App() {
       client: "ARXEN",
       role: "Frontend Developer & UI Designer",
       year: "2025",
-      overview: (
-        <>
-          A premium product landing page for ARXEN Open-Ear Concha Clip Wireless Earbuds. Built as a single-file, production-ready HTML experience with scroll-driven animations, parallax effects, video background, drag-to-scroll gallery, and IntersectionObserver-powered reveal animations — all powered by vanilla JavaScript with zero external dependencies.
-        </>
-      ),
+      overview: "A premium product landing page for ARXEN Open-Ear Concha Clip Wireless Earbuds. Built as a single-file, production-ready HTML experience with scroll-driven animations, parallax effects, video background, drag-to-scroll gallery, and IntersectionObserver-powered reveal animations — all powered by vanilla JavaScript with zero external dependencies.",
       challenges: "Create a cinematic, scroll-driven landing page that feels like a flagship product page from a tier-1 tech brand. The experience needed to be fully responsive, run at 60fps on all devices, and deliver premium interactions without any external libraries. All in a single HTML file.",
       solutions: "Architected a mobile-first responsive layout with CSS custom properties for a consistent design token system. Implemented IntersectionObserver for performant scroll-triggered animations, requestAnimationFrame for smooth count-up counters, and native mouse/touch events for the drag-to-scroll gallery. The video background uses playsinline and muted attributes for reliable mobile autoplay.",
       resultsText: "A complete, deployment-ready product landing page with 12 sections, zero dependencies, and smooth 60fps animations throughout. The single-file architecture makes it incredibly portable.",
@@ -124,11 +120,7 @@ export default function App() {
       client: "Abu Dhabi Mobility",
       role: "Lead Designer",
       year: "2024",
-      overview: (
-        <>
-          This project involved designing the full vehicle livery for Abu Dhabi&apos;s Smart Driving Test program, operated under the Abu Dhabi Mobility authority (<a href="https://admobility.gov.ae" target="_blank" rel="noopener noreferrer" className="text-neon hover:underline">admobility.gov.ae</a>). The goal was to create a distinctive, government-grade vehicle wrap for a Toyota Corolla fleet that would be immediately recognizable on the road, communicate the program&apos;s smart and tech-forward identity, and maintain visual coherence with the existing brand system.
-        </>
-      ),
+      overview: "This project involved designing the full vehicle livery for Abu Dhabi's Smart Driving Test program, operated under the Abu Dhabi Mobility authority (admobility.gov.ae). The goal was to create a distinctive, government-grade vehicle wrap for a Toyota Corolla fleet that would be immediately recognizable on the road, communicate the program's smart and tech-forward identity, and maintain visual coherence with the existing brand system.",
       challenges: "The vehicle needed to feel modern, authoritative, and intelligent — reflecting the program's position at the intersection of government service and smart technology. It also had to function effectively in two environments: full daylight and low-light nighttime conditions.",
       solutions: "The circular motif from the logo was scaled up dramatically and used as the hero graphic element, dissolving into a field of scattered digital dots. A dual-mode design was developed using reflective sticker materials for nighttime visibility, transforming the vehicle into a striking presence on night roads.",
       resultsText: "The final design delivers a cohesive, government-ready vehicle livery that is bold enough to command attention on Abu Dhabi's roads while remaining fully faithful to the Smart Driving Test brand identity.",
@@ -228,7 +220,6 @@ export default function App() {
       ],
       projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1776881076/Al_Sarooj_i72obc.mp4"
     },
-    // X14 removed - moved to archive
     {
       id: "07.",
       name: "Plug N Go Web",
