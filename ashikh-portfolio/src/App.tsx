@@ -55,6 +55,34 @@ export default function App() {
   const projects = [
     {
       id: "01.",
+      name: "Plug N Go",
+      desc: "Logo branding for Abu Dhabi Mobility EV charging app and chargers",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1777495590/003_1_weyfcd.jpg",
+      position: "object-center",
+      list: ["ARXEN", "IDD Overview", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "Plug N Go Web"],
+      client: "Abu Dhabi Mobility",
+      role: "Lead Graphic Designer",
+      year: "2025",
+      overview: "Developing the visual identity and logo branding for Plug N Go, the official EV charging infrastructure for Abu Dhabi Mobility. The project encompassed the design for the mobile application and the physical charging stations across the city.",
+      challenges: "The main challenge was creating a brand that felt both high-tech and approachable, while ensuring the mobile app was usable in high-glare outdoor environments.",
+      solutions: "I used a high-contrast color palette and large, touch-friendly interface elements. The branding reflects a 'flow' concept, symbolizing the constant movement of energy.",
+      resultsText: "The branding successfully unified the digital and physical presence of the charging network.",
+      resultsStats: [
+        { value: "Brand", label: "Identity" },
+        { value: "EV", label: "Charging" },
+        { value: "Unified", label: "System" }
+      ],
+      gallery: [
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1777495590/003_1_weyfcd.jpg",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1777495592/0011_xhweoh.jpg",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1777495592/022_c0ax9q.jpg",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775582417/EV_branding_uz0df3.jpg",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775582422/EV_branding_01_xwyezt.jpg"
+      ]
+    },
+
+    {
+      id: "02.",
       name: "ARXEN",
       desc: "Premium product landing page for open-ear wireless earbuds — scroll-driven animations, video background, parallax",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1780088827/single-profile-2_gn1jyq.png",
@@ -82,8 +110,9 @@ export default function App() {
       projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1780084035/ARXEN_BG_01_kgywm9.mp4",
       liveUrl: "/arxen/"
     },
+
     {
-      id: "02.",
+      id: "03.",
       name: "IDD Overview",
       desc: "Infrastructure design & delivery overview — road pavements, bridges, tunnels, drainage, public lighting, urban landscaping",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1780128708/Screenshot_2026-05-30_at_12.06.08_PM_g0fyyh.png",
@@ -109,8 +138,9 @@ export default function App() {
         "https://res.cloudinary.com/dijfcvpio/video/upload/v1780136557/hf_20260225_041914_93a014d4-b50c-49eb-875a-d396cb3eb35c_1_ssmyv3.mp4"
       ],
     },
+
     {
-      id: "03.",
+      id: "04.",
       name: "SDT",
       desc: "Distinctive, government-grade vehicle wrap for Abu Dhabi Mobility",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775415196/Screenshot_2026-04-05_at_9.16.04_PM_awyc9s.jpg",
@@ -133,33 +163,7 @@ export default function App() {
         "https://res.cloudinary.com/dijfcvpio/image/upload/v1775414642/001-02_aexg0y.jpg"
       ]
     },
-    {
-      id: "04.",
-      name: "Plug N Go",
-      desc: "Logo branding for Abu Dhabi Mobility EV charging app and chargers",
-      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1777495590/003_1_weyfcd.jpg",
-      position: "object-center",
-      list: ["ARXEN", "IDD Overview", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "Plug N Go Web"],
-      client: "Abu Dhabi Mobility",
-      role: "Lead Graphic Designer",
-      year: "2025",
-      overview: "Developing the visual identity and logo branding for Plug N Go, the official EV charging infrastructure for Abu Dhabi Mobility. The project encompassed the design for the mobile application and the physical charging stations across the city.",
-      challenges: "The main challenge was creating a brand that felt both high-tech and approachable, while ensuring the mobile app was usable in high-glare outdoor environments.",
-      solutions: "I used a high-contrast color palette and large, touch-friendly interface elements. The branding reflects a 'flow' concept, symbolizing the constant movement of energy.",
-      resultsText: "The branding successfully unified the digital and physical presence of the charging network.",
-      resultsStats: [
-        { value: "Brand", label: "Identity" },
-        { value: "EV", label: "Charging" },
-        { value: "Unified", label: "System" }
-      ],
-      gallery: [
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1777495590/003_1_weyfcd.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1777495592/0011_xhweoh.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1777495592/022_c0ax9q.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775582417/EV_branding_uz0df3.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775582422/EV_branding_01_xwyezt.jpg"
-      ]
-    },
+
     {
       id: "05.",
       name: "SDTS",
@@ -190,6 +194,7 @@ export default function App() {
       ],
       projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1776881517/smart_driving_test_training_ruujs0.mp4"
     },
+
     {
       id: "06.",
       name: "Al Sarooj",
@@ -218,6 +223,7 @@ export default function App() {
       ],
       projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1776881076/Al_Sarooj_i72obc.mp4"
     },
+
     {
       id: "07.",
       name: "Plug N Go Web",
@@ -245,7 +251,7 @@ export default function App() {
         "https://res.cloudinary.com/dijfcvpio/image/upload/v1778437062/Screenshot_2026-05-10_at_10.17.20_PM_ixitrb.png"
       ],
       liveUrl: "https://37q2sur77lrcy.kimi.page"
-    },
+    }
   ];
 
   const faqs = [
