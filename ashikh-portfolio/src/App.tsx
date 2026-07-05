@@ -1,4 +1,14 @@
-import { motion, AnimatePresence } from "framer-motion";
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import { motion, AnimatePresence } from "motion/react";
 import { useEffect, useState, useRef } from "react";
 import { ArrowUpRight, ArrowLeft, ArrowRight } from "lucide-react";
 
@@ -15,6 +25,7 @@ export default function App() {
   useEffect(() => {
     const video = videoRef.current;
     if (video) {
+      // Direct property assignment is most reliable for mobile autoplay
       video.muted = true;
       video.defaultMuted = true;
       video.playsInline = true;
@@ -23,6 +34,9 @@ export default function App() {
         const playPromise = video.play();
         if (playPromise !== undefined) {
           playPromise.catch(() => {
+            // Autoplay was prevented
+            // We show the video at slightly higher opacity if it's ready but waiting
+            // And use any user interaction to start it
             const startVideo = () => {
               video.play().then(() => {
                 document.removeEventListener('mousedown', startVideo);
@@ -35,6 +49,7 @@ export default function App() {
         }
       };
 
+      // Try playing immediately, and also on load
       attemptPlay();
       video.addEventListener('loadedmetadata', attemptPlay);
       
@@ -55,11 +70,39 @@ export default function App() {
   const projects = [
     {
       id: "01.",
+      name: "SDT",
+      desc: "Distinctive vehicle livery system for a smart mobility fleet",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775415196/Screenshot_2026-04-05_at_9.16.04_PM_awyc9s.jpg",
+      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14"],
+      client: "Abu Dhabi Mobility",
+      role: "Lead Designer",
+      year: "2024",
+      overview: (
+        <>
+          This project involved designing the full vehicle livery for Abu Dhabi's Smart Driving Test program, operated under the Abu Dhabi Mobility authority (<a href="https://admobility.gov.ae" target="_blank" rel="noopener noreferrer" className="text-neon hover:underline">admobility.gov.ae</a>). The goal was to create a distinctive, government-grade vehicle wrap for a Toyota Corolla fleet that would be immediately recognizable on the road, communicate the program's smart and tech-forward identity, and maintain visual coherence with the existing brand system.
+        </>
+      ),
+      challenges: "The vehicle needed to feel modern, authoritative, and intelligent — reflecting the program's position at the intersection of government service and smart technology. It also had to function effectively in two environments: full daylight and low-light nighttime conditions.",
+      solutions: "The circular motif from the logo was scaled up dramatically and used as the hero graphic element, dissolving into a field of scattered digital dots. A dual-mode design was developed using reflective sticker materials for nighttime visibility, transforming the vehicle into a striking presence on night roads.",
+      resultsText: "The final design delivers a cohesive, government-ready vehicle livery that is bold enough to command attention on Abu Dhabi's roads while remaining fully faithful to the Smart Driving Test brand identity.",
+      resultsStats: [
+        { value: "Day/Night", label: "Dual Treatment" },
+        { value: "Reflective", label: "Visibility" },
+        { value: "100%", label: "Brand Coherence" }
+      ],
+      gallery: [
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775415196/Screenshot_2026-04-05_at_9.16.04_PM_awyc9s.jpg",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775414641/001-01_c8ar3i.jpg",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775414642/001-02_aexg0y.jpg"
+      ]
+    },
+    {
+      id: "02.",
       name: "Plug N Go",
-      desc: "Logo branding for Abu Dhabi Mobility EV charging app and chargers",
+      desc: "Logo branding for an EV charging network",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1777495590/003_1_weyfcd.jpg",
       position: "object-center",
-      list: ["ARXEN", "IDD Overview", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "Plug N Go Web"],
+      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14"],
       client: "Abu Dhabi Mobility",
       role: "Lead Graphic Designer",
       year: "2025",
@@ -80,101 +123,17 @@ export default function App() {
         "https://res.cloudinary.com/dijfcvpio/image/upload/v1775582422/EV_branding_01_xwyezt.jpg"
       ]
     },
-
-    {
-      id: "02.",
-      name: "ARXEN",
-      desc: "Premium product landing page for open-ear wireless earbuds — scroll-driven animations, video background, parallax",
-      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1780088827/single-profile-2_gn1jyq.png",
-      detailImage: "https://res.cloudinary.com/dijfcvpio/image/upload/v1780088827/screenshot-charging_c67zgo.png",
-      position: "object-center",
-      list: ["ARXEN", "IDD Overview", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "Plug N Go Web"],
-      client: "ARXEN",
-      role: "Frontend Developer & UI Designer",
-      year: "2025",
-      overview: "A premium product landing page for ARXEN Open-Ear Concha Clip Wireless Earbuds. Built as a single-file, production-ready HTML experience with scroll-driven animations, parallax effects, video background, drag-to-scroll gallery, and IntersectionObserver-powered reveal animations — all powered by vanilla JavaScript with zero external dependencies.",
-      challenges: "Create a cinematic, scroll-driven landing page that feels like a flagship product page from a tier-1 tech brand. The experience needed to be fully responsive, run at 60fps on all devices, and deliver premium interactions without any external libraries. All in a single HTML file.",
-      solutions: "Architected a mobile-first responsive layout with CSS custom properties for a consistent design token system. Implemented IntersectionObserver for performant scroll-triggered animations, requestAnimationFrame for smooth count-up counters, and native mouse/touch events for the drag-to-scroll gallery. The video background uses playsinline and muted attributes for reliable mobile autoplay.",
-      resultsText: "A complete, deployment-ready product landing page with 12 sections, zero dependencies, and smooth 60fps animations throughout. The single-file architecture makes it incredibly portable.",
-      resultsStats: [
-        { value: "12", label: "Sections" },
-        { value: "1 File", label: "Zero Dependencies" },
-        { value: "60fps", label: "Animations" }
-      ],
-      gallery: [
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1780088825/screenshot-hero_fzrti6.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1780088825/screenshot-specs_m7ecuk.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1780088827/screenshot-charging_c67zgo.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1780088826/screenshot-cta_hjdfeb.png"
-      ],
-      projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1780084035/ARXEN_BG_01_kgywm9.mp4",
-      liveUrl: "/arxen/"
-    },
-
     {
       id: "03.",
-      name: "IDD Overview",
-      desc: "Infrastructure design & delivery overview — road pavements, bridges, tunnels, drainage, public lighting, urban landscaping",
-      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1780128708/Screenshot_2026-05-30_at_12.06.08_PM_g0fyyh.png",
-      detailImage: "https://res.cloudinary.com/dijfcvpio/image/upload/v1780128708/Screenshot_2026-05-30_at_12.06.08_PM_g0fyyh.png",
-      position: "object-top",
-      list: ["ARXEN", "IDD Overview", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "Plug N Go Web"],
-      client: "ADM",
-      role: "Motion Graphic Design",
-      year: "2026",
-      overview: "A comprehensive infrastructure design and delivery overview covering road pavements across all types and classifications, and associated structures including bridges, tunnels, retaining walls, culverts, and similar facilities. The scope extends to pedestrian walkways, cycling paths, road furniture, vehicle parking facilities, rest areas, and farm access gates. It further encompasses stormwater drainage networks, public lighting systems, and irrigation networks with all related components, as well as centralized control and monitoring systems governing these networks. The project also covers public spaces and urban landscaping works including natural beautification, public parks, and recreational facilities.",
-      challenges: "Communicating the full scope of a massive infrastructure portfolio in a single, visually compelling document that government stakeholders could quickly understand and reference. The content was highly technical and spanned multiple disciplines — from road engineering to urban landscaping.",
-      solutions: "Created a structured motion graphic presentation with clean typography, iconography, and visual hierarchy that breaks down each infrastructure category into digestible sections. Used ADM's brand guidelines to maintain consistency with existing government communications.",
-      resultsText: "The final deliverable serves as a clear, authoritative reference document for ADM's infrastructure scope, used in government meetings and public communications to showcase the breadth of services and facilities under their mandate.",
-      resultsStats: [
-        { value: "Multi", label: "Discipline" },
-        { value: "Full", label: "Scope Coverage" },
-        { value: "Gov", label: "Grade" }
-      ],
-      gallery: [
-        "https://res.cloudinary.com/dijfcvpio/video/upload/v1780136559/hf_20260226_103951_c62999f9-0a45-429a-b582-b56f50ee6834_1_c1ewuu.mp4",
-        "https://res.cloudinary.com/dijfcvpio/video/upload/v1780136559/hf_20260225_080405_07ead2a8-a73f-4de4-8620-1ede865401b4_1_u4kses.mp4",
-        "https://res.cloudinary.com/dijfcvpio/video/upload/v1780136557/hf_20260225_081727_baaac101-cec2-4e85-883f-eb9426a25b67_1_fv3e4g.mp4",
-        "https://res.cloudinary.com/dijfcvpio/video/upload/v1780136557/hf_20260225_041914_93a014d4-b50c-49eb-875a-d396cb3eb35c_1_ssmyv3.mp4"
-      ],
-    },
-
-    {
-      id: "04.",
-      name: "SDT",
-      desc: "Distinctive, government-grade vehicle wrap for Abu Dhabi Mobility",
-      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775415196/Screenshot_2026-04-05_at_9.16.04_PM_awyc9s.jpg",
-      list: ["ARXEN", "IDD Overview", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "Plug N Go Web"],
-      client: "Abu Dhabi Mobility",
-      role: "Lead Designer",
-      year: "2024",
-      overview: "This project involved designing the full vehicle livery for Abu Dhabi's Smart Driving Test program, operated under the Abu Dhabi Mobility authority (admobility.gov.ae). The goal was to create a distinctive, government-grade vehicle wrap for a Toyota Corolla fleet that would be immediately recognizable on the road, communicate the program's smart and tech-forward identity, and maintain visual coherence with the existing brand system.",
-      challenges: "The vehicle needed to feel modern, authoritative, and intelligent — reflecting the program's position at the intersection of government service and smart technology. It also had to function effectively in two environments: full daylight and low-light nighttime conditions.",
-      solutions: "The circular motif from the logo was scaled up dramatically and used as the hero graphic element, dissolving into a field of scattered digital dots. A dual-mode design was developed using reflective sticker materials for nighttime visibility, transforming the vehicle into a striking presence on night roads.",
-      resultsText: "The final design delivers a cohesive, government-ready vehicle livery that is bold enough to command attention on Abu Dhabi's roads while remaining fully faithful to the Smart Driving Test brand identity.",
-      resultsStats: [
-        { value: "Day/Night", label: "Dual Treatment" },
-        { value: "Reflective", label: "Visibility" },
-        { value: "100%", label: "Brand Coherence" }
-      ],
-      gallery: [
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775415196/Screenshot_2026-04-05_at_9.16.04_PM_awyc9s.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775414641/001-01_c8ar3i.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775414642/001-02_aexg0y.jpg"
-      ]
-    },
-
-    {
-      id: "05.",
       name: "SDTS",
       desc: "AI-powered driver licensing and evaluation system",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775379354/Screenshot_2026-04-05_at_12.12.16_PM_aq3yxq.png",
       position: "object-[15%_center]",
-      list: ["ARXEN", "IDD Overview", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "Plug N Go Web"],
+      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14"],
       client: "Abu Dhabi Mobility",
       role: "Motion Graphics Designer & Animator",
       year: "2024",
-      overview: "A comprehensive motion graphics explainer video produced for the Smart Driving Test application — an AI-powered driver licensing and evaluation system developed in partnership with Abu Dhabi Mobility. The project required translating a highly technical, multi-layered system into a visually compelling narrative accessible to government stakeholders, smart city audiences, and the general public.",
+      overview: "A comprehensive motion graphics explainer video produced for the Smart Driving Test application — an AI-powered driver licensing and evaluation system developed in partnership with Abu Dhabi Mobility. The project required translating a highly technical, multi-layered system into a visually compelling narrative accessible to government stakeholders, smart city audiences, and the general public. Key sections covered include the Smart Test Vehicle, Smart Monitoring Bus, Central Control Room, and the end-to-end user journey. Tools used: Adobe Illustrator, After Effects, and Premiere Pro.",
       challenges: "The primary challenge was distilling a complex, multi-layered AI evaluation system into a narrative that government officials and the public could easily understand. The old documentation was purely technical and lacked a storytelling element that could showcase the system's efficiency and fairness.",
       solutions: "I developed a high-fidelity motion graphics video that visualizes the entire ecosystem. By using custom 3D-style illustrations and dynamic data overlays, I was able to explain the 21 primary criteria and 48 sub-criteria in a way that felt intuitive and technologically advanced.",
       resultsText: "The video successfully served as the primary presentation tool for high-level government meetings, leading to a broader rollout of the system across the region.",
@@ -194,17 +153,16 @@ export default function App() {
       ],
       projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1776881517/smart_driving_test_training_ruujs0.mp4"
     },
-
     {
-      id: "06.",
+      id: "04.",
       name: "Al Sarooj",
-      desc: "Motion graphics infographic video for a 4.5 km road connectivity corridor",
+      desc: "Motion graphics video for a road connectivity corridor",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775387741/Screenshot_2026-04-05_at_1.45.43_PM_olv4pq.png",
-      list: ["ARXEN", "IDD Overview", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "Plug N Go Web"],
+      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14"],
       client: "ADM",
       role: "Motion Graphics Designer & Animator",
       year: "2023",
-      overview: "A motion graphics infographic video showcasing a 4.5 km road connectivity corridor linking Al Rouge and Al, featuring a 120-meter tunnel. The video combines aerial footage, 3D architectural renderings, construction visuals, and animated map interfaces to communicate the project's scope and impact.",
+      overview: "A motion graphics infographic video showcasing a 4.5 km road connectivity corridor linking Al Rouge and Al, featuring a 120-meter tunnel. The video combines aerial footage, 3D architectural renderings, construction visuals, and animated map interfaces to communicate the project's scope and impact—including dedicated pedestrian and cycling paths, upgraded intersections, and improved traffic flow. Produced for TIR/Tatweer to highlight infrastructure development aimed at building smarter, safer, and more connected cities.",
       challenges: "Communicating the scope and impact of a complex 4.5 km road project, including a tunnel and various upgrades, in a concise 56-second video.",
       solutions: "Combining aerial footage, 3D renderings, and animated map interfaces to create a visually compelling narrative.",
       resultsText: "The video effectively highlighted the infrastructure development, showcasing the project's impact on urban connectivity and safety.",
@@ -223,34 +181,33 @@ export default function App() {
       ],
       projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1776881076/Al_Sarooj_i72obc.mp4"
     },
-
     {
-      id: "07.",
-      name: "Plug N Go Web",
-      desc: "Full website design & development for Plug N Go EV charging network",
-      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1778436065/Screenshot_2026-05-10_at_10.00.49_PM_pnvz6j.png",
-      detailImage: "https://res.cloudinary.com/dijfcvpio/image/upload/v1778436002/Screenshot_2026-05-10_at_9.58.37_PM_afvw74.png",
+      id: "05.",
+      name: "X14",
+      desc: "Brand Collateral & Digital Brochure",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392696/X14_digital_profile-v4_Page_1_wdsbtm.jpg",
       position: "object-top",
-      list: ["ARXEN", "IDD Overview", "SDT", "Plug N Go", "SDTS", "Al Sarooj", "Plug N Go Web"],
-      client: "Abu Dhabi Mobility",
-      role: "Web Designer & Developer",
-      year: "2025",
-      overview: "A comprehensive website design and development project for Plug N Go, the UAE's fastest growing EV charging network. The website serves as the digital hub for 50+ charging stations across Dubai, Sharjah, Abu Dhabi, and Ajman. Built with a modern, responsive design featuring real-time station locators, service showcases, customer testimonials, and an intuitive user experience that reflects the brand's tech-forward identity.",
-      challenges: "Creating a website that effectively communicates the scale and reliability of the charging network while providing an intuitive experience for EV drivers searching for nearby stations. The site needed to work seamlessly across all devices and load quickly despite rich visual content.",
-      solutions: "Developed a clean, modern single-page website with smooth scroll animations, an interactive station locator section, and a responsive card-based layout. Used optimized assets and lazy loading for fast performance. The green and dark color scheme aligns with the Plug N Go brand identity while ensuring high readability.",
-      resultsText: "The website successfully established Plug N Go's digital presence, providing a professional platform that showcases the network's coverage and services while offering an intuitive experience for EV drivers across the UAE.",
+      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14"],
+      client: "X14 Holding",
+      role: "Sole Designer",
+      year: "2023",
+      overview: "X14 is a digital media start-up founded and based in Abu Dhabi, specializing in online reputation management, media analytics, and information management. As part of their early brand-building efforts, a digital company profile was needed to communicate their identity, services, and value proposition to potential clients across both the government and private sectors.",
+      challenges: "The brief was to create a professional, visually compelling digital brochure that could serve as X14's primary introductory document — something that felt credible, modern, and reflective of a company positioning itself as a thought leader in the Abu Dhabi media landscape.",
+      solutions: "I developed a comprehensive 6-page digital profile using a two-tone navy and amber palette to balance authority with dynamism. The layout follows a structured grid system with clean typography, custom iconography, and humanizing illustrations to break up dense text sections while maintaining a professional consultancy aesthetic.",
+      resultsText: "The final deliverable is a polished, print-ready and screen-optimized digital profile that X14 can use across client pitches, email outreach, and digital platforms. The design positions X14 as a credible, world-class consultancy operating out of Abu Dhabi with global reach and capability.",
       resultsStats: [
-        { value: "50+", label: "Stations Listed" },
-        { value: "4", label: "Cities Covered" },
-        { value: "100%", label: "Responsive" }
+        { value: "06", label: "Pages" },
+        { value: "100%", label: "Custom Design" },
+        { value: "Print", label: "Ready" }
       ],
       gallery: [
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1778436001/Screenshot_2026-05-10_at_9.58.54_PM_n3fmgn.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1778437109/Screenshot_2026-05-10_at_10.18.14_PM_wrkpwi.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1778436000/Screenshot_2026-05-10_at_9.59.21_PM_cmbydx.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1778437062/Screenshot_2026-05-10_at_10.17.20_PM_ixitrb.png"
-      ],
-      liveUrl: "https://37q2sur77lrcy.kimi.page"
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392696/X14_digital_profile-v4_Page_1_wdsbtm.jpg",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392690/X14_digital_profile-v4_Page_2_xtp4cb.jpg",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392688/X14_digital_profile-v4_Page_3_gvgfj9.jpg",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392689/X14_digital_profile-v4_Page_4_njvs3y.jpg",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392692/X14_digital_profile-v4_Page_5_i1scvc.jpg",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392693/X14_digital_profile-v4_Page_6_odigq3.jpg"
+      ]
     }
   ];
 
@@ -367,6 +324,13 @@ export default function App() {
   }, []);
 
   useEffect(() => {
+    fetch("/api/health")
+      .then((res) => res.json())
+      .then((data) => console.log("API Connection:", data))
+      .catch((err) => console.error("API Error:", err));
+  }, []);
+
+  useEffect(() => {
     if (selectedProject !== null) {
       window.scrollTo(0, 0);
     }
@@ -458,6 +422,7 @@ export default function App() {
             }}
           />
         ))}
+        {/* Horizontal Lines */}
         {[...Array(4)].map((_, i) => (
           <motion.div
             key={`h-${i}`}
@@ -504,7 +469,7 @@ export default function App() {
                 }}
                 className="text-xs font-bold uppercase tracking-widest flex items-center gap-2 hover:text-neon transition-colors"
               >
-                <span>&#8592;</span> Back to Home
+                <span>←</span> Back to Home
               </button>
               <div className="text-xs font-bold uppercase tracking-widest opacity-50">
                 Project {projects[selectedProject].id}
@@ -517,7 +482,7 @@ export default function App() {
                 initial={{ scale: 1.1, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 1.2, ease: "easeOut" }}
-                src={projects[selectedProject].detailImage || projects[selectedProject].image} 
+                src={projects[selectedProject].image} 
                 alt={projects[selectedProject].name}
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
@@ -611,7 +576,7 @@ export default function App() {
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-12 pt-12 border-t border-white/5">
                           {projects[selectedProject].resultsStats.map((stat: any, i: number) => (
                             <div key={i}>
-                              <div className="text-4xl md:text-6xl font-display text-neon mb-2">{stat.value}</div>
+                              <div className="text-xl md:text-3xl lg:text-4xl font-display text-neon mb-2">{stat.value}</div>
                               <div className="text-[10px] font-bold uppercase tracking-widest opacity-40">{stat.label}</div>
                             </div>
                           ))}
@@ -625,7 +590,7 @@ export default function App() {
 
             {/* Gallery */}
             <div className="w-full space-y-12 pb-24">
-              {projects[selectedProject].gallery.map((item, i) => (
+              {projects[selectedProject].gallery.map((img, i) => (
                 <div key={i} className="max-w-7xl mx-auto px-6 md:px-12">
                   <motion.div 
                     initial={{ opacity: 0, y: 50 }}
@@ -633,25 +598,12 @@ export default function App() {
                     viewport={{ once: true }}
                     className="aspect-video overflow-hidden rounded-2xl border border-white/10 bg-white/5"
                   >
-                    {item.endsWith('.mp4') ? (
-                      <video 
-                        src={item} 
-                        controls 
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        className="w-full h-full object-cover"
-                        poster={projects[selectedProject].image}
-                      />
-                    ) : (
-                      <img 
-                        src={item} 
-                        alt={`Gallery ${i}`} 
-                        className="w-full h-full object-cover"
-                        referrerPolicy="no-referrer"
-                      />
-                    )}
+                    <img 
+                      src={img} 
+                      alt={`Gallery ${i}`} 
+                      className="w-full h-full object-cover"
+                      referrerPolicy="no-referrer"
+                    />
                   </motion.div>
                 </div>
               ))}
@@ -708,19 +660,9 @@ export default function App() {
                   referrerPolicy="no-referrer"
                 />
                 <div className="text-[10px] font-bold uppercase tracking-widest opacity-40">
-                  &copy; 2026 Ashikh Rahman. All rights reserved.
+                  © 2026 Ashikh Rahman. All rights reserved.
                 </div>
               </div>
-              {projects[selectedProject].liveUrl && (
-                <a 
-                  href={projects[selectedProject].liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xs font-bold uppercase tracking-widest hover:text-neon transition-colors flex items-center gap-2"
-                >
-                  View Live Site <ArrowUpRight className="w-4 h-4" />
-                </a>
-              )}
               <button 
                 onClick={() => {
                   setSelectedProject(null);
@@ -777,7 +719,7 @@ export default function App() {
             whileTap={{ scale: 0.98 }}
             className="px-8 py-3 rounded-full border border-white/20 text-[10px] font-bold uppercase tracking-[0.2em] transition-colors"
           >
-            Let&apos;s Talk
+            Let's Talk
           </motion.a>
 
           {/* Hamburger Menu */}
@@ -1132,7 +1074,7 @@ export default function App() {
       <section id="about" className="relative w-full min-h-screen p-6 md:p-12 flex flex-col justify-center bg-black border-t border-white/5 overflow-hidden">
         <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center relative">
           
-          {/* Signature */}
+          {/* Signature where image was */}
           <div className="md:col-span-4 flex justify-center items-center relative h-full min-h-[400px]">
             <motion.div
               initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
@@ -1167,7 +1109,7 @@ export default function App() {
                 />
               </div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-display uppercase leading-[1.1] tracking-tight mb-12 max-w-4xl">
-                { "Most creatives follow the brief. I hunt what's behind it — the real problem, the missed opportunity, the thing nobody said out loud. I build AI-powered workflows, generative visual systems, and digital products for brands that operate at the top. Based in the UAE. Working everywhere".split(" ").map((word, i) => (
+                { "Most creatives follow the brief. I hunt what's behind it — the real problem, the missed opportunity, the thing nobody said out loud. I build AI-powered workflows that compress production timelines, generative visual systems that push creative boundaries, and digital products that move fast. I work with organizations that value speed, precision, and impact — from mobility brands to product startups. Based in the UAE. Working everywhere.".split(" ").map((word, i) => (
                   <motion.span
                     key={i}
                     initial={{ opacity: 0 }}
@@ -1187,12 +1129,11 @@ export default function App() {
         </div>
 
         {/* Stats Grid */}
-        <div className="max-w-7xl mx-auto w-full mt-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 border-t border-white/10 pt-16">
+        <div className="max-w-7xl mx-auto w-full mt-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 border-t border-white/10 pt-16">
           {[
             { label: "40+", title: "PROJECTS", sub: "AI & CREATIVE PRODUCTIONS", desc: "Across motion, design, and digital platforms" },
-            { label: "15+", title: "CLIENTS", sub: "REGIONAL & GLOBAL", desc: "Government, mobility, and private sector" },
+            { label: "15+", title: "CLIENTS", sub: "REGIONAL & GLOBAL", desc: "Mobility, technology, and infrastructure brands" },
             { label: "14+", title: "YEARS", sub: "INDUSTRY EXPERIENCE", desc: "Across 3D, VFX, design, and AI" },
-            { label: "4", title: "AWARDS", sub: "RECOGNIZED WORK", desc: "Regional and international recognition" }
           ].map((stat, i) => (
             <motion.div
               key={i}
@@ -1200,7 +1141,7 @@ export default function App() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="flex flex-col group"
+              className="flex flex-col group p-8 rounded-2xl border border-white/10 bg-white/[0.02] hover:border-neon/30 hover:bg-white/[0.04] transition-all duration-500"
             >
               <span className="text-5xl md:text-6xl font-display text-neon mb-2 group-hover:scale-110 transition-transform duration-300 origin-left">{stat.label}</span>
               <span className="text-3xl md:text-4xl font-display uppercase tracking-tighter mb-6">{stat.title}</span>
@@ -1252,6 +1193,7 @@ export default function App() {
                   />
                 </div>
               ))}
+              {/* Duplicate for seamless loop */}
               {[
                 "https://res.cloudinary.com/dijfcvpio/image/upload/v1775391527/AD-Mobility-Master-Bilingual-Identity-Full-Colour-V2_zgj8zz.png",
                 "https://res.cloudinary.com/dijfcvpio/image/upload/v1775391586/x14_holding_e7eawa.png",
@@ -1313,7 +1255,7 @@ export default function App() {
                   className="relative group shrink-0 w-[85vw] md:w-[45vw] lg:w-[320px] xl:w-[350px] h-[550px] lg:h-[600px] rounded-[3rem] overflow-hidden cursor-pointer bg-neutral-900 border border-white/5 snap-start"
                   onClick={() => setSelectedProject(index)}
                 >
-                  {/* Background Image */}
+                  {/* Background Image with optimized loading */}
                   <div className="absolute inset-0 transform transition-transform duration-1000 group-hover:scale-110">
                     <img 
                       src={project.image} 
@@ -1355,7 +1297,7 @@ export default function App() {
               ))}
             </div>
 
-            {/* Scroll Buttons */}
+            {/* Scroll Buttons - Moved to bottom */}
             <div className="flex items-center justify-center gap-6 mt-12 pb-12 border-b border-white/5">
               <button 
                 onClick={() => {
@@ -1385,6 +1327,51 @@ export default function App() {
             </div>
           </div>
 
+        </div>
+      </section>
+
+      {/* AI Process Section */}
+      <section id="approach" className="relative w-full min-h-screen p-6 md:p-12 bg-black border-t border-white/5 flex flex-col justify-center">
+        <div className="max-w-7xl mx-auto w-full">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="flex items-center gap-4 mb-24">
+            <h2 className="text-5xl md:text-7xl font-display uppercase tracking-tighter">How I Work</h2>
+            <div className="h-[1px] flex-grow bg-white/10" />
+          </motion.div>
+
+          <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="mb-24">
+            <div className="inline-flex items-center gap-3 bg-neon/10 border border-neon/30 rounded-full px-6 py-3">
+              <div className="w-2 h-2 bg-neon rounded-full animate-pulse" />
+              <span className="text-sm font-bold uppercase tracking-widest text-neon">AI-Powered — 10x Faster Delivery</span>
+            </div>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { num: "01", title: "DISCOVER", desc: "I dig into the real problem — not just what was asked, but what actually needs solving. Research, competitive analysis, and stakeholder interviews to find the gap.", tags: ["Research", "Strategy", "Problem Framing"] },
+              { num: "02", title: "DESIGN", desc: "AI-accelerated concepting and rapid prototyping. I generate dozens of directions in hours, not weeks — then refine the strongest concepts into production-ready designs.", tags: ["AI Concepting", "Rapid Prototyping", "Visual Systems"] },
+              { num: "03", title: "BUILD", desc: "Production pipelines powered by generative AI, motion automation, and real-time rendering. High-fidelity output at a fraction of traditional timelines.", tags: ["Motion Graphics", "Generative AI", "3D/VFX"] },
+              { num: "04", title: "DELIVER", desc: "Production-ready assets with full documentation. Two structured revision rounds included. Post-delivery support and team onboarding for any AI workflows built.", tags: ["Handoff", "Revisions", "Support"] }
+            ].map((step, i) => (
+              <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.1 }} className="group relative p-8 rounded-2xl border border-white/10 bg-white/[0.02] hover:border-neon/30 hover:bg-white/[0.04] transition-all duration-500">
+                <div className="text-7xl md:text-8xl font-display text-white/5 group-hover:text-neon/10 transition-colors duration-500 mb-4">{step.num}</div>
+                <h3 className="text-2xl md:text-3xl font-display uppercase tracking-tighter mb-4 group-hover:text-neon transition-colors duration-300">{step.title}</h3>
+                <p className="text-sm opacity-50 leading-relaxed mb-6">{step.desc}</p>
+                <div className="flex flex-wrap gap-2">
+                  {step.tags.map((tag, t) => (
+                    <span key={t} className="text-[10px] font-bold uppercase tracking-widest text-white/30 border border-white/10 rounded-full px-3 py-1">{tag}</span>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mt-32 pt-16 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div>
+              <h3 className="text-3xl md:text-5xl font-display uppercase tracking-tighter mb-2">Speed without sacrifice<span className="text-neon">.</span></h3>
+              <p className="text-sm opacity-50 max-w-md">Traditional agencies take weeks. I deliver in days — without compromising on quality, strategy, or creative ambition.</p>
+            </div>
+            <a href="mailto:hey@ashikh.studio" className="group flex items-center gap-4 bg-white text-black px-10 py-5 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-neon transition-all duration-300 shrink-0">Start a Project <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" /></a>
+          </motion.div>
         </div>
       </section>
 
@@ -1517,7 +1504,7 @@ export default function App() {
             <div className="space-y-8 mt-24 lg:mt-0">
               <div className="space-y-2">
                 <h3 className="text-xl font-bold uppercase tracking-tight">Got Questions?</h3>
-                <p className="text-sm opacity-50 max-w-xs">Need help with something? I&apos;m here to make things easy. Don&apos;t hesitate to reach out.</p>
+                <p className="text-sm opacity-50 max-w-xs">Need help with something? I'm here to make things easy. Don't hesitate to reach out.</p>
               </div>
               <button className="group flex items-center justify-center gap-4 bg-white text-black w-full max-w-sm py-6 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-neon transition-all duration-300">
                 Book a call
@@ -1582,10 +1569,10 @@ export default function App() {
                 </div>
                 <div className="space-y-6 max-w-xs">
                   <p className="text-xs font-bold uppercase tracking-widest leading-relaxed">
-                    Let&apos;s create something extraordinary together.
+                    Let's create something extraordinary together.
                   </p>
                   <p className="text-[10px] opacity-40 uppercase tracking-tight leading-relaxed">
-                    Hit me up if you&apos;re looking for a fast, reliable creative strategist who can bring your vision to life
+                    Hit me up if you're looking for a fast, reliable creative strategist who can bring your vision to life
                   </p>
                 </div>
               </div>
@@ -1634,7 +1621,7 @@ export default function App() {
                 referrerPolicy="no-referrer"
               />
               <div className="text-[10px] font-bold uppercase tracking-widest opacity-40">
-                &copy; 2026 Ashikh Rahman. All rights reserved.
+                © 2026 Ashikh Rahman. All rights reserved.
               </div>
             </div>
           </div>
