@@ -1225,6 +1225,7 @@ export default function App() {
             <div className="absolute inset-y-0 right-0 w-40 bg-gradient-to-l from-black to-transparent z-10" />
           </div>
         </div>
+
       </section>
 
       {/* Works Section */}
@@ -1518,7 +1519,7 @@ export default function App() {
               <div className="space-y-12">
                 <div className="relative w-48 h-64 rounded-xl overflow-hidden border border-white/10 grayscale hover:grayscale-0 transition-all duration-700">
                   <img 
-                    src="https://res.cloudinary.com/dijfcvpio/image/upload/v1775929030/Screenshot_jon0jh.png" 
+                    src="https://res.cloudinary.com/dijfcvpio/image/upload/v1784225612/hf_20260411_172042_4436ec7e-0807-410e-83d2-ee55d8561ce8_2_evxe3l.png" 
                     alt="Ashikh"
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
