@@ -100,7 +100,7 @@ export default function App() {
       id: "02.",
       name: "Plug N Go",
       desc: "Logo branding for Abu Dhabi Mobility EV charging app and chargers",
-      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1777495590/003_1_weyfcd.jpg",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1784225077/Plug_N_Go_BG_fnum4l.png",
       position: "object-center",
       list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14"],
       client: "Abu Dhabi Mobility",
@@ -116,7 +116,7 @@ export default function App() {
         { value: "Unified", label: "System" }
       ],
       gallery: [
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1777495590/003_1_weyfcd.jpg",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1784225077/Plug_N_Go_BG_fnum4l.png",
         "https://res.cloudinary.com/dijfcvpio/image/upload/v1777495592/0011_xhweoh.jpg",
         "https://res.cloudinary.com/dijfcvpio/image/upload/v1777495592/022_c0ax9q.jpg",
         "https://res.cloudinary.com/dijfcvpio/image/upload/v1775582417/EV_branding_uz0df3.jpg",
