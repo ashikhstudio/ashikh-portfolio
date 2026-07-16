@@ -121,7 +121,7 @@ export default function App() {
         "https://res.cloudinary.com/dijfcvpio/image/upload/v1777495592/022_c0ax9q.jpg",
         "https://res.cloudinary.com/dijfcvpio/image/upload/v1775582417/EV_branding_uz0df3.jpg",
         "https://res.cloudinary.com/dijfcvpio/image/upload/v1775582422/EV_branding_01_xwyezt.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1784140465/Plug_N_Go_xdanwz.png"
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1784224512/Plug_N_Go_xdanwz.jpg"
       ]
     },
     {
