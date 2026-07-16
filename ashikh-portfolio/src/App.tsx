@@ -847,10 +847,11 @@ export default function App() {
           muted
           loop
           playsInline
-          className="absolute inset-0 w-full h-full object-cover z-0 opacity-25 pointer-events-none"
+          className="absolute inset-0 w-full h-full object-cover z-0 opacity-50 pointer-events-none"
           preload="auto"
+          poster="https://res.cloudinary.com/dijfcvpio/image/upload/v1775582417/EV_branding_uz0df3.jpg"
         >
-          <source src="https://res.cloudinary.com/dijfcvpio/video/upload/v1776795853/BG_001_gv2bio.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dijfcvpio/video/upload/v1779718375/BG_03_wtliuv.mp4" type="video/mp4" />
         </video>
         
         {/* Top Section */}
