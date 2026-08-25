@@ -17,6 +17,7 @@ export default function App() {
   const [activeService, setActiveService] = useState(0);
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
+  const [activeCategory, setActiveCategory] = useState("All");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
   const [isLoading, setIsLoading] = useState(true);
@@ -71,11 +72,12 @@ export default function App() {
     {
       id: "01.",
       name: "SDT",
+      category: "Branding",
       desc: "Distinctive, government-grade vehicle wrap for Abu Dhabi Mobility",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775415196/Screenshot_2026-04-05_at_9.16.04_PM_awyc9s.jpg",
-      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14"],
+      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "AI Trainer System", "PLUG N GO", "ARVEX"],
       client: "Abu Dhabi Mobility",
-      role: "Lead Designer",
+      role: "Senior Graphic Designer",
       year: "2024",
       overview: (
         <>
@@ -92,17 +94,20 @@ export default function App() {
       ],
       gallery: [
         "https://res.cloudinary.com/dijfcvpio/image/upload/v1775415196/Screenshot_2026-04-05_at_9.16.04_PM_awyc9s.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775414641/001-01_c8ar3i.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775414642/001-02_aexg0y.jpg"
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787679327/SDTS_Page_1_qsarya.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787679327/SDTS_Page_2_pl0z1e.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787679331/SDTS_Page_3_fqfpco.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787679328/SDTS_Page_4_uhyjlc.png"
       ]
     },
     {
       id: "02.",
       name: "Plug N Go",
+      category: "Branding",
       desc: "Logo branding for Abu Dhabi Mobility EV charging app and chargers",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1784225077/Plug_N_Go_BG_fnum4l.png",
       position: "object-center",
-      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14"],
+      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "AI Trainer System", "PLUG N GO", "ARVEX"],
       client: "Abu Dhabi Mobility",
       role: "Lead Graphic Designer",
       year: "2025",
@@ -117,20 +122,19 @@ export default function App() {
       ],
       gallery: [
         "https://res.cloudinary.com/dijfcvpio/image/upload/v1784225077/Plug_N_Go_BG_fnum4l.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1777495592/0011_xhweoh.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1777495592/022_c0ax9q.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775582417/EV_branding_uz0df3.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775582422/EV_branding_01_xwyezt.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1784224512/Plug_N_Go_xdanwz.jpg"
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787677406/Plug_N_Go_brand_guidelines_Page_2_rvqlhi.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787677406/Plug_N_Go_brand_guidelines_Page_3_ostlwq.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787677407/Plug_N_Go_brand_guidelines_Page_5_jhfpvx.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787677411/Plug_N_Go_brand_guidelines_Page_6_lihbsq.png"
       ]
     },
     {
       id: "03.",
       name: "SDTS",
+      category: "Motion Graphics",
       desc: "AI-powered driver licensing and evaluation system",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775379354/Screenshot_2026-04-05_at_12.12.16_PM_aq3yxq.png",
-      position: "object-[15%_center]",
-      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14"],
+      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "AI Trainer System", "PLUG N GO", "ARVEX"],
       client: "Abu Dhabi Mobility",
       role: "Motion Graphics Designer & Animator",
       year: "2024",
@@ -157,9 +161,10 @@ export default function App() {
     {
       id: "04.",
       name: "Al Sarooj",
+      category: "Motion Graphics",
       desc: "Motion graphics infographic video for a 4.5 km road connectivity corridor",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775387741/Screenshot_2026-04-05_at_1.45.43_PM_olv4pq.png",
-      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14"],
+      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "AI Trainer System", "PLUG N GO", "ARVEX"],
       client: "ADM",
       role: "Motion Graphics Designer & Animator",
       year: "2023",
@@ -185,10 +190,11 @@ export default function App() {
     {
       id: "05.",
       name: "X14",
+      category: "Branding",
       desc: "Brand Collateral & Digital Brochure",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392696/X14_digital_profile-v4_Page_1_wdsbtm.jpg",
       position: "object-top",
-      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14"],
+      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "AI Trainer System", "PLUG N GO", "ARVEX"],
       client: "X14 Holding",
       role: "Sole Designer",
       year: "2023",
@@ -209,6 +215,97 @@ export default function App() {
         "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392692/X14_digital_profile-v4_Page_5_i1scvc.jpg",
         "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392693/X14_digital_profile-v4_Page_6_odigq3.jpg"
       ]
+    },
+    {
+      id: "06.",
+      name: "AI Trainer System",
+      category: "Ai Video",
+      desc: "A cinematic AI-generated promo for a smart driver-training platform",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1787680298/AI_Training_fhfsmk.png",
+      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "AI Trainer System", "PLUG N GO", "ARVEX"],
+      client: "Yas Driving School",
+      role: "AI Motion Designer",
+      year: "2025",
+      overview: "A cinematic AI-generated promo for a smart driver-training platform. Combines a product UI reveal — real-time driving score, reaction time, and safety metrics — with a sensor-driven vehicle sequence and animated data visualizations. Concept to final render built through an AI motion workflow.",
+      challenges: "Creating a cohesive 60-second narrative that seamlessly blends product UI, real-world driving footage, and AI-generated cinematic sequences into a single compelling story.",
+      solutions: "Developed an end-to-end AI motion pipeline using generative video tools, custom motion graphics, and compositing techniques to create a unified visual language that feels both high-tech and emotionally engaging.",
+      resultsText: "The final deliverable is a polished, broadcast-ready promo that positions the AI Trainer System as the future of driver education — smart, safe, and fully automated.",
+      resultsStats: [
+        { value: "60s", label: "AI Film" },
+        { value: "UI+3D", label: "Mixed Media" },
+        { value: "100%", label: "AI-Driven" }
+      ],
+      gallery: [
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787680298/AI_Training_fhfsmk.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787680300/AI_Training_02_ty9wpu.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787680300/AI_Training_01_uems42.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787680334/Screenshot_2026-08-25_at_9.47.38_PM_gmbzml.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787680300/AI_Training_03_pmiqn0.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787680338/Screenshot_2026-08-25_at_9.46.54_PM_k2ceje.png"
+      ],
+      projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1787681515/Ai_trainer_jta0gx.mp4"
+    },
+    {
+      id: "07.",
+      name: "PLUG N GO",
+      category: "Ai Video",
+      desc: "A vertical social campaign for Abu Dhabi Mobility's EV charging app",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1787681972/Screenshot_2026-08-25_at_10.15.50_PM_ilz2h9.png",
+      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "AI Trainer System", "PLUG N GO", "ARVEX"],
+      client: "Abu Dhabi Mobility",
+      role: "AI Motion Designer",
+      year: "2025",
+      overview: "EV charging, made effortless. A vertical ad for Abu Dhabi Mobility that turns app onboarding into a story — hook, flow, and a full charge in a few taps. Blends a scenario-led hook with a clean app UI walkthrough — sign-up, verification, and charging in a few simple steps — closing on cinematic, captioned lifestyle footage built for feed and story placements.",
+      challenges: "Creating a vertical narrative that works across multiple social formats — feed, stories, and reels — while maintaining brand consistency and clear app feature communication in under 60 seconds.",
+      solutions: "Developed a modular AI motion pipeline that generates vertical content optimized for each platform. Combined AI-generated lifestyle footage with clean UI screen recordings and kinetic typography for maximum engagement.",
+      resultsText: "The campaign delivered a suite of vertical assets ready for immediate deployment across Instagram, TikTok, and Snapchat — driving app downloads and brand awareness with zero traditional production overhead.",
+      resultsStats: [
+        { value: "60s", label: "Vertical Film" },
+        { value: "3:4", label: "Aspect Ratio" },
+        { value: "100%", label: "AI-Driven" }
+      ],
+      gallery: [
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787681972/Screenshot_2026-08-25_at_10.15.50_PM_ilz2h9.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787681970/Screenshot_2026-08-25_at_10.16.02_PM_injwao.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787681971/Screenshot_2026-08-25_at_10.16.21_PM_f3uvrb.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787681969/Screenshot_2026-08-25_at_10.16.32_PM_hy2yfq.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787681975/Screenshot_2026-08-25_at_10.16.57_PM_mpwnmk.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787681974/Screenshot_2026-08-25_at_10.17.23_PM_q22vkt.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787681977/Screenshot_2026-08-25_at_10.17.12_PM_fqmkxp.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787681971/Screenshot_2026-08-25_at_10.17.48_PM_pfbaid.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787681973/Screenshot_2026-08-25_at_10.18.03_PM_wwvfey.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787681976/Screenshot_2026-08-25_at_10.18.21_PM_hgnroi.png"
+      ],
+      projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1787682654/Plug_N_Go_meioi4.mp4"
+    },
+    {
+      id: "08.",
+      name: "ARVEX",
+      category: "Ai Video",
+      desc: "A self-directed concept project exploring AI-driven product design and film",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1787683685/Screenshot_2026-08-25_at_10.46.14_PM_tpxym6.png",
+      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "AI Trainer System", "PLUG N GO", "ARVEX"],
+      client: "Self-Directed",
+      role: "AI Motion Designer & Creative Director",
+      year: "2025",
+      overview: "ARVEX — RUN BEYOND LIMITS. A self-directed concept project exploring AI-driven product design and film. I built a fictional performance running shoe from the ground up — character sheet with material callouts and specs, a nine-shot storyboard with motion-control camera direction, and a cinematic hero film — proving out an end-to-end generative workflow from concept to final render.",
+      challenges: "Creating a believable fictional product from scratch using only generative AI tools — from the initial shoe concept and material specifications to a fully realized cinematic film with coherent visual storytelling across all deliverables.",
+      solutions: "Developed a structured generative workflow that maintained visual consistency across character sheets, storyboards, and final film output. Used precise prompting techniques and style references to ensure the ARVEX shoe looked cohesive in every frame.",
+      resultsText: "The final deliverable is a complete product design concept package — character sheet, storyboard, and cinematic hero film — demonstrating a full end-to-end AI-powered creative workflow from initial concept to final render.",
+      resultsStats: [
+        { value: "9", label: "Storyboard Shots" },
+        { value: "100%", label: "AI-Generated" },
+        { value: "End-to-End", label: "Workflow" }
+      ],
+      gallery: [
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787683685/Screenshot_2026-08-25_at_10.46.14_PM_tpxym6.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787683687/Screenshot_2026-08-25_at_10.46.56_PM_o4gcxw.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787683685/Screenshot_2026-08-25_at_10.47.10_PM_rvtmzj.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787683683/Screenshot_2026-08-25_at_10.47.38_PM_cmr3ou.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787683433/ARVEX_Character_Sheet_zyhrhz.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787683439/ARVEX_Storyboard_czxmh0.png"
+      ],
+      projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1787683447/ARVEX_dde98x.mp4"
     }
   ];
 
@@ -590,38 +687,64 @@ export default function App() {
             )}
 
             {/* Gallery */}
-            <div className="w-full space-y-12 pb-24">
-              {projects[selectedProject].gallery.map((img, i) => (
-                <div key={i} className="max-w-7xl mx-auto px-6 md:px-12">
-                  <motion.div 
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="aspect-video overflow-hidden rounded-2xl border border-white/10 bg-white/5"
-                  >
-                    <img 
-                      src={img} 
-                      alt={`Gallery ${i}`} 
-                      className="w-full h-full object-cover"
-                      referrerPolicy="no-referrer"
-                    />
-                  </motion.div>
+            <div className="w-full pb-24">
+              {projects[selectedProject].name === "PLUG N GO" ? (
+                <div className="max-w-7xl mx-auto px-6 md:px-12">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {projects[selectedProject].gallery.map((img, i) => (
+                      <motion.div
+                        key={i}
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="aspect-[9/16] overflow-hidden rounded-2xl border border-white/10 bg-white/5"
+                      >
+                        <img
+                          src={img}
+                          alt={`Gallery ${i}`}
+                          className="w-full h-full object-cover"
+                          referrerPolicy="no-referrer"
+                        />
+                      </motion.div>
+                    ))}
+                  </div>
                 </div>
-              ))}
+              ) : (
+                <div className="space-y-12">
+                  {projects[selectedProject].gallery.map((img, i) => (
+                    <div key={i} className="max-w-7xl mx-auto px-6 md:px-12">
+                      <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="aspect-video overflow-hidden rounded-2xl border border-white/10 bg-white/5"
+                      >
+                        <img
+                          src={img}
+                          alt={`Gallery ${i}`}
+                          className="w-full h-full object-cover"
+                          referrerPolicy="no-referrer"
+                        />
+                      </motion.div>
+                    </div>
+                  ))}
+                </div>
+              )}
 
               {projects[selectedProject].projectVideo && (
-                <div className="max-w-7xl mx-auto px-6 md:px-12">
-                  <motion.div 
+                <div className="max-w-7xl mx-auto px-6 md:px-12 mt-12">
+                  <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="aspect-video overflow-hidden rounded-2xl border border-white/10 bg-white/5"
+                    className={`mx-auto overflow-hidden rounded-2xl border border-white/10 bg-white/5 ${projects[selectedProject].name === "PLUG N GO" ? "aspect-[9/16] max-w-[400px]" : "aspect-video"}`}
                   >
-                    <video 
-                      src={projects[selectedProject].projectVideo} 
-                      controls 
-                      className="w-full h-full object-cover"
+                    <video
+                      src={projects[selectedProject].projectVideo}
+                      controls
+                      className="w-full h-full object-contain"
                       poster={projects[selectedProject].image}
+                      playsInline
                     />
                   </motion.div>
                 </div>
@@ -1242,22 +1365,47 @@ export default function App() {
             <div className="h-[1px] flex-grow bg-white/10" />
           </motion.div>
 
+          {/* Category Filter Tabs */}
+          <div className="flex flex-wrap gap-3 mb-12">
+            {["All", "Ai Video", "Branding", "Motion Graphics"].map((cat) => (
+              <button
+                key={cat}
+                onClick={() => {
+                  setActiveCategory(cat);
+                  const container = document.getElementById("projects-container");
+                  if (container) container.scrollTo({ left: 0, behavior: "smooth" });
+                }}
+                className={`px-5 py-2 rounded-full text-xs font-black uppercase tracking-widest transition-all duration-300 border ${
+                  activeCategory === cat
+                    ? "bg-neon text-black border-neon"
+                    : "bg-transparent text-white/60 border-white/10 hover:border-white/30 hover:text-white"
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+
           {/* Projects Container */}
           <div className="relative group/works">
-            <div 
+            <div
               id="projects-container"
               className="flex overflow-x-auto gap-6 lg:gap-8 pb-12 no-scrollbar scroll-smooth snap-x snap-mandatory px-4 -mx-4"
-              style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+              style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
             >
-              {projects.map((project, index) => (
+              {projects
+                .filter(
+                  (project) =>
+                    activeCategory === "All" || project.category === activeCategory
+                )
+                .map((project) => (
                 <motion.div
-                  key={index}
+                  key={project.id}
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
                   className="relative group shrink-0 w-[85vw] md:w-[45vw] lg:w-[320px] xl:w-[350px] h-[550px] lg:h-[600px] rounded-[3rem] overflow-hidden cursor-pointer bg-neutral-900 border border-white/5 snap-start"
-                  onClick={() => setSelectedProject(index)}
+                  onClick={() => setSelectedProject(projects.indexOf(project))}
                 >
                   {/* Background Image with optimized loading */}
                   <div className="absolute inset-0 transform transition-transform duration-1000 group-hover:scale-110">
