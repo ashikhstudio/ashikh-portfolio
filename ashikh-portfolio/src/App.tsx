@@ -1288,12 +1288,11 @@ export default function App() {
         </div>
 
         {/* Stats Grid */}
-        <div className="max-w-7xl mx-auto w-full mt-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 border-t border-white/10 pt-16">
+        <div className="max-w-7xl mx-auto w-full mt-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 border-t border-white/10 pt-16">
           {[
             { label: "40+", title: "PROJECTS", sub: "AI & CREATIVE PRODUCTIONS", desc: "Across motion, design, and digital platforms" },
             { label: "15+", title: "CLIENTS", sub: "REGIONAL & GLOBAL", desc: "Government, mobility, and private sector" },
-            { label: "14+", title: "YEARS", sub: "INDUSTRY EXPERIENCE", desc: "Across 3D, VFX, design, and AI" },
-            { label: "4", title: "AWARDS", sub: "RECOGNIZED WORK", desc: "Regional and international recognition" }
+            { label: "14+", title: "YEARS", sub: "INDUSTRY EXPERIENCE", desc: "Across 3D, VFX, design, and AI" }
           ].map((stat, i) => (
             <motion.div
               key={i}
