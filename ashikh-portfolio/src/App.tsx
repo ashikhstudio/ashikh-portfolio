@@ -17,6 +17,7 @@ export default function App() {
   const [activeService, setActiveService] = useState(0);
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
+  const [activeCategory, setActiveCategory] = useState("All");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
   const [isLoading, setIsLoading] = useState(true);
@@ -71,6 +72,7 @@ export default function App() {
     {
       id: "01.",
       name: "SDT",
+      category: "Branding",
       desc: "Distinctive, government-grade vehicle wrap for Abu Dhabi Mobility",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775415196/Screenshot_2026-04-05_at_9.16.04_PM_awyc9s.jpg",
       list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14"],
@@ -99,6 +101,7 @@ export default function App() {
     {
       id: "02.",
       name: "Plug N Go",
+      category: "Branding",
       desc: "Logo branding for Abu Dhabi Mobility EV charging app and chargers",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1784225077/Plug_N_Go_BG_fnum4l.png",
       position: "object-center",
@@ -127,6 +130,7 @@ export default function App() {
     {
       id: "03.",
       name: "SDTS",
+      category: "Ai Video",
       desc: "AI-powered driver licensing and evaluation system",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775379354/Screenshot_2026-04-05_at_12.12.16_PM_aq3yxq.png",
       position: "object-[15%_center]",
@@ -157,6 +161,7 @@ export default function App() {
     {
       id: "04.",
       name: "Al Sarooj",
+      category: "Motion Graphics",
       desc: "Motion graphics infographic video for a 4.5 km road connectivity corridor",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775387741/Screenshot_2026-04-05_at_1.45.43_PM_olv4pq.png",
       list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14"],
@@ -185,6 +190,7 @@ export default function App() {
     {
       id: "05.",
       name: "X14",
+      category: "Branding",
       desc: "Brand Collateral & Digital Brochure",
       image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392696/X14_digital_profile-v4_Page_1_wdsbtm.jpg",
       position: "object-top",
@@ -1242,22 +1248,47 @@ export default function App() {
             <div className="h-[1px] flex-grow bg-white/10" />
           </motion.div>
 
+          {/* Category Filter Tabs */}
+          <div className="flex flex-wrap gap-3 mb-12">
+            {["All", ...new Set(projects.map((p) => p.category))].map((cat) => (
+              <button
+                key={cat}
+                onClick={() => {
+                  setActiveCategory(cat);
+                  const container = document.getElementById("projects-container");
+                  if (container) container.scrollTo({ left: 0, behavior: "smooth" });
+                }}
+                className={`px-5 py-2 rounded-full text-xs font-black uppercase tracking-widest transition-all duration-300 border ${
+                  activeCategory === cat
+                    ? "bg-neon text-black border-neon"
+                    : "bg-transparent text-white/60 border-white/10 hover:border-white/30 hover:text-white"
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+
           {/* Projects Container */}
           <div className="relative group/works">
-            <div 
+            <div
               id="projects-container"
               className="flex overflow-x-auto gap-6 lg:gap-8 pb-12 no-scrollbar scroll-smooth snap-x snap-mandatory px-4 -mx-4"
-              style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+              style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
             >
-              {projects.map((project, index) => (
+              {projects
+                .filter(
+                  (project) =>
+                    activeCategory === "All" || project.category === activeCategory
+                )
+                .map((project) => (
                 <motion.div
-                  key={index}
+                  key={project.id}
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
                   className="relative group shrink-0 w-[85vw] md:w-[45vw] lg:w-[320px] xl:w-[350px] h-[550px] lg:h-[600px] rounded-[3rem] overflow-hidden cursor-pointer bg-neutral-900 border border-white/5 snap-start"
-                  onClick={() => setSelectedProject(index)}
+                  onClick={() => setSelectedProject(projects.indexOf(project))}
                 >
                   {/* Background Image with optimized loading */}
                   <div className="absolute inset-0 transform transition-transform duration-1000 group-hover:scale-110">
