@@ -69,155 +69,8 @@ export default function App() {
   }, []);
 
   const projects = [
-    {
+{
       id: "01.",
-      name: "SDT",
-      category: "Branding",
-      desc: "Distinctive, government-grade vehicle wrap for Abu Dhabi Mobility",
-      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775415196/Screenshot_2026-04-05_at_9.16.04_PM_awyc9s.jpg",
-      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "AI Trainer System", "PLUG N GO", "ARVEX"],
-      client: "Abu Dhabi Mobility",
-      role: "Senior Graphic Designer",
-      year: "2024",
-      overview: (
-        <>
-          This project involved designing the full vehicle livery for Abu Dhabi's Smart Driving Test program, operated under the Abu Dhabi Mobility authority (<a href="https://admobility.gov.ae" target="_blank" rel="noopener noreferrer" className="text-neon hover:underline">admobility.gov.ae</a>). The goal was to create a distinctive, government-grade vehicle wrap for a Toyota Corolla fleet that would be immediately recognizable on the road, communicate the program's smart and tech-forward identity, and maintain visual coherence with the existing brand system.
-        </>
-      ),
-      challenges: "The vehicle needed to feel modern, authoritative, and intelligent — reflecting the program's position at the intersection of government service and smart technology. It also had to function effectively in two environments: full daylight and low-light nighttime conditions.",
-      solutions: "The circular motif from the logo was scaled up dramatically and used as the hero graphic element, dissolving into a field of scattered digital dots. A dual-mode design was developed using reflective sticker materials for nighttime visibility, transforming the vehicle into a striking presence on night roads.",
-      resultsText: "The final design delivers a cohesive, government-ready vehicle livery that is bold enough to command attention on Abu Dhabi's roads while remaining fully faithful to the Smart Driving Test brand identity.",
-      resultsStats: [
-        { value: "Day/Night", label: "Dual Treatment" },
-        { value: "Reflective", label: "Visibility" },
-        { value: "100%", label: "Brand Coherence" }
-      ],
-      gallery: [
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775415196/Screenshot_2026-04-05_at_9.16.04_PM_awyc9s.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787679327/SDTS_Page_1_qsarya.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787679327/SDTS_Page_2_pl0z1e.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787679331/SDTS_Page_3_fqfpco.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787679328/SDTS_Page_4_uhyjlc.png"
-      ]
-    },
-    {
-      id: "02.",
-      name: "Plug N Go",
-      category: "Branding",
-      desc: "Logo branding for Abu Dhabi Mobility EV charging app and chargers",
-      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1784225077/Plug_N_Go_BG_fnum4l.png",
-      position: "object-center",
-      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "AI Trainer System", "PLUG N GO", "ARVEX"],
-      client: "Abu Dhabi Mobility",
-      role: "Lead Graphic Designer",
-      year: "2025",
-      overview: "Developing the visual identity and logo branding for Plug N Go, the official EV charging infrastructure for Abu Dhabi Mobility. The project encompassed the design for the mobile application and the physical charging stations across the city.",
-      challenges: "The main challenge was creating a brand that felt both high-tech and approachable, while ensuring the mobile app was usable in high-glare outdoor environments.",
-      solutions: "I used a high-contrast color palette and large, touch-friendly interface elements. The branding reflects a 'flow' concept, symbolizing the constant movement of energy.",
-      resultsText: "The branding successfully unified the digital and physical presence of the charging network.",
-      resultsStats: [
-        { value: "Brand", label: "Identity" },
-        { value: "EV", label: "Charging" },
-        { value: "Unified", label: "System" }
-      ],
-      gallery: [
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1784225077/Plug_N_Go_BG_fnum4l.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787677406/Plug_N_Go_brand_guidelines_Page_2_rvqlhi.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787677406/Plug_N_Go_brand_guidelines_Page_3_ostlwq.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787677407/Plug_N_Go_brand_guidelines_Page_5_jhfpvx.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787677411/Plug_N_Go_brand_guidelines_Page_6_lihbsq.png"
-      ]
-    },
-    {
-      id: "03.",
-      name: "SDTS",
-      category: "Motion Graphics",
-      desc: "AI-powered driver licensing and evaluation system",
-      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775379354/Screenshot_2026-04-05_at_12.12.16_PM_aq3yxq.png",
-      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "AI Trainer System", "PLUG N GO", "ARVEX"],
-      client: "Abu Dhabi Mobility",
-      role: "Motion Graphics Designer & Animator",
-      year: "2024",
-      overview: "A comprehensive motion graphics explainer video produced for the Smart Driving Test application — an AI-powered driver licensing and evaluation system developed in partnership with Abu Dhabi Mobility. The project required translating a highly technical, multi-layered system into a visually compelling narrative accessible to government stakeholders, smart city audiences, and the general public. Key sections covered include the Smart Test Vehicle, Smart Monitoring Bus, Central Control Room, and the end-to-end user journey. Tools used: Adobe Illustrator, After Effects, and Premiere Pro.",
-      challenges: "The primary challenge was distilling a complex, multi-layered AI evaluation system into a narrative that government officials and the public could easily understand. The old documentation was purely technical and lacked a storytelling element that could showcase the system's efficiency and fairness.",
-      solutions: "I developed a high-fidelity motion graphics video that visualizes the entire ecosystem. By using custom 3D-style illustrations and dynamic data overlays, I was able to explain the 21 primary criteria and 48 sub-criteria in a way that felt intuitive and technologically advanced.",
-      resultsText: "The video successfully served as the primary presentation tool for high-level government meetings, leading to a broader rollout of the system across the region.",
-      resultsStats: [
-        { value: "21", label: "Primary Criteria" },
-        { value: "48", label: "Sub-criteria" },
-        { value: "100%", label: "Fairness Rate" }
-      ],
-      gallery: [
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775379354/Screenshot_2026-04-05_at_12.12.16_PM_aq3yxq.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775379354/Screenshot_2026-04-05_at_12.13.00_PM_dfnq4j.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775379354/Screenshot_2026-04-05_at_12.13.09_PM_submgv.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775379354/Screenshot_2026-04-05_at_12.14.23_PM_facut0.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775379355/Screenshot_2026-04-05_at_12.15.27_PM_lvjvcw.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775379355/Screenshot_2026-04-05_at_12.15.11_PM_jxqr4j.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775379355/Screenshot_2026-04-05_at_12.17.52_PM_er0jyn.png"
-      ],
-      projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1776881517/smart_driving_test_training_ruujs0.mp4"
-    },
-    {
-      id: "04.",
-      name: "Al Sarooj",
-      category: "Motion Graphics",
-      desc: "Motion graphics infographic video for a 4.5 km road connectivity corridor",
-      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775387741/Screenshot_2026-04-05_at_1.45.43_PM_olv4pq.png",
-      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "AI Trainer System", "PLUG N GO", "ARVEX"],
-      client: "ADM",
-      role: "Motion Graphics Designer & Animator",
-      year: "2023",
-      overview: "A motion graphics infographic video showcasing a 4.5 km road connectivity corridor linking Al Rouge and Al, featuring a 120-meter tunnel. The video combines aerial footage, 3D architectural renderings, construction visuals, and animated map interfaces to communicate the project's scope and impact—including dedicated pedestrian and cycling paths, upgraded intersections, and improved traffic flow. Produced for TIR/Tatweer to highlight infrastructure development aimed at building smarter, safer, and more connected cities.",
-      challenges: "Communicating the scope and impact of a complex 4.5 km road project, including a tunnel and various upgrades, in a concise 56-second video.",
-      solutions: "Combining aerial footage, 3D renderings, and animated map interfaces to create a visually compelling narrative.",
-      resultsText: "The video effectively highlighted the infrastructure development, showcasing the project's impact on urban connectivity and safety.",
-      resultsStats: [
-        { value: "4.5 km", label: "Road Link" },
-        { value: "120 m", label: "Tunnel" },
-        { value: "56 s", label: "Video Length" }
-      ],
-      gallery: [
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775387741/Screenshot_2026-04-05_at_1.45.43_PM_olv4pq.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775383174/Screenshot_2026-04-05_at_1.44.39_PM_lfbien.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775383173/Screenshot_2026-04-05_at_1.45.20_PM_rqiy4c.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775383173/Screenshot_2026-04-05_at_1.45.29_PM_auyjw7.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775383175/Screenshot_2026-04-05_at_1.46.08_PM_m7dxlt.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775383174/Screenshot_2026-04-05_at_1.45.52_PM_uf4qcy.png"
-      ],
-      projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1776881076/Al_Sarooj_i72obc.mp4"
-    },
-    {
-      id: "05.",
-      name: "X14",
-      category: "Branding",
-      desc: "Brand Collateral & Digital Brochure",
-      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392696/X14_digital_profile-v4_Page_1_wdsbtm.jpg",
-      position: "object-top",
-      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "AI Trainer System", "PLUG N GO", "ARVEX"],
-      client: "X14 Holding",
-      role: "Sole Designer",
-      year: "2023",
-      overview: "X14 is a digital media start-up founded and based in Abu Dhabi, specializing in online reputation management, media analytics, and information management. As part of their early brand-building efforts, a digital company profile was needed to communicate their identity, services, and value proposition to potential clients across both the government and private sectors.",
-      challenges: "The brief was to create a professional, visually compelling digital brochure that could serve as X14's primary introductory document — something that felt credible, modern, and reflective of a company positioning itself as a thought leader in the Abu Dhabi media landscape.",
-      solutions: "I developed a comprehensive 6-page digital profile using a two-tone navy and amber palette to balance authority with dynamism. The layout follows a structured grid system with clean typography, custom iconography, and humanizing illustrations to break up dense text sections while maintaining a professional consultancy aesthetic.",
-      resultsText: "The final deliverable is a polished, print-ready and screen-optimized digital profile that X14 can use across client pitches, email outreach, and digital platforms. The design positions X14 as a credible, world-class consultancy operating out of Abu Dhabi with global reach and capability.",
-      resultsStats: [
-        { value: "06", label: "Pages" },
-        { value: "100%", label: "Custom Design" },
-        { value: "Print", label: "Ready" }
-      ],
-      gallery: [
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392696/X14_digital_profile-v4_Page_1_wdsbtm.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392690/X14_digital_profile-v4_Page_2_xtp4cb.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392688/X14_digital_profile-v4_Page_3_gvgfj9.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392689/X14_digital_profile-v4_Page_4_njvs3y.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392692/X14_digital_profile-v4_Page_5_i1scvc.jpg",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392693/X14_digital_profile-v4_Page_6_odigq3.jpg"
-      ]
-    },
-    {
-      id: "06.",
       name: "AI Trainer System",
       category: "Ai Video",
       desc: "A cinematic AI-generated promo for a smart driver-training platform",
@@ -245,8 +98,9 @@ export default function App() {
       ],
       projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1787681515/Ai_trainer_jta0gx.mp4"
     },
-    {
-      id: "07.",
+    
+{
+      id: "02.",
       name: "PLUG N GO",
       category: "Ai Video",
       desc: "A vertical social campaign for Abu Dhabi Mobility's EV charging app",
@@ -278,8 +132,9 @@ export default function App() {
       ],
       projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1787682654/Plug_N_Go_meioi4.mp4"
     },
-    {
-      id: "08.",
+    
+{
+      id: "03.",
       name: "ARVEX",
       category: "Ai Video",
       desc: "A self-directed concept project exploring AI-driven product design and film",
@@ -306,6 +161,185 @@ export default function App() {
         "https://res.cloudinary.com/dijfcvpio/image/upload/v1787683439/ARVEX_Storyboard_czxmh0.png"
       ],
       projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1787683447/ARVEX_dde98x.mp4"
+    },
+    {
+      id: "04.",
+      name: "ARXEN",
+      category: "Ai Video",
+      desc: "A self-directed concept project: a fictional open-ear earbud brand, designed and filmed end to end",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1787687819/Screenshot_2026-08-25_at_11.55.36_PM_uipvfg.png",
+      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "AI Trainer System", "PLUG N GO", "ARVEX", "ARXEN"],
+      client: "Self-Directed",
+      role: "AI Motion Designer & Creative Director",
+      year: "2025",
+      overview: "ARXEN — OPEN-EAR EVOLUTION. A self-directed concept project: a fictional open-ear earbud brand, designed and filmed end to end. Glossy hero renders, a floating case reveal with live battery readout, and a clean logo lockup — a cinematic product spot built entirely through a generative AI motion pipeline.",
+      challenges: "Creating a believable fictional audio product brand from scratch using only generative AI — from the initial earbud concept and material specifications to a fully realized cinematic film with coherent visual storytelling and brand identity.",
+      solutions: "Developed a structured generative workflow that maintained visual consistency across hero renders, product animations, and final film output. Used precise prompting and style-locking techniques to ensure the ARXEN brand looked cohesive in every frame.",
+      resultsText: "The final deliverable is a complete product brand concept package — hero renders, storyboard, and cinematic hero film — demonstrating a full end-to-end AI-powered creative workflow from concept to final render.",
+      resultsStats: [
+        { value: "100%", label: "AI-Generated" },
+        { value: "End-to-End", label: "Workflow" },
+        { value: "Product", label: "Film" }
+      ],
+      gallery: [
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787687819/Screenshot_2026-08-25_at_11.55.36_PM_uipvfg.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787687820/Screenshot_2026-08-25_at_11.56.01_PM_dcitsj.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787687822/Screenshot_2026-08-25_at_11.56.30_PM_lpji0d.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787683404/ARXEN_Character_Sheet_zmwfdq.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787683402/ARXEN_Storyboard_nrmx7o.png"
+      ],
+      projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1787683395/ARXEN_v1_uo2gvs.mp4"
+    },
+{
+      id: "05.",
+      name: "SDT",
+      category: "Branding",
+      desc: "Distinctive, government-grade vehicle wrap for Abu Dhabi Mobility",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775415196/Screenshot_2026-04-05_at_9.16.04_PM_awyc9s.jpg",
+      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "AI Trainer System", "PLUG N GO", "ARVEX"],
+      client: "Abu Dhabi Mobility",
+      role: "Senior Graphic Designer",
+      year: "2024",
+      overview: (
+        <>
+          This project involved designing the full vehicle livery for Abu Dhabi's Smart Driving Test program, operated under the Abu Dhabi Mobility authority (<a href="https://admobility.gov.ae" target="_blank" rel="noopener noreferrer" className="text-neon hover:underline">admobility.gov.ae</a>). The goal was to create a distinctive, government-grade vehicle wrap for a Toyota Corolla fleet that would be immediately recognizable on the road, communicate the program's smart and tech-forward identity, and maintain visual coherence with the existing brand system.
+        </>
+      ),
+      challenges: "The vehicle needed to feel modern, authoritative, and intelligent — reflecting the program's position at the intersection of government service and smart technology. It also had to function effectively in two environments: full daylight and low-light nighttime conditions.",
+      solutions: "The circular motif from the logo was scaled up dramatically and used as the hero graphic element, dissolving into a field of scattered digital dots. A dual-mode design was developed using reflective sticker materials for nighttime visibility, transforming the vehicle into a striking presence on night roads.",
+      resultsText: "The final design delivers a cohesive, government-ready vehicle livery that is bold enough to command attention on Abu Dhabi's roads while remaining fully faithful to the Smart Driving Test brand identity.",
+      resultsStats: [
+        { value: "Day/Night", label: "Dual Treatment" },
+        { value: "Reflective", label: "Visibility" },
+        { value: "100%", label: "Brand Coherence" }
+      ],
+      gallery: [
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775415196/Screenshot_2026-04-05_at_9.16.04_PM_awyc9s.jpg",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787679327/SDTS_Page_1_qsarya.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787679327/SDTS_Page_2_pl0z1e.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787679331/SDTS_Page_3_fqfpco.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787679328/SDTS_Page_4_uhyjlc.png"
+      ]
+    },
+    
+{
+      id: "06.",
+      name: "Plug N Go",
+      category: "Branding",
+      desc: "Logo branding for Abu Dhabi Mobility EV charging app and chargers",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1784225077/Plug_N_Go_BG_fnum4l.png",
+      position: "object-center",
+      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "AI Trainer System", "PLUG N GO", "ARVEX"],
+      client: "Abu Dhabi Mobility",
+      role: "Lead Graphic Designer",
+      year: "2025",
+      overview: "Developing the visual identity and logo branding for Plug N Go, the official EV charging infrastructure for Abu Dhabi Mobility. The project encompassed the design for the mobile application and the physical charging stations across the city.",
+      challenges: "The main challenge was creating a brand that felt both high-tech and approachable, while ensuring the mobile app was usable in high-glare outdoor environments.",
+      solutions: "I used a high-contrast color palette and large, touch-friendly interface elements. The branding reflects a 'flow' concept, symbolizing the constant movement of energy.",
+      resultsText: "The branding successfully unified the digital and physical presence of the charging network.",
+      resultsStats: [
+        { value: "Brand", label: "Identity" },
+        { value: "EV", label: "Charging" },
+        { value: "Unified", label: "System" }
+      ],
+      gallery: [
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1784225077/Plug_N_Go_BG_fnum4l.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787677406/Plug_N_Go_brand_guidelines_Page_2_rvqlhi.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787677406/Plug_N_Go_brand_guidelines_Page_3_ostlwq.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787677407/Plug_N_Go_brand_guidelines_Page_5_jhfpvx.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787677411/Plug_N_Go_brand_guidelines_Page_6_lihbsq.png"
+      ]
+    },
+    
+{
+      id: "07.",
+      name: "SDTS",
+      category: "Motion Graphics",
+      desc: "AI-powered driver licensing and evaluation system",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775379354/Screenshot_2026-04-05_at_12.12.16_PM_aq3yxq.png",
+      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "AI Trainer System", "PLUG N GO", "ARVEX"],
+      client: "Abu Dhabi Mobility",
+      role: "Motion Graphics Designer & Animator",
+      year: "2024",
+      overview: "A comprehensive motion graphics explainer video produced for the Smart Driving Test application — an AI-powered driver licensing and evaluation system developed in partnership with Abu Dhabi Mobility. The project required translating a highly technical, multi-layered system into a visually compelling narrative accessible to government stakeholders, smart city audiences, and the general public. Key sections covered include the Smart Test Vehicle, Smart Monitoring Bus, Central Control Room, and the end-to-end user journey. Tools used: Adobe Illustrator, After Effects, and Premiere Pro.",
+      challenges: "The primary challenge was distilling a complex, multi-layered AI evaluation system into a narrative that government officials and the public could easily understand. The old documentation was purely technical and lacked a storytelling element that could showcase the system's efficiency and fairness.",
+      solutions: "I developed a high-fidelity motion graphics video that visualizes the entire ecosystem. By using custom 3D-style illustrations and dynamic data overlays, I was able to explain the 21 primary criteria and 48 sub-criteria in a way that felt intuitive and technologically advanced.",
+      resultsText: "The video successfully served as the primary presentation tool for high-level government meetings, leading to a broader rollout of the system across the region.",
+      resultsStats: [
+        { value: "21", label: "Primary Criteria" },
+        { value: "48", label: "Sub-criteria" },
+        { value: "100%", label: "Fairness Rate" }
+      ],
+      gallery: [
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775379354/Screenshot_2026-04-05_at_12.12.16_PM_aq3yxq.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775379354/Screenshot_2026-04-05_at_12.13.00_PM_dfnq4j.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775379354/Screenshot_2026-04-05_at_12.13.09_PM_submgv.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775379354/Screenshot_2026-04-05_at_12.14.23_PM_facut0.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775379355/Screenshot_2026-04-05_at_12.15.27_PM_lvjvcw.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775379355/Screenshot_2026-04-05_at_12.15.11_PM_jxqr4j.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775379355/Screenshot_2026-04-05_at_12.17.52_PM_er0jyn.png"
+      ],
+      projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1776881517/smart_driving_test_training_ruujs0.mp4"
+    },
+    
+{
+      id: "08.",
+      name: "Al Sarooj",
+      category: "Motion Graphics",
+      desc: "Motion graphics infographic video for a 4.5 km road connectivity corridor",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775387741/Screenshot_2026-04-05_at_1.45.43_PM_olv4pq.png",
+      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "AI Trainer System", "PLUG N GO", "ARVEX"],
+      client: "ADM",
+      role: "Motion Graphics Designer & Animator",
+      year: "2023",
+      overview: "A motion graphics infographic video showcasing a 4.5 km road connectivity corridor linking Al Rouge and Al, featuring a 120-meter tunnel. The video combines aerial footage, 3D architectural renderings, construction visuals, and animated map interfaces to communicate the project's scope and impact—including dedicated pedestrian and cycling paths, upgraded intersections, and improved traffic flow. Produced for TIR/Tatweer to highlight infrastructure development aimed at building smarter, safer, and more connected cities.",
+      challenges: "Communicating the scope and impact of a complex 4.5 km road project, including a tunnel and various upgrades, in a concise 56-second video.",
+      solutions: "Combining aerial footage, 3D renderings, and animated map interfaces to create a visually compelling narrative.",
+      resultsText: "The video effectively highlighted the infrastructure development, showcasing the project's impact on urban connectivity and safety.",
+      resultsStats: [
+        { value: "4.5 km", label: "Road Link" },
+        { value: "120 m", label: "Tunnel" },
+        { value: "56 s", label: "Video Length" }
+      ],
+      gallery: [
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775387741/Screenshot_2026-04-05_at_1.45.43_PM_olv4pq.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775383174/Screenshot_2026-04-05_at_1.44.39_PM_lfbien.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775383173/Screenshot_2026-04-05_at_1.45.20_PM_rqiy4c.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775383173/Screenshot_2026-04-05_at_1.45.29_PM_auyjw7.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775383175/Screenshot_2026-04-05_at_1.46.08_PM_m7dxlt.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775383174/Screenshot_2026-04-05_at_1.45.52_PM_uf4qcy.png"
+      ],
+      projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1776881076/Al_Sarooj_i72obc.mp4"
+    },
+    
+{
+      id: "09.",
+      name: "X14",
+      category: "Branding",
+      desc: "Brand Collateral & Digital Brochure",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392696/X14_digital_profile-v4_Page_1_wdsbtm.jpg",
+      position: "object-top",
+      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "AI Trainer System", "PLUG N GO", "ARVEX"],
+      client: "X14 Holding",
+      role: "Sole Designer",
+      year: "2023",
+      overview: "X14 is a digital media start-up founded and based in Abu Dhabi, specializing in online reputation management, media analytics, and information management. As part of their early brand-building efforts, a digital company profile was needed to communicate their identity, services, and value proposition to potential clients across both the government and private sectors.",
+      challenges: "The brief was to create a professional, visually compelling digital brochure that could serve as X14's primary introductory document — something that felt credible, modern, and reflective of a company positioning itself as a thought leader in the Abu Dhabi media landscape.",
+      solutions: "I developed a comprehensive 6-page digital profile using a two-tone navy and amber palette to balance authority with dynamism. The layout follows a structured grid system with clean typography, custom iconography, and humanizing illustrations to break up dense text sections while maintaining a professional consultancy aesthetic.",
+      resultsText: "The final deliverable is a polished, print-ready and screen-optimized digital profile that X14 can use across client pitches, email outreach, and digital platforms. The design positions X14 as a credible, world-class consultancy operating out of Abu Dhabi with global reach and capability.",
+      resultsStats: [
+        { value: "06", label: "Pages" },
+        { value: "100%", label: "Custom Design" },
+        { value: "Print", label: "Ready" }
+      ],
+      gallery: [
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392696/X14_digital_profile-v4_Page_1_wdsbtm.jpg",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392690/X14_digital_profile-v4_Page_2_xtp4cb.jpg",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392688/X14_digital_profile-v4_Page_3_gvgfj9.jpg",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392689/X14_digital_profile-v4_Page_4_njvs3y.jpg",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392692/X14_digital_profile-v4_Page_5_i1scvc.jpg",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392693/X14_digital_profile-v4_Page_6_odigq3.jpg"
+      ]
     }
   ];
 
