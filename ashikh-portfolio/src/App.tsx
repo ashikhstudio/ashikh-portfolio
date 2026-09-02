@@ -340,6 +340,97 @@ export default function App() {
         "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392692/X14_digital_profile-v4_Page_5_i1scvc.jpg",
         "https://res.cloudinary.com/dijfcvpio/image/upload/v1775392693/X14_digital_profile-v4_Page_6_odigq3.jpg"
       ]
+    },
+    {
+      id: "06.",
+      name: "AI Trainer System",
+      category: "Ai Video",
+      desc: "A cinematic AI-generated promo for a smart driver-training platform",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1787680298/AI_Training_fhfsmk.png",
+      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "AI Trainer System", "PLUG N GO", "ARVEX"],
+      client: "Yas Driving School",
+      role: "AI Motion Designer",
+      year: "2025",
+      overview: "A cinematic AI-generated promo for a smart driver-training platform. Combines a product UI reveal — real-time driving score, reaction time, and safety metrics — with a sensor-driven vehicle sequence and animated data visualizations. Concept to final render built through an AI motion workflow.",
+      challenges: "Creating a cohesive 60-second narrative that seamlessly blends product UI, real-world driving footage, and AI-generated cinematic sequences into a single compelling story.",
+      solutions: "Developed an end-to-end AI motion pipeline using generative video tools, custom motion graphics, and compositing techniques to create a unified visual language that feels both high-tech and emotionally engaging.",
+      resultsText: "The final deliverable is a polished, broadcast-ready promo that positions the AI Trainer System as the future of driver education — smart, safe, and fully automated.",
+      resultsStats: [
+        { value: "60s", label: "AI Film" },
+        { value: "UI+3D", label: "Mixed Media" },
+        { value: "100%", label: "AI-Driven" }
+      ],
+      gallery: [
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787680298/AI_Training_fhfsmk.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787680300/AI_Training_02_ty9wpu.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787680300/AI_Training_01_uems42.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787680334/Screenshot_2026-08-25_at_9.47.38_PM_gmbzml.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787680300/AI_Training_03_pmiqn0.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787680338/Screenshot_2026-08-25_at_9.46.54_PM_k2ceje.png"
+      ],
+      projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1787681515/Ai_trainer_jta0gx.mp4"
+    },
+    {
+      id: "07.",
+      name: "PLUG N GO",
+      category: "Ai Video",
+      desc: "A vertical social campaign for Abu Dhabi Mobility's EV charging app",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1787681972/Screenshot_2026-08-25_at_10.15.50_PM_ilz2h9.png",
+      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "AI Trainer System", "PLUG N GO", "ARVEX"],
+      client: "Abu Dhabi Mobility",
+      role: "AI Motion Designer",
+      year: "2025",
+      overview: "EV charging, made effortless. A vertical ad for Abu Dhabi Mobility that turns app onboarding into a story — hook, flow, and a full charge in a few taps. Blends a scenario-led hook with a clean app UI walkthrough — sign-up, verification, and charging in a few simple steps — closing on cinematic, captioned lifestyle footage built for feed and story placements.",
+      challenges: "Creating a vertical narrative that works across multiple social formats — feed, stories, and reels — while maintaining brand consistency and clear app feature communication in under 60 seconds.",
+      solutions: "Developed a modular AI motion pipeline that generates vertical content optimized for each platform. Combined AI-generated lifestyle footage with clean UI screen recordings and kinetic typography for maximum engagement.",
+      resultsText: "The campaign delivered a suite of vertical assets ready for immediate deployment across Instagram, TikTok, and Snapchat — driving app downloads and brand awareness with zero traditional production overhead.",
+      resultsStats: [
+        { value: "60s", label: "Vertical Film" },
+        { value: "3:4", label: "Aspect Ratio" },
+        { value: "100%", label: "AI-Driven" }
+      ],
+      gallery: [
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787681972/Screenshot_2026-08-25_at_10.15.50_PM_ilz2h9.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787681970/Screenshot_2026-08-25_at_10.16.02_PM_injwao.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787681971/Screenshot_2026-08-25_at_10.16.21_PM_f3uvrb.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787681969/Screenshot_2026-08-25_at_10.16.32_PM_hy2yfq.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787681975/Screenshot_2026-08-25_at_10.16.57_PM_mpwnmk.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787681974/Screenshot_2026-08-25_at_10.17.23_PM_q22vkt.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787681977/Screenshot_2026-08-25_at_10.17.12_PM_fqmkxp.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787681971/Screenshot_2026-08-25_at_10.17.48_PM_pfbaid.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787681973/Screenshot_2026-08-25_at_10.18.03_PM_wwvfey.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787681976/Screenshot_2026-08-25_at_10.18.21_PM_hgnroi.png"
+      ],
+      projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1787682654/Plug_N_Go_meioi4.mp4"
+    },
+    {
+      id: "08.",
+      name: "ARVEX",
+      category: "Ai Video",
+      desc: "A self-directed concept project exploring AI-driven product design and film",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1787683685/Screenshot_2026-08-25_at_10.46.14_PM_tpxym6.png",
+      list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "AI Trainer System", "PLUG N GO", "ARVEX"],
+      client: "Self-Directed",
+      role: "AI Motion Designer & Creative Director",
+      year: "2025",
+      overview: "ARVEX — RUN BEYOND LIMITS. A self-directed concept project exploring AI-driven product design and film. I built a fictional performance running shoe from the ground up — character sheet with material callouts and specs, a nine-shot storyboard with motion-control camera direction, and a cinematic hero film — proving out an end-to-end generative workflow from concept to final render.",
+      challenges: "Creating a believable fictional product from scratch using only generative AI tools — from the initial shoe concept and material specifications to a fully realized cinematic film with coherent visual storytelling across all deliverables.",
+      solutions: "Developed a structured generative workflow that maintained visual consistency across character sheets, storyboards, and final film output. Used precise prompting techniques and style references to ensure the ARVEX shoe looked cohesive in every frame.",
+      resultsText: "The final deliverable is a complete product design concept package — character sheet, storyboard, and cinematic hero film — demonstrating a full end-to-end AI-powered creative workflow from initial concept to final render.",
+      resultsStats: [
+        { value: "9", label: "Storyboard Shots" },
+        { value: "100%", label: "AI-Generated" },
+        { value: "End-to-End", label: "Workflow" }
+      ],
+      gallery: [
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787683685/Screenshot_2026-08-25_at_10.46.14_PM_tpxym6.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787683687/Screenshot_2026-08-25_at_10.46.56_PM_o4gcxw.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787683685/Screenshot_2026-08-25_at_10.47.10_PM_rvtmzj.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787683683/Screenshot_2026-08-25_at_10.47.38_PM_cmr3ou.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787683433/ARVEX_Character_Sheet_zyhrhz.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787683439/ARVEX_Storyboard_czxmh0.png"
+      ],
+      projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1787683447/ARVEX_dde98x.mp4"
     }
   ];
 
