@@ -138,7 +138,7 @@ export default function App() {
       name: "ARVEX",
       category: "Ai Video",
       desc: "A self-directed concept project exploring AI-driven product design and film",
-      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1787683685/Screenshot_2026-08-25_at_10.46.14_PM_tpxym6.png",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1788636278/Screenshot_2026-09-05_at_11.20.52_PM_xgsfvq.png",
       list: ["SDT", "Plug N Go", "SDTS", "Al Sarooj", "X14", "AI Trainer System", "PLUG N GO", "ARVEX"],
       client: "Self-Directed",
       role: "AI Motion Designer & Creative Director",
@@ -153,14 +153,19 @@ export default function App() {
         { value: "End-to-End", label: "Workflow" }
       ],
       gallery: [
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787683685/Screenshot_2026-08-25_at_10.46.14_PM_tpxym6.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787683687/Screenshot_2026-08-25_at_10.46.56_PM_o4gcxw.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787683685/Screenshot_2026-08-25_at_10.47.10_PM_rvtmzj.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787683683/Screenshot_2026-08-25_at_10.47.38_PM_cmr3ou.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787683433/ARVEX_Character_Sheet_zyhrhz.png",
-        "https://res.cloudinary.com/dijfcvpio/image/upload/v1787683439/ARVEX_Storyboard_czxmh0.png"
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1788636278/Screenshot_2026-09-05_at_11.20.52_PM_xgsfvq.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1788636278/Screenshot_2026-09-05_at_11.21.20_PM_rcofk2.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1788636279/Screenshot_2026-09-05_at_11.22.12_PM_tgfi9c.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1788636282/Screenshot_2026-09-05_at_11.22.26_PM_xniafr.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1788636283/Screenshot_2026-09-05_at_11.22.34_PM_zv0jlo.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1788636284/Screenshot_2026-09-05_at_11.22.47_PM_gug5fg.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1788636283/Screenshot_2026-09-05_at_11.23.08_PM_swlmge.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1788636283/Screenshot_2026-09-05_at_11.23.21_PM_hjsf3c.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1788636290/Screenshot_2026-09-05_at_11.23.41_PM_lulxan.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1788636286/Screenshot_2026-09-05_at_11.23.53_PM_wso0li.png",
+        "https://res.cloudinary.com/dijfcvpio/image/upload/v1788635332/ARVEX_Green_Character_Sheet_mxsuwt.png"
       ],
-      projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1787683447/ARVEX_dde98x.mp4"
+      projectVideo: "https://res.cloudinary.com/dijfcvpio/video/upload/v1788635992/ARVEX_Green_2_jrjf5b.mp4"
     },
     {
       id: "04.",
@@ -375,35 +380,35 @@ export default function App() {
       id: "01.",
       title: "Generative Design",
       description: "Crafting high-end cinematic assets and visual narratives where AI becomes the brush, not the artist.",
-      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1777138471/Generative_design_zwhv4n.jpg",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1788759019/Generative_design_hsgzx7.png",
       tags: ["AI Motion", "Cinematic Assets", "Generative Art", "Visual Storytelling"]
     },
     {
       id: "02.",
       title: "Motion Graphics & VFX",
       description: "High-impact 3D animations and visual effects that translate complex technical concepts into stories people actually feel.",
-      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1777138471/Motion_graphics_ljk98e.jpg",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1788759019/Motion_graphics_em6qvh.png",
       tags: ["3D Animation", "VFX", "Cinema 4D", "After Effects"]
     },
     {
       id: "03.",
       title: "Digital Product Design",
       description: "User-centric UI/UX and prototyping for complex platforms, specializing in Smart City and Government Platforms.",
-      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1777138472/UI_UX_omfhdz.jpg",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1788759019/UI_UX_sd53f1.png",
       tags: ["UI/UX Design", "Digital Prototyping", "Product Strategy", "User Research"]
     },
     {
       id: "04.",
       title: "AI Strategy & Workflows",
       description: "Architecting end-to-end AI pipelines that compress production timelines without compromising creative integrity.",
-      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1777140383/AI_Strategy_i4pop8.jpg",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1788759020/AI_Strategy_mgpddf.png",
       tags: ["AI Integration", "Workflow Optimization", "Generative Synthesis", "Process Design"]
     },
     {
       id: "05.",
       title: "High-End Presentations",
       description: "Transforming complex data and technical narratives into high-stakes presentation decks that command attention and drive decisions.",
-      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1777140648/Presentations_01_udv9i8.jpg",
+      image: "https://res.cloudinary.com/dijfcvpio/image/upload/v1788759019/Presentations_kqxd6s.png",
       tags: ["Pitch Decks", "Investor Presentations", "Visual Storytelling", "Technical Narratives"]
     }
   ];
@@ -469,7 +474,7 @@ export default function App() {
   }, [selectedProject]);
 
   return (
-    <main className="relative min-h-screen w-full bg-black text-white font-sans selection:bg-neon selection:text-black flex flex-col overflow-x-hidden scroll-smooth">
+    <main className="relative min-h-screen w-full bg-[#2A2A2A] text-white font-sans selection:bg-neon selection:text-black flex flex-col overflow-x-hidden scroll-smooth">
       
       <AnimatePresence mode="wait">
         {isLoading && (
@@ -591,7 +596,7 @@ export default function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="relative z-10 w-full min-h-screen bg-black"
+            className="relative z-10 w-full min-h-screen bg-[#2A2A2A]"
           >
             {/* Project Detail Header */}
             <div className="fixed top-0 left-0 w-full p-6 md:p-12 flex justify-between items-center z-50 mix-blend-difference">
@@ -909,7 +914,7 @@ export default function App() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ duration: 0.6, ease: [0.76, 0, 0.24, 1] }}
-              className="fixed top-0 right-0 bottom-0 z-[100] w-full md:w-[450px] bg-[#0a0a0a] flex flex-col p-8 md:p-12 border-l border-white/5 shadow-2xl"
+              className="fixed top-0 right-0 bottom-0 z-[100] w-full md:w-[450px] bg-[#242424] flex flex-col p-8 md:p-12 border-l border-white/5 shadow-2xl"
             >
               {/* Menu Header */}
               <div className="flex justify-between items-center w-full pb-8 border-b border-white/5">
@@ -1008,7 +1013,7 @@ export default function App() {
           preload="auto"
           poster="https://res.cloudinary.com/dijfcvpio/image/upload/v1775582417/EV_branding_uz0df3.jpg"
         >
-          <source src="https://res.cloudinary.com/dijfcvpio/video/upload/v1779718375/BG_03_wtliuv.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dijfcvpio/video/upload/v1788627724/ARVEX_Green_xiz2mv.mp4" type="video/mp4" />
         </video>
         
         {/* Top Section */}
@@ -1230,7 +1235,7 @@ export default function App() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="relative w-full min-h-screen p-6 md:p-12 flex flex-col justify-center bg-black border-t border-white/5 overflow-hidden">
+      <section id="about" className="relative w-full min-h-screen p-6 md:p-12 flex flex-col justify-center bg-[#2A2A2A] border-t border-white/5 overflow-hidden">
         <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center relative">
           
           {/* Signature where image was */}
@@ -1386,7 +1391,7 @@ export default function App() {
       </section>
 
       {/* Works Section */}
-      <section id="works" className="relative w-full min-h-screen p-6 md:p-12 bg-black border-t border-white/5">
+      <section id="works" className="relative w-full min-h-screen p-6 md:p-12 bg-[#2A2A2A] border-t border-white/5">
         <div className="max-w-7xl mx-auto w-full pt-24">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -1437,7 +1442,7 @@ export default function App() {
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-                  className="relative group shrink-0 w-[85vw] md:w-[45vw] lg:w-[320px] xl:w-[350px] h-[550px] lg:h-[600px] rounded-[3rem] overflow-hidden cursor-pointer bg-neutral-900 border border-white/5 snap-start"
+                  className="relative group shrink-0 w-[85vw] md:w-[45vw] lg:w-[320px] xl:w-[350px] h-[550px] lg:h-[600px] rounded-[3rem] overflow-hidden cursor-pointer bg-[#242424] border border-white/5 snap-start"
                   onClick={() => setSelectedProject(projects.indexOf(project))}
                 >
                   {/* Background Image with optimized loading */}
@@ -1516,7 +1521,7 @@ export default function App() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="relative w-full min-h-screen p-6 md:p-12 bg-black border-t border-white/5">
+      <section id="services" className="relative w-full min-h-screen p-6 md:p-12 bg-[#2A2A2A] border-t border-white/5">
         <div className="max-w-7xl mx-auto w-full pt-24">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -1600,7 +1605,7 @@ export default function App() {
                                 initial={{ opacity: 0, scale: 0.8 }}
                                 animate={{ opacity: 1, scale: 1 }}
                                 transition={{ duration: 0.3, ease: "linear", delay: 0.2 + (tIndex * 0.05) }}
-                                whileHover={{ scale: 1.1, borderColor: "#FF5F1F", color: "#FF5F1F" }}
+                                whileHover={{ scale: 1.1, borderColor: "#8CC63F", color: "#8CC63F" }}
                                 className="px-4 py-2 rounded-full border border-white/10 text-[10px] font-bold uppercase tracking-widest text-white/60 cursor-default transition-all duration-300"
                               >
                                 {tag}
@@ -1625,7 +1630,7 @@ export default function App() {
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" className="relative w-full min-h-screen p-6 md:p-12 bg-black border-t border-white/5 flex flex-col justify-center">
+      <section id="faq" className="relative w-full min-h-screen p-6 md:p-12 bg-[#2A2A2A] border-t border-white/5 flex flex-col justify-center">
         <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           {/* Left Side: Title & CTA */}
           <div className="lg:col-span-5 flex flex-col justify-between h-full min-h-[400px]">
@@ -1691,7 +1696,7 @@ export default function App() {
       </section>
 
       {/* Footer Section */}
-      <footer id="contact" className="relative w-full min-h-screen p-6 md:p-12 bg-black border-t border-white/5 flex flex-col justify-between overflow-hidden">
+      <footer id="contact" className="relative w-full min-h-screen p-6 md:p-12 bg-[#2A2A2A] border-t border-white/5 flex flex-col justify-between overflow-hidden">
         {/* Top Part of Footer */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start pt-24">
           {/* Left Side: Image and Text */}
