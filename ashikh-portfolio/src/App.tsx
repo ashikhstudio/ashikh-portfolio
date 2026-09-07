@@ -491,33 +491,12 @@ export default function App() {
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(7,63,54,0)_0%,_rgba(5,40,34,0.6)_100%)]" />
             
             <div className="relative w-48 h-48 md:w-64 md:h-64">
-              {/* Glow layer — pulses at completion */}
-              <motion.div
-                className="absolute inset-0 flex items-center justify-center"
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: [0, 0, 0.15, 0], scale: [0.8, 0.9, 1.1, 1.2] }}
-                transition={{ duration: 3.5, times: [0, 0.6, 0.85, 1], ease: "easeOut" }}
-              >
-                <div className="w-32 h-32 md:w-48 md:h-48 rounded-full bg-[#91CF35] blur-[60px] opacity-40" />
-              </motion.div>
-              
               <svg 
                 viewBox="0 0 219 222" 
                 className="w-full h-full relative z-10"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <defs>
-                  {/* Subtle glow filter for the logo */}
-                  <filter id="logoGlow" x="-20%" y="-20%" width="140%" height="140%">
-                    <feGaussianBlur stdDeviation="2" result="blur" />
-                    <feMerge>
-                      <feMergeNode in="blur" />
-                      <feMergeNode in="blur" />
-                      <feMergeNode in="SourceGraphic" />
-                    </feMerge>
-                  </filter>
-                </defs>
                 <g>
                   {/* Main logo shape — thin outline → thick → solid fill */}
                   <motion.polyline 
@@ -570,16 +549,6 @@ export default function App() {
                   />
                 </g>
               </svg>
-              
-              {/* Completion pulse ring */}
-              <motion.div
-                className="absolute inset-0 flex items-center justify-center pointer-events-none"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: [0, 0, 0.4, 0] }}
-                transition={{ duration: 3.5, times: [0, 0.7, 0.85, 1], ease: "easeOut" }}
-              >
-                <div className="w-40 h-40 md:w-56 md:h-56 rounded-full border border-[#91CF35]/30" />
-              </motion.div>
             </div>
           </motion.div>
         )}
