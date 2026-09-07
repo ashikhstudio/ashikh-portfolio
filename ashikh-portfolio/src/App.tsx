@@ -456,7 +456,7 @@ export default function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3500);
+    }, 4200);
     return () => clearTimeout(timer);
   }, []);
 
@@ -482,49 +482,104 @@ export default function App() {
             key="loader"
             initial={{ opacity: 1 }}
             exit={{ 
-              y: "-100%",
-              transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] }
+              opacity: 0,
+              transition: { duration: 1.2, ease: [0.45, 0, 0.15, 1], delay: 0.3 }
             }}
-            className="fixed inset-0 z-[1000] bg-neon flex items-center justify-center"
+            className="fixed inset-0 z-[1000] bg-[#073F36] flex items-center justify-center"
           >
+            {/* Subtle radial depth gradient */}
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(7,63,54,0)_0%,_rgba(5,40,34,0.6)_100%)]" />
+            
             <div className="relative w-48 h-48 md:w-64 md:h-64">
+              {/* Glow layer — pulses at completion */}
+              <motion.div
+                className="absolute inset-0 flex items-center justify-center"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: [0, 0, 0.15, 0], scale: [0.8, 0.9, 1.1, 1.2] }}
+                transition={{ duration: 3.5, times: [0, 0.6, 0.85, 1], ease: "easeOut" }}
+              >
+                <div className="w-32 h-32 md:w-48 md:h-48 rounded-full bg-[#91CF35] blur-[60px] opacity-40" />
+              </motion.div>
+              
               <svg 
                 viewBox="0 0 219 222" 
-                className="w-full h-full"
+                className="w-full h-full relative z-10"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
+                <defs>
+                  {/* Subtle glow filter for the logo */}
+                  <filter id="logoGlow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="2" result="blur" />
+                    <feMerge>
+                      <feMergeNode in="blur" />
+                      <feMergeNode in="blur" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                </defs>
                 <g>
+                  {/* Main logo shape — thin outline → thick → solid fill */}
                   <motion.polyline 
                     points="122.19 147.35 81.72 167.45 48.79 167.45 111.3 57.77 187.91 168.32 116.61 77.31 88.98 147.63 121.91 147.35"
-                    stroke="white"
-                    strokeWidth="2"
-                    initial={{ pathLength: 0, fill: "rgba(255, 255, 255, 0)" }}
+                    stroke="#91CF35"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    initial={{ 
+                      pathLength: 0, 
+                      strokeWidth: 0.5,
+                      strokeOpacity: 0.3,
+                      fill: "rgba(145, 207, 53, 0)" 
+                    }}
                     animate={{ 
                       pathLength: 1,
-                      fill: "rgba(255, 255, 255, 1)",
+                      strokeWidth: 2.5,
+                      strokeOpacity: 1,
+                      fill: "rgba(145, 207, 53, 1)",
                     }}
                     transition={{ 
-                      pathLength: { duration: 2, ease: "easeInOut" },
-                      fill: { duration: 1, delay: 1.5, ease: "easeIn" }
+                      pathLength: { duration: 2.2, ease: "easeInOut" },
+                      strokeWidth: { duration: 2, ease: "easeOut", delay: 0.3 },
+                      strokeOpacity: { duration: 1.5, ease: "easeOut" },
+                      fill: { duration: 1.2, delay: 1.8, ease: "easeInOut" }
                     }}
                   />
                   <motion.polygon 
                     points="122.88 145.02 93.72 145.02 117.25 81.95 185.25 168.32 145.9 168.32 117.3 117.25 111.16 134.7 122.88 145.02"
-                    stroke="white"
-                    strokeWidth="2"
-                    initial={{ pathLength: 0, fill: "rgba(255, 255, 255, 0)" }}
+                    stroke="#91CF35"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    initial={{ 
+                      pathLength: 0, 
+                      strokeWidth: 0.5,
+                      strokeOpacity: 0.3,
+                      fill: "rgba(145, 207, 53, 0)" 
+                    }}
                     animate={{ 
                       pathLength: 1,
-                      fill: "rgba(255, 255, 255, 1)",
+                      strokeWidth: 2.5,
+                      strokeOpacity: 1,
+                      fill: "rgba(145, 207, 53, 1)",
                     }}
                     transition={{ 
-                      pathLength: { duration: 2, ease: "easeInOut" },
-                      fill: { duration: 1, delay: 1.5, ease: "easeIn" }
+                      pathLength: { duration: 2.2, ease: "easeInOut", delay: 0.2 },
+                      strokeWidth: { duration: 2, ease: "easeOut", delay: 0.5 },
+                      strokeOpacity: { duration: 1.5, ease: "easeOut", delay: 0.2 },
+                      fill: { duration: 1.2, delay: 2, ease: "easeInOut" }
                     }}
                   />
                 </g>
               </svg>
+              
+              {/* Completion pulse ring */}
+              <motion.div
+                className="absolute inset-0 flex items-center justify-center pointer-events-none"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: [0, 0, 0.4, 0] }}
+                transition={{ duration: 3.5, times: [0, 0.7, 0.85, 1], ease: "easeOut" }}
+              >
+                <div className="w-40 h-40 md:w-56 md:h-56 rounded-full border border-[#91CF35]/30" />
+              </motion.div>
             </div>
           </motion.div>
         )}
