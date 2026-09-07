@@ -914,7 +914,7 @@ export default function App() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ duration: 0.6, ease: [0.76, 0, 0.24, 1] }}
-              className="fixed top-0 right-0 bottom-0 z-[100] w-full md:w-[450px] bg-[#242424] flex flex-col p-8 md:p-12 border-l border-white/5 shadow-2xl"
+              className="fixed top-0 right-0 bottom-0 z-[100] w-full md:w-[450px] bg-[#242424] flex flex-col p-8 md:p-12 border-l border-white/10 shadow-2xl"
             >
               {/* Menu Header */}
               <div className="flex justify-between items-center w-full pb-8 border-b border-white/5">
@@ -1383,8 +1383,8 @@ export default function App() {
             </motion.div>
             
             {/* Gradient Fades */}
-            <div className="absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-black to-transparent z-10" />
-            <div className="absolute inset-y-0 right-0 w-40 bg-gradient-to-l from-black to-transparent z-10" />
+            <div className="absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-[#2A2A2A] to-transparent z-10" />
+            <div className="absolute inset-y-0 right-0 w-40 bg-gradient-to-l from-[#2A2A2A] to-transparent z-10" />
           </div>
         </div>
 
@@ -1442,7 +1442,7 @@ export default function App() {
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-                  className="relative group shrink-0 w-[85vw] md:w-[45vw] lg:w-[320px] xl:w-[350px] h-[550px] lg:h-[600px] rounded-[3rem] overflow-hidden cursor-pointer bg-[#242424] border border-white/5 snap-start"
+                  className="relative group shrink-0 w-[85vw] md:w-[45vw] lg:w-[320px] xl:w-[350px] h-[550px] lg:h-[600px] rounded-[3rem] overflow-hidden cursor-pointer bg-[#242424] border border-white/5 snap-start transition-all duration-500 hover:border-neon/30"
                   onClick={() => setSelectedProject(projects.indexOf(project))}
                 >
                   {/* Background Image with optimized loading */}
@@ -1541,7 +1541,7 @@ export default function App() {
                 onClick={() => setActiveService(index)}
                 className="group border-b border-white/10 cursor-pointer"
               >
-                <div className="flex flex-col lg:flex-row items-start lg:items-center py-12 gap-8 lg:gap-16">
+                <div className="flex flex-col lg:flex-row items-start lg:items-center py-12 gap-8 lg:gap-16 ">
                   {/* Service Number */}
                   <div className="flex items-center gap-2">
                     <span className={`text-6xl md:text-8xl font-display transition-colors duration-500 ${activeService === index ? 'text-neon' : 'text-white/10 group-hover:text-white/30'}`}>
@@ -1697,6 +1697,8 @@ export default function App() {
 
       {/* Footer Section */}
       <footer id="contact" className="relative w-full min-h-screen p-6 md:p-12 bg-[#2A2A2A] border-t border-white/5 flex flex-col justify-between overflow-hidden">
+        {/* Forest Green Depth Gradient */}
+        <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
         {/* Top Part of Footer */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start pt-24">
           {/* Left Side: Image and Text */}
