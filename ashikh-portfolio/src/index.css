@@ -5,7 +5,7 @@
   --font-display: "Anton", sans-serif;
   --font-sans: "Inter", sans-serif;
   --font-script: "Mr Dafoe", cursive;
-  --color-neon: #FF5F1F;
+  --color-neon: #8CC63F;
 }
 
 html {
@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background-color: #000;
+  background-color: #2A2A2A;
   color: #fff;
   font-family: var(--font-sans);
   overflow-x: hidden;
