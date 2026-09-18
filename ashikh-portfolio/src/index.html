@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ashikh Rahman — AI-Powered Creative Strategist</title>
+  <meta name="description" content="Ashikh Rahman — AI-powered creative strategist, generative design and motion specialist based in the UAE. Working everywhere.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;700;900&family=Mr+Dafoe&display=swap">
+  <link rel="icon" href="https://res.cloudinary.com/dijfcvpio/image/upload/v1775412441/AR_Logo_wnsauc.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader__glow"></div>
+    <svg class="loader__mark" viewBox="0 0 219 222" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polyline class="loader__a" points="122.19 147.35 81.72 167.45 48.79 167.45 111.3 57.77 187.91 168.32 116.61 77.31 88.98 147.63 121.91 147.35" stroke="#91CF35" stroke-linecap="round" stroke-linejoin="round"/>
+      <polygon class="loader__b" points="122.88 145.02 93.72 145.02 117.25 81.95 185.25 168.32 145.9 168.32 117.3 117.25 111.16 134.7 122.88 145.02" stroke="#91CF35" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <!-- Animated background lines (filled by JS) -->
+  <div id="bg-lines" class="bg-lines" aria-hidden="true"></div>
+
+  <!-- ============ MAIN SITE ============ -->
+  <div id="site" class="site">
+
+    <header class="header">
+      <a href="#home" class="header__logo" id="logo-home" aria-label="Ashikh Rahman — home">
+        <img src="https://res.cloudinary.com/dijfcvpio/image/upload/v1775412441/AR_Logo_wnsauc.svg" alt="AR logo" referrerpolicy="no-referrer">
+      </a>
+      <div class="header__right">
+        <div class="clock" id="clock">
+          <span class="clock__time" id="clock-time">--:--:-- --</span>
+          <span class="clock__zone">(GMT+4)</span>
+        </div>
+        <a href="mailto:hey@ashikh.studio" class="btn-outline">Let's Talk</a>
+        <button type="button" class="burger" id="menu-open" aria-label="Open menu" aria-controls="drawer" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Drawer -->
+    <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+    <aside class="drawer" id="drawer" aria-hidden="true">
+      <div class="drawer__head">
+        <div class="drawer__label"><i></i><span>Menu</span></div>
+        <button type="button" class="drawer__close" id="menu-close" aria-label="Close menu"><span></span><span></span></button>
+      </div>
+      <nav class="drawer__nav" id="drawer-nav">
+        <a href="#home" data-section="home">Home</a>
+        <a href="#about" data-section="about">About</a>
+        <a href="#works" data-section="works">Works</a>
+        <a href="#contact" data-section="contact">Contact</a>
+      </nav>
+      <div class="drawer__foot">
+        <div>
+          <span class="eyebrow">(Email)</span>
+          <a class="drawer__email" href="mailto:hey@ashikh.studio">hey@ashikh.studio</a>
+        </div>
+        <div>
+          <span class="eyebrow">(Socials)</span>
+          <div class="drawer__socials">
+            <a href="#">Instagram <i class="i-ne"></i></a>
+            <a href="https://www.linkedin.com/in/ashikh/" target="_blank" rel="noopener noreferrer">LinkedIn <i class="i-ne"></i></a>
+            <a href="#">Twitter <i class="i-ne"></i></a>
+            <a href="#">Dribbble <i class="i-ne"></i></a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <video id="hero-video" class="hero__video" autoplay muted loop playsinline preload="auto"
+             poster="https://res.cloudinary.com/dijfcvpio/image/upload/v1775582417/EV_branding_uz0df3.jpg">
+        <source src="https://res.cloudinary.com/dijfcvpio/video/upload/v1788627724/ARVEX_Green_xiz2mv.mp4" type="video/mp4">
+      </video>
+
+      <div class="hero__top">
+        <h1 class="hero__name reveal" data-anim="from-left">ashikh</h1>
+        <div class="hero__intro reveal" data-anim="from-right" data-delay="200">
+          <h2 class="hero__tag words" data-highlight="brief.,hunt,behind">I don't follow the brief. I hunt what's behind it</h2>
+          <div class="hero__who">
+            <div>
+              <p class="hero__who-name">Ashikh Rahman</p>
+              <p class="hero__who-role">AI-Powered Creative Strategist | Generative Design Specialist | Digital Product &amp; Motion Graphics Expert</p>
+            </div>
+            <div class="hero__bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__phases">
+        <div class="phase"><span class="phase__num">001</span><div class="phase__label">Phase/<em>Break</em><div class="phase__dots"><i></i><i></i><i></i></div></div></div>
+        <div class="phase"><span class="phase__num">002</span><div class="phase__label">Phase/<em>Build</em><div class="phase__dots"><i></i><i></i><i></i></div></div></div>
+        <div class="phase"><span class="phase__num">003</span><div class="phase__label">Phase/<em>Bend</em><div class="phase__dots"><i></i><i></i><i></i></div></div></div>
+        <div class="phase"><span class="phase__num">004</span><div class="phase__label">Phase/<em>Unleash</em><div class="phase__dots"><i></i><i></i><i></i></div></div></div>
+      </div>
+
+      <div class="hero__bottom">
+        <div class="hero__meta reveal" data-anim="fade">
+          <div class="hero__stamp"><p>10X AR</p><p class="neon">2026</p></div>
+          <div class="hero__list">
+            <div class="hero__vline"></div>
+            <ul>
+              <li>Generative Design</li>
+              <li>AI Motion</li>
+              <li>Graphic Design</li>
+              <li>Presentation Design</li>
+              <li>UI/UX &amp; Digital Prototyping</li>
+            </ul>
+          </div>
+        </div>
+        <h1 class="hero__name hero__name--right reveal" data-anim="from-right" data-delay="200">rahman</h1>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div class="container about__grid">
+        <div class="about__sig-wrap">
+          <div class="about__sig reveal" data-anim="sig">Ashikh</div>
+        </div>
+        <div class="about__text reveal" data-anim="up">
+          <div class="label-row"><span class="label neon">WHO I AM!</span><span class="label-line"></span></div>
+          <h2 class="about__h2 words">Most creatives follow the brief. I hunt what's behind it — the real problem, the missed opportunity, the thing nobody said out loud. I build AI-powered workflows, generative visual systems, and digital products for brands that operate at the top. Based in the UAE. Working everywhere</h2>
+          <a href="mailto:hey@ashikh.studio" class="btn-pill">Email me <i class="i-arrow"></i></a>
+        </div>
+      </div>
+
+      <div class="container stats">
+        <div class="stat reveal" data-anim="up"><span class="stat__num">40+</span><span class="stat__title">PROJECTS</span><p class="stat__sub">AI &amp; CREATIVE PRODUCTIONS</p><p class="stat__desc">Across motion, design, and digital platforms</p></div>
+        <div class="stat reveal" data-anim="up" data-delay="100"><span class="stat__num">15+</span><span class="stat__title">CLIENTS</span><p class="stat__sub">REGIONAL &amp; GLOBAL</p><p class="stat__desc">Government, mobility, and private sector</p></div>
+        <div class="stat reveal" data-anim="up" data-delay="200"><span class="stat__num">14+</span><span class="stat__title">YEARS</span><p class="stat__sub">INDUSTRY EXPERIENCE</p><p class="stat__desc">Across 3D, VFX, design, and AI</p></div>
+      </div>
+
+      <div class="clients">
+        <div class="container"><span class="eyebrow eyebrow--dim">Selected Clients &amp; Collaborations</span></div>
+        <div class="marquee">
+          <div class="marquee__track" id="marquee-track"></div>
+          <div class="marquee__fade marquee__fade--l"></div>
+          <div class="marquee__fade marquee__fade--r"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKS -->
+    <section id="works" class="works">
+      <div class="container">
+        <div class="section-head reveal" data-anim="up"><h2>Selected Works</h2><span class="section-head__line"></span></div>
+        <div class="tabs" id="work-tabs"></div>
+        <div class="works__wrap">
+          <div class="works__track no-scrollbar" id="projects-container"></div>
+          <div class="works__nav">
+            <button type="button" class="works__btn" id="works-prev"><span class="works__circle"><i class="i-arrow i-arrow--l"></i></span>Prev Projects</button>
+            <span class="works__nav-line"></span>
+            <button type="button" class="works__btn" id="works-next">Next Projects<span class="works__circle"><i class="i-arrow"></i></span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-head reveal" data-anim="up"><h2>Services I Provide</h2><span class="section-head__line"></span></div>
+        <div class="services__list" id="services-list"></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+      <div class="container faq__grid">
+        <div class="faq__left">
+          <div>
+            <h2 class="faq__title reveal" data-anim="from-left">FAQ</h2>
+            <p class="label label--dim">Frequently asked questions</p>
+          </div>
+          <div class="faq__cta">
+            <div>
+              <h3>Got Questions?</h3>
+              <p>Need help with something? I'm here to make things easy. Don't hesitate to reach out.</p>
+            </div>
+            <a href="mailto:hey@ashikh.studio" class="btn-pill btn-pill--wide">Book a call <i class="i-arrow"></i></a>
+          </div>
+        </div>
+        <div class="faq__list" id="faq-list"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT / FOOTER -->
+    <footer id="contact" class="footer">
+      <div class="footer__depth"></div>
+      <div class="footer__top">
+        <div class="footer__left">
+          <div class="footer__intro">
+            <span class="footer__dot"></span>
+            <div>
+              <div class="footer__portrait">
+                <img src="https://res.cloudinary.com/dijfcvpio/image/upload/v1784225612/hf_20260411_172042_4436ec7e-0807-410e-83d2-ee55d8561ce8_2_evxe3l.png" alt="Ashikh" referrerpolicy="no-referrer">
+              </div>
+              <div class="footer__copy">
+                <p class="footer__lead">Let's create something extraordinary together.</p>
+                <p class="footer__sub">Hit me up if you're looking for a fast, reliable creative strategist who can bring your vision to life</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bgname" aria-hidden="true">
+            <h2>ASHIKH RAHMAN</h2>
+            <div class="footer__sig">Ashikh</div>
+          </div>
+        </div>
+        <div class="footer__right">
+          <a href="mailto:hey@ashikh.studio" class="email-pill">
+            <span class="email-pill__inner"><h3>Hey<span class="neon">@</span>Ashikh.studio</h3></span>
+            <span class="email-pill__glow"></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__brand">
+          <img src="https://res.cloudinary.com/dijfcvpio/image/upload/v1775412441/AR_Logo_wnsauc.svg" alt="AR logo" referrerpolicy="no-referrer">
+          <span class="eyebrow">© 2026 Ashikh Rahman. All rights reserved.</span>
+        </div>
+        <div class="footer__links">
+          <div>
+            <span class="eyebrow eyebrow--dim">Quick Links</span>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#works">Works</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <span class="eyebrow eyebrow--dim">Portfolio</span>
+            <ul>
+              <li><a href="#">Contra</a></li>
+              <li><a href="#">Dribbble</a></li>
+              <li><a href="#">Behance</a></li>
+            </ul>
+          </div>
+          <div>
+            <span class="eyebrow eyebrow--dim">Social</span>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="https://www.linkedin.com/in/ashikh/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+              <li><a href="#">Twitter "X"</a></li>
+              <li><a href="#">Youtube</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ============ PROJECT DETAIL (rendered by JS) ============ -->
+  <div id="project" class="project" hidden></div>
+
+  <!-- Grain overlay -->
+  <div class="grain" aria-hidden="true">
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/></filter>
+      <rect width="100%" height="100%" filter="url(#noiseFilter)"/>
+    </svg>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
