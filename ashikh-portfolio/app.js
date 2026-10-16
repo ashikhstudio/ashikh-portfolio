@@ -168,7 +168,7 @@
     {
       id: '10.', name: 'Agentic Mobility', category: 'Presentations',
       desc: 'Strategic vision deck taking Abu Dhabi from smart mobility to agentic mobility',
-      image: img('f_auto,q_auto,w_1200/v1792168868/Abu_Dhabi_Agentic_Mobility_Page_2_jbclig.png'),
+      image: img('f_auto,q_auto:good,w_1600/v1792168868/Abu_Dhabi_Agentic_Mobility_Page_2_jbclig.png'),
       position: 'object-top',
       client: 'Tatweer', role: 'Presentation & Infographic Design', year: '2026',
       overview: 'A strategic vision presentation produced for Tatweer, framing Abu Dhabi\'s evolution from smart mobility to agentic mobility — an AI-native layer where city systems reason, plan, act and learn within policy limits. The deck translates a complex technical concept into a clear narrative for government stakeholders, using custom isometric infographics to explain the sense-to-learn agent loop, levels of autonomy, the shared governed foundation, and concrete opportunity areas across Abu Dhabi\'s transport network.',
@@ -185,7 +185,7 @@
     {
       id: '11.', name: 'C-ITS Master Plan', category: 'Presentations',
       desc: 'National master plan deck for cooperative intelligent transport systems',
-      image: img('f_auto,q_auto,w_1200/v1792169035/C-ITS_National_Master_Plan_v1_Page_04_t2y5mk.png'),
+      image: img('f_auto,q_auto:good,w_1600/v1792169035/C-ITS_National_Master_Plan_v1_Page_04_t2y5mk.png'),
       position: 'object-top',
       client: 'Tatweer', role: 'Presentation & Infographic Design', year: '2026',
       overview: 'An Arabic-language strategic deck for Tatweer making the case for a national Cooperative Intelligent Transportation Systems (C-ITS) master plan — moving a country from scattered, siloed transport projects to one connected system. The presentation frames C-ITS as the nervous system of the city, explaining V2V, V2I, V2N and V2X connectivity, a five-layer architecture with a single trust backbone, and a phased national roadmap, all through custom isometric infographics designed to read clearly in right-to-left Arabic.',
@@ -202,7 +202,7 @@
     {
       id: '12.', name: 'Ghana Smart Cities', category: 'Presentations',
       desc: 'Programme deck for Ghana\'s smart & sustainable cities initiative',
-      image: img('f_auto,q_auto,w_1200/v1792172278/Ghana_Smart_Cities_v1_u1klcm.png'),
+      image: img('f_auto,q_auto:good,w_1600/v1792172278/Ghana_Smart_Cities_v1_u1klcm.png'),
       position: 'object-top',
       client: 'Tatweer × Vitronic', role: 'Presentation & Infographic Design', year: '2026',
       overview: 'A programme presentation for Tatweer, in partnership with Vitronic, setting out a smart and sustainable cities initiative for Ghana across seven pillars — mobility, safe city, smart waste, energy and utilities, citizen digital services, payments and revenue, and data-driven command centres. The deck moves from the urban challenge, through a layered programme architecture and pillar-by-pillar deep-dives, to PPP financing, the consortium model, and a phased delivery roadmap.',
@@ -219,7 +219,7 @@
     {
       id: '13.', name: 'TATWEER 360°', category: 'Presentations',
       desc: 'IoT predictive maintenance proposal deck for Dubai Municipality\'s fleet',
-      image: img('f_auto,q_auto,w_1200/v1792169556/Tatweer_Predictive_Maintenance_Page_06_iaeh2a.png'),
+      image: img('f_auto,q_auto:good,w_1600/v1792169556/Tatweer_Predictive_Maintenance_Page_06_iaeh2a.png'),
       position: 'object-top',
       client: 'Tatweer → Dubai Municipality', role: 'Presentation & Infographic Design', year: '2026',
       overview: 'A solution proposal deck prepared for Dubai Municipality, presenting TATWEER 360° — an IoT-based condition monitoring and predictive maintenance ecosystem for a mixed fleet of 1,469 vehicles and equipment across 31 categories. The presentation moves from the problem (a large fleet maintained reactively) through the proposed six-stage platform, mixed-fleet coverage, three solution tiers (Basic, Medium, Optimal), detailed use-case walkthroughs, and an implementation timeline.',
