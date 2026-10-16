@@ -219,7 +219,7 @@
     {
       id: '13.', name: 'TATWEER 360°', category: 'Presentations',
       desc: 'IoT predictive maintenance proposal deck for Dubai Municipality\'s fleet',
-      image: img('f_auto,q_auto:good,w_1600/v1792169556/Tatweer_Predictive_Maintenance_Page_06_iaeh2a.png'),
+      image: img('f_auto,q_auto:good,w_1600/v1792173541/Tatweer_Predictive_Maintenance_li5b7n.png'),
       position: 'object-top',
       client: 'Tatweer → Dubai Municipality', role: 'Presentation & Infographic Design', year: '2026',
       overview: 'A solution proposal deck prepared for Dubai Municipality, presenting TATWEER 360° — an IoT-based condition monitoring and predictive maintenance ecosystem for a mixed fleet of 1,469 vehicles and equipment across 31 categories. The presentation moves from the problem (a large fleet maintained reactively) through the proposed six-stage platform, mixed-fleet coverage, three solution tiers (Basic, Medium, Optimal), detailed use-case walkthroughs, and an implementation timeline.',
