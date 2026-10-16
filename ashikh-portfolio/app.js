@@ -164,6 +164,74 @@
         'v1775392696/X14_digital_profile-v4_Page_1_wdsbtm.jpg', 'v1775392690/X14_digital_profile-v4_Page_2_xtp4cb.jpg', 'v1775392688/X14_digital_profile-v4_Page_3_gvgfj9.jpg',
         'v1775392689/X14_digital_profile-v4_Page_4_njvs3y.jpg', 'v1775392692/X14_digital_profile-v4_Page_5_i1scvc.jpg', 'v1775392693/X14_digital_profile-v4_Page_6_odigq3.jpg'
       ].map(img)
+    },
+    {
+      id: '10.', name: 'Agentic Mobility', category: 'Presentations',
+      desc: 'Strategic vision deck taking Abu Dhabi from smart mobility to agentic mobility',
+      image: img('f_auto,q_auto,w_1200/v1792168868/Abu_Dhabi_Agentic_Mobility_Page_2_jbclig.png'),
+      position: 'object-top',
+      client: 'Tatweer', role: 'Presentation & Infographic Design', year: '2026',
+      overview: 'A strategic vision presentation produced for Tatweer, framing Abu Dhabi\'s evolution from smart mobility to agentic mobility — an AI-native layer where city systems reason, plan, act and learn within policy limits. The deck translates a complex technical concept into a clear narrative for government stakeholders, using custom isometric infographics to explain the sense-to-learn agent loop, levels of autonomy, the shared governed foundation, and concrete opportunity areas across Abu Dhabi\'s transport network.',
+      challenges: 'The subject matter is dense and abstract — autonomous agents, governance layers, and levels of machine autonomy — and had to land with senior government stakeholders who needed the strategic picture without the technical weight. Every concept risked becoming a wall of text.',
+      solutions: 'I built the deck around a consistent isometric infographic system, turning each concept into a diagram: the evolution of mobility intelligence, the seven-step agent loop, the layered foundation, and the real-world Abu Dhabi opportunity grid. A disciplined type hierarchy and restrained palette kept it government-grade throughout.',
+      resultsText: 'The result is a presentation that reads as a clear strategic argument rather than a technical briefing — carrying a complex agentic-mobility vision from first principles through to where it could improve Abu Dhabi\'s network today.',
+      resultsStats: [{ value: 'Strategy', label: 'Vision Deck' }, { value: 'Isometric', label: 'Infographics' }, { value: 'Gov-Grade', label: 'Design' }],
+      gallery: [
+        'f_auto,q_auto,w_1600/v1792168868/Abu_Dhabi_Agentic_Mobility_Page_2_jbclig.png', 'f_auto,q_auto,w_1600/v1792168800/Abu_Dhabi_Agentic_Mobility_Page_4_odnbvi.png',
+        'f_auto,q_auto,w_1600/v1792168800/Abu_Dhabi_Agentic_Mobility_Page_5_itv1fs.png', 'f_auto,q_auto,w_1600/v1792168821/Abu_Dhabi_Agentic_Mobility_Page_6_jqkdon.png',
+        'f_auto,q_auto,w_1600/v1792168803/Abu_Dhabi_Agentic_Mobility_Page_7_xvrte4.png'
+      ].map(img)
+    },
+    {
+      id: '11.', name: 'C-ITS Master Plan', category: 'Presentations',
+      desc: 'National master plan deck for cooperative intelligent transport systems',
+      image: img('f_auto,q_auto,w_1200/v1792169035/C-ITS_National_Master_Plan_v1_Page_04_t2y5mk.png'),
+      position: 'object-top',
+      client: 'Tatweer', role: 'Presentation & Infographic Design', year: '2026',
+      overview: 'An Arabic-language strategic deck for Tatweer making the case for a national Cooperative Intelligent Transportation Systems (C-ITS) master plan — moving a country from scattered, siloed transport projects to one connected system. The presentation frames C-ITS as the nervous system of the city, explaining V2V, V2I, V2N and V2X connectivity, a five-layer architecture with a single trust backbone, and a phased national roadmap, all through custom isometric infographics designed to read clearly in right-to-left Arabic.',
+      challenges: 'The deck had to argue a national-scale infrastructure vision in Arabic, carrying dense technical ideas — vehicle-to-everything connectivity, governance layers, cybersecurity principles — for senior government decision-makers, while keeping right-to-left layouts clean and the infographics legible.',
+      solutions: 'I built a consistent isometric visual language and a disciplined RTL grid, turning each concept into a diagram: the connected-vehicle scenarios, the five-layer system with its governance spine, the real-incident walkthrough, and a three-phase roadmap that starts from existing assets rather than replacing them.',
+      resultsText: 'The result is a government-grade Arabic strategy deck that carries a complex C-ITS vision from problem statement through architecture to a staged national rollout, each stage framed to deliver value before the next begins.',
+      resultsStats: [{ value: 'Arabic', label: 'RTL Design' }, { value: '5-Layer', label: 'Architecture' }, { value: 'National', label: 'Master Plan' }],
+      gallery: [
+        'f_auto,q_auto,w_1600/v1792169035/C-ITS_National_Master_Plan_v1_Page_04_t2y5mk.png', 'f_auto,q_auto,w_1600/v1792169028/C-ITS_National_Master_Plan_v1_Page_05_drfnft.png',
+        'f_auto,q_auto,w_1600/v1792169023/C-ITS_National_Master_Plan_v1_Page_06_vzhu8n.png', 'f_auto,q_auto,w_1600/v1792169015/C-ITS_National_Master_Plan_v1_Page_07_xiaxhe.png',
+        'f_auto,q_auto,w_1600/v1792169017/C-ITS_National_Master_Plan_v1_Page_09_kzioue.png', 'f_auto,q_auto,w_1600/v1792169039/C-ITS_National_Master_Plan_v1_Page_11_wz6iev.png'
+      ].map(img)
+    },
+    {
+      id: '12.', name: 'Ghana Smart Cities', category: 'Presentations',
+      desc: 'Programme deck for Ghana\'s smart & sustainable cities initiative',
+      image: img('f_auto,q_auto,w_1200/v1792169341/Ghana_Smart_Cities_v1_Page_07_h5dqqi.png'),
+      position: 'object-top',
+      client: 'Tatweer × Vitronic', role: 'Presentation & Infographic Design', year: '2026',
+      overview: 'A programme presentation for Tatweer, in partnership with Vitronic, setting out a smart and sustainable cities initiative for Ghana across seven pillars — mobility, safe city, smart waste, energy and utilities, citizen digital services, payments and revenue, and data-driven command centres. The deck moves from the urban challenge, through a layered programme architecture and pillar-by-pillar deep-dives, to PPP financing, the consortium model, and a phased delivery roadmap.',
+      challenges: 'The programme spans seven technical pillars plus financing and delivery, aimed at government and investment stakeholders. It had to feel like one coherent, bankable initiative rather than nine disconnected projects, while staying visually engaging across a long deck.',
+      solutions: 'I built a modular section system — numbered pillar dividers, consistent diagram treatments, and a shared iconography — so each pillar reads as part of one architecture. Infographics carry the heavy content: the layered programme stack, the mobility and safe-city operation flows, the financing structure, and the implementation timeline.',
+      resultsText: 'The result is a cohesive, investment-ready programme deck that carries a multi-sector smart-city vision for Ghana from the urban opportunity through to a structured, phased delivery and partnership model.',
+      resultsStats: [{ value: '7', label: 'Pillars' }, { value: 'PPP', label: 'Financing' }, { value: 'National', label: 'Programme' }],
+      gallery: [
+        'f_auto,q_auto,w_1600/v1792169341/Ghana_Smart_Cities_v1_Page_07_h5dqqi.png', 'f_auto,q_auto,w_1600/v1792169330/Ghana_Smart_Cities_v1_Page_08_buyetg.png',
+        'f_auto,q_auto,w_1600/v1792169350/Ghana_Smart_Cities_v1_Page_09_ruwcyv.png', 'f_auto,q_auto,w_1600/v1792169377/Ghana_Smart_Cities_v1_Page_12_khrfze.png',
+        'f_auto,q_auto,w_1600/v1792169319/Ghana_Smart_Cities_v1_Page_16_pnjx1h.png', 'f_auto,q_auto,w_1600/v1792169315/Ghana_Smart_Cities_v1_Page_18_qika1a.png'
+      ].map(img)
+    },
+    {
+      id: '13.', name: 'TATWEER 360°', category: 'Presentations',
+      desc: 'IoT predictive maintenance proposal deck for Dubai Municipality\'s fleet',
+      image: img('f_auto,q_auto,w_1200/v1792169556/Tatweer_Predictive_Maintenance_Page_06_iaeh2a.png'),
+      position: 'object-top',
+      client: 'Tatweer → Dubai Municipality', role: 'Presentation & Infographic Design', year: '2026',
+      overview: 'A solution proposal deck prepared for Dubai Municipality, presenting TATWEER 360° — an IoT-based condition monitoring and predictive maintenance ecosystem for a mixed fleet of 1,469 vehicles and equipment across 31 categories. The presentation moves from the problem (a large fleet maintained reactively) through the proposed six-stage platform, mixed-fleet coverage, three solution tiers (Basic, Medium, Optimal), detailed use-case walkthroughs, and an implementation timeline.',
+      challenges: 'The proposal had to explain a full IoT-to-insight pipeline — sensors, connectivity, platform, analytics, and action — for a highly diverse fleet, and make a technical predictive-maintenance system feel concrete and credible to municipal decision-makers across a long, detailed deck.',
+      solutions: 'I designed a six-stage platform diagram as the spine of the deck, then carried it into mixed-fleet coverage tables, tiered capability comparisons, and step-by-step use-case flows with realistic dashboard mockups. A consistent icon and color system kept the technical density readable from first slide to last.',
+      resultsText: 'The result is a detailed, credible proposal deck that carries Dubai Municipality from a reactive-maintenance problem statement through a staged, tiered predictive-maintenance solution and a clear 20-week delivery timeline.',
+      resultsStats: [{ value: '1,469', label: 'Fleet Assets' }, { value: '3-Tier', label: 'Solution' }, { value: 'IoT', label: 'Predictive' }],
+      gallery: [
+        'f_auto,q_auto,w_1600/v1792169556/Tatweer_Predictive_Maintenance_Page_06_iaeh2a.png', 'f_auto,q_auto,w_1600/v1792169559/Tatweer_Predictive_Maintenance_Page_04_jrvqe4.png',
+        'f_auto,q_auto,w_1600/v1792169549/Tatweer_Predictive_Maintenance_Page_07_e2tlor.png', 'f_auto,q_auto,w_1600/v1792169547/Tatweer_Predictive_Maintenance_Page_08_f1xtcy.png',
+        'f_auto,q_auto,w_1600/v1792169549/Tatweer_Predictive_Maintenance_Page_09_e9qqyu.png'
+      ].map(img)
     }
   ];
 
@@ -190,7 +258,7 @@
     'v1775390905/kabrimini_nhcfi5.png'
   ].map(img);
 
-  const categories = ['All', 'Ai Video', 'Branding', 'Motion Graphics'];
+  const categories = ['All', 'Ai Video', 'Branding', 'Motion Graphics', 'Presentations'];
 
   /* ---------------- HELPERS ---------------- */
   const $ = (s, r) => (r || document).querySelector(s);
