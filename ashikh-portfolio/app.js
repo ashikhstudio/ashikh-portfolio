@@ -168,7 +168,7 @@
     {
       id: '10.', name: 'Agentic Mobility', category: 'Presentations',
       desc: 'Strategic vision deck taking Abu Dhabi from smart mobility to agentic mobility',
-      image: img('f_auto,q_auto:good,w_1600/v1792168868/Abu_Dhabi_Agentic_Mobility_Page_2_jbclig.png'),
+      image: img('f_auto,q_auto:good,w_1600/v1792173339/Abu_Dhabi_Agentic_Mobility_oajn31.png'),
       position: 'object-top',
       client: 'Tatweer', role: 'Presentation & Infographic Design', year: '2026',
       overview: 'A strategic vision presentation produced for Tatweer, framing Abu Dhabi\'s evolution from smart mobility to agentic mobility — an AI-native layer where city systems reason, plan, act and learn within policy limits. The deck translates a complex technical concept into a clear narrative for government stakeholders, using custom isometric infographics to explain the sense-to-learn agent loop, levels of autonomy, the shared governed foundation, and concrete opportunity areas across Abu Dhabi\'s transport network.',
