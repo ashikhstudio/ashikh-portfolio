@@ -185,7 +185,7 @@
     {
       id: '11.', name: 'C-ITS Master Plan', category: 'Presentations',
       desc: 'National master plan deck for cooperative intelligent transport systems',
-      image: img('f_auto,q_auto:good,w_1600/v1792169035/C-ITS_National_Master_Plan_v1_Page_04_t2y5mk.png'),
+      image: img('f_auto,q_auto:good,w_1600/v1792173182/C-ITS_National_Master_Plan_v1_gphhfq.png'),
       position: 'object-top',
       client: 'Tatweer', role: 'Presentation & Infographic Design', year: '2026',
       overview: 'An Arabic-language strategic deck for Tatweer making the case for a national Cooperative Intelligent Transportation Systems (C-ITS) master plan — moving a country from scattered, siloed transport projects to one connected system. The presentation frames C-ITS as the nervous system of the city, explaining V2V, V2I, V2N and V2X connectivity, a five-layer architecture with a single trust backbone, and a phased national roadmap, all through custom isometric infographics designed to read clearly in right-to-left Arabic.',
