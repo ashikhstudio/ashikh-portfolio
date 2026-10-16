@@ -202,7 +202,7 @@
     {
       id: '12.', name: 'Ghana Smart Cities', category: 'Presentations',
       desc: 'Programme deck for Ghana\'s smart & sustainable cities initiative',
-      image: img('f_auto,q_auto:good,w_1600/v1792172278/Ghana_Smart_Cities_v1_u1klcm.png'),
+      image: img('f_auto,q_auto:good,w_1600/v1792172743/Ghana_Smart_Cities_v1_fgakdf.png'),
       position: 'object-top',
       client: 'Tatweer × Vitronic', role: 'Presentation & Infographic Design', year: '2026',
       overview: 'A programme presentation for Tatweer, in partnership with Vitronic, setting out a smart and sustainable cities initiative for Ghana across seven pillars — mobility, safe city, smart waste, energy and utilities, citizen digital services, payments and revenue, and data-driven command centres. The deck moves from the urban challenge, through a layered programme architecture and pillar-by-pillar deep-dives, to PPP financing, the consortium model, and a phased delivery roadmap.',
