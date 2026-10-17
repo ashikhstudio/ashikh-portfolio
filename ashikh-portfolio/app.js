@@ -236,7 +236,7 @@
     {
       id: '14.', name: 'Speed Radar', category: 'Product Design',
       desc: 'Industrial design concept for a traffic speed radar that detects over-speeding and issues driver violations',
-      image: img('f_auto,q_auto:good,w_1600/v1792217197/hf_20261016_194152_9745539e-0410-41a7-b1d3-b3d53f1725ee_wokvxk.png'),
+      image: img('f_auto,q_auto:good,w_1600/v1792218180/hf_20261016_193357_758f2dde-70fe-4a51-88e8-9d74fa68e597_ieebje.png'),
       vertical: true,
       client: 'Tatweer', role: 'Concept & Industrial Design', year: '2016',
       overview: 'An industrial-design concept for a roadside traffic speed radar that tracks each passing vehicle\'s speed and, when a vehicle exceeds the permitted limit, registers a traffic violation against the driver. The study reimagines the enforcement pole as a sculpted, intentional object rather than a utilitarian box — exploring the overall silhouette, housing materials and finishes, and distinctive laser-cut detailing, developed as a series of cinematic product renders under Tatweer branding.',
@@ -246,7 +246,7 @@
       resultsStats: [{ value: 'Concept', label: 'Industrial Design' }, { value: 'Speed', label: 'Enforcement' }, { value: 'Branded', label: 'Hardware' }],
       gallery: [
         'c_fill,g_auto,ar_9:16,f_auto,q_auto,w_1200/v1792217196/hf_20261016_192941_e1cfa3de-04ab-4a55-b80b-83301715838b_jjergz.png', 'c_fill,g_auto,ar_9:16,f_auto,q_auto,w_1200/v1792217194/hf_20261016_193847_e6ef8e03-15a5-46c4-836c-2d66952f3079_u47g4f.png',
-        'c_fill,g_auto,ar_9:16,f_auto,q_auto,w_1200/v1792217188/hf_20261016_193244_d213cb8f-1308-40a8-9a8c-0de2396bf82e_agcirm.png', 'c_fill,g_east,ar_9:16,f_auto,q_auto,w_1200/v1792217197/hf_20261016_194152_9745539e-0410-41a7-b1d3-b3d53f1725ee_wokvxk.png'
+        'c_fill,g_auto,ar_9:16,f_auto,q_auto,w_1200/v1792217188/hf_20261016_193244_d213cb8f-1308-40a8-9a8c-0de2396bf82e_agcirm.png', 'c_fill,g_auto,ar_9:16,f_auto,q_auto,w_1200/v1792218180/hf_20261016_193357_758f2dde-70fe-4a51-88e8-9d74fa68e597_ieebje.png'
       ].map(img)
     }
   ];
