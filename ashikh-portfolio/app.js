@@ -232,6 +232,22 @@
         'f_auto,q_auto,w_1600/v1792169549/Tatweer_Predictive_Maintenance_Page_07_e2tlor.png', 'f_auto,q_auto,w_1600/v1792169547/Tatweer_Predictive_Maintenance_Page_08_f1xtcy.png',
         'f_auto,q_auto,w_1600/v1792169549/Tatweer_Predictive_Maintenance_Page_09_e9qqyu.png'
       ].map(img)
+    },
+    {
+      id: '14.', name: 'Speed Radar', category: 'Product Design',
+      desc: 'Industrial design concept for a traffic speed radar that detects over-speeding and issues driver violations',
+      image: img('f_auto,q_auto:good,w_1600/v1792217197/hf_20261016_194152_9745539e-0410-41a7-b1d3-b3d53f1725ee_wokvxk.png'),
+      vertical: true,
+      client: 'Tatweer', role: 'Concept & Industrial Design', year: '2016',
+      overview: 'An industrial-design concept for a roadside traffic speed radar that tracks each passing vehicle\'s speed and, when a vehicle exceeds the permitted limit, registers a traffic violation against the driver. The study reimagines the enforcement pole as a sculpted, intentional object rather than a utilitarian box — exploring the overall silhouette, housing materials and finishes, and distinctive laser-cut detailing, developed as a series of cinematic product renders under Tatweer branding.',
+      challenges: 'Roadside enforcement hardware is almost always purely functional and visually generic. The challenge was to give a speed radar a considered industrial-design language — recognizable, modern, and brand-aligned — while housing real detection and enforcement equipment in a practical roadside pole.',
+      solutions: 'I iterated on form, materials, and surface detailing, developing a confident silhouette with laser-cut pattern work and a refined material palette. The concept was rendered as a set of high-fidelity product shots to communicate the design intent from multiple angles.',
+      resultsText: 'The result is a cohesive product-design concept that elevates a standard speed-enforcement radar into a distinctive, brand-forward piece of roadside infrastructure.',
+      resultsStats: [{ value: 'Concept', label: 'Industrial Design' }, { value: 'Speed', label: 'Enforcement' }, { value: 'Branded', label: 'Hardware' }],
+      gallery: [
+        'f_auto,q_auto,w_1600/v1792217197/hf_20261016_194152_9745539e-0410-41a7-b1d3-b3d53f1725ee_wokvxk.png', 'f_auto,q_auto,w_1600/v1792217196/hf_20261016_192941_e1cfa3de-04ab-4a55-b80b-83301715838b_jjergz.png',
+        'f_auto,q_auto,w_1600/v1792217194/hf_20261016_193847_e6ef8e03-15a5-46c4-836c-2d66952f3079_u47g4f.png', 'f_auto,q_auto,w_1600/v1792217188/hf_20261016_193244_d213cb8f-1308-40a8-9a8c-0de2396bf82e_agcirm.png'
+      ].map(img)
     }
   ];
 
@@ -258,7 +274,7 @@
     'v1775390905/kabrimini_nhcfi5.png'
   ].map(img);
 
-  const categories = ['All', 'Ai Video', 'Branding', 'Motion Graphics', 'Presentations'];
+  const categories = ['All', 'Ai Video', 'Branding', 'Motion Graphics', 'Presentations', 'Product Design'];
 
   /* ---------------- HELPERS ---------------- */
   const $ = (s, r) => (r || document).querySelector(s);
