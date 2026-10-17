@@ -150,22 +150,6 @@
       projectVideo: vid('v1776881076/Al_Sarooj_i72obc.mp4')
     },
     {
-      id: '09.', name: 'X14', category: 'Branding',
-      desc: 'Brand Collateral & Digital Brochure',
-      image: img('v1775392696/X14_digital_profile-v4_Page_1_wdsbtm.jpg'),
-      position: 'object-top',
-      client: 'X14 Holding', role: 'Sole Designer', year: '2023',
-      overview: 'X14 is a digital media start-up founded and based in Abu Dhabi, specializing in online reputation management, media analytics, and information management. As part of their early brand-building efforts, a digital company profile was needed to communicate their identity, services, and value proposition to potential clients across both the government and private sectors.',
-      challenges: 'The brief was to create a professional, visually compelling digital brochure that could serve as X14\'s primary introductory document — something that felt credible, modern, and reflective of a company positioning itself as a thought leader in the Abu Dhabi media landscape.',
-      solutions: 'I developed a comprehensive 6-page digital profile using a two-tone navy and amber palette to balance authority with dynamism. The layout follows a structured grid system with clean typography, custom iconography, and humanizing illustrations to break up dense text sections while maintaining a professional consultancy aesthetic.',
-      resultsText: 'The final deliverable is a polished, print-ready and screen-optimized digital profile that X14 can use across client pitches, email outreach, and digital platforms. The design positions X14 as a credible, world-class consultancy operating out of Abu Dhabi with global reach and capability.',
-      resultsStats: [{ value: '06', label: 'Pages' }, { value: '100%', label: 'Custom Design' }, { value: 'Print', label: 'Ready' }],
-      gallery: [
-        'v1775392696/X14_digital_profile-v4_Page_1_wdsbtm.jpg', 'v1775392690/X14_digital_profile-v4_Page_2_xtp4cb.jpg', 'v1775392688/X14_digital_profile-v4_Page_3_gvgfj9.jpg',
-        'v1775392689/X14_digital_profile-v4_Page_4_njvs3y.jpg', 'v1775392692/X14_digital_profile-v4_Page_5_i1scvc.jpg', 'v1775392693/X14_digital_profile-v4_Page_6_odigq3.jpg'
-      ].map(img)
-    },
-    {
       id: '10.', name: 'Agentic Mobility', category: 'Presentations',
       desc: 'Strategic vision deck taking Abu Dhabi from smart mobility to agentic mobility',
       image: img('f_auto,q_auto:good,w_1600/v1792173339/Abu_Dhabi_Agentic_Mobility_oajn31.png'),
