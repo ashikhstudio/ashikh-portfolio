@@ -275,7 +275,7 @@
     'v1775390905/kabrimini_nhcfi5.png'
   ].map(img);
 
-  const categories = ['All', 'Ai Video', 'Branding', 'Motion Graphics', 'Presentations', 'Product Design'];
+  const categories = ['All', 'Ai Video', 'Branding', 'Presentations', 'Product Design', 'Motion Graphics'];
 
   /* ---------------- HELPERS ---------------- */
   const $ = (s, r) => (r || document).querySelector(s);
