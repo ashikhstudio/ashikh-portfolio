@@ -237,6 +237,7 @@
       id: '14.', name: 'Speed Radar', category: 'Product Design',
       desc: 'Industrial design concept for a traffic speed radar that detects over-speeding and issues driver violations',
       image: img('f_auto,q_auto:good,w_1600/v1792218180/hf_20261016_193357_758f2dde-70fe-4a51-88e8-9d74fa68e597_ieebje.png'),
+      heroImage: img('f_auto,q_auto:good,w_2000/v1792217197/hf_20261016_194152_9745539e-0410-41a7-b1d3-b3d53f1725ee_wokvxk.png'),
       vertical: true,
       client: 'Tatweer', role: 'Concept & Industrial Design', year: '2016',
       overview: 'An industrial-design concept for a roadside traffic speed radar that tracks each passing vehicle\'s speed and, when a vehicle exceeds the permitted limit, registers a traffic violation against the driver. The study reimagines the enforcement pole as a sculpted, intentional object rather than a utilitarian box — exploring the overall silhouette, housing materials and finishes, and distinctive laser-cut detailing, developed as a series of cinematic product renders under Tatweer branding.',
@@ -522,7 +523,7 @@
         <div class="project__num">Project ${esc(p.id)}</div>
       </div>
       <div class="project__hero">
-        <img src="${p.image}" alt="${esc(p.name)}" referrerpolicy="no-referrer">
+        <img src="${p.heroImage || p.image}" alt="${esc(p.name)}" referrerpolicy="no-referrer">
         <div class="project__hero-shade"></div>
         <div class="project__hero-title"><div class="container"><h1>${esc(p.name)}</h1></div></div>
       </div>
