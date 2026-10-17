@@ -245,8 +245,8 @@
       resultsText: 'The result is a cohesive product-design concept that elevates a standard speed-enforcement radar into a distinctive, brand-forward piece of roadside infrastructure.',
       resultsStats: [{ value: 'Concept', label: 'Industrial Design' }, { value: 'Speed', label: 'Enforcement' }, { value: 'Branded', label: 'Hardware' }],
       gallery: [
-        'c_fill,g_east,ar_9:16,f_auto,q_auto,w_1200/v1792217197/hf_20261016_194152_9745539e-0410-41a7-b1d3-b3d53f1725ee_wokvxk.png', 'c_fill,g_auto,ar_9:16,f_auto,q_auto,w_1200/v1792217196/hf_20261016_192941_e1cfa3de-04ab-4a55-b80b-83301715838b_jjergz.png',
-        'c_fill,g_auto,ar_9:16,f_auto,q_auto,w_1200/v1792217194/hf_20261016_193847_e6ef8e03-15a5-46c4-836c-2d66952f3079_u47g4f.png', 'c_fill,g_auto,ar_9:16,f_auto,q_auto,w_1200/v1792217188/hf_20261016_193244_d213cb8f-1308-40a8-9a8c-0de2396bf82e_agcirm.png'
+        'c_fill,g_auto,ar_9:16,f_auto,q_auto,w_1200/v1792217196/hf_20261016_192941_e1cfa3de-04ab-4a55-b80b-83301715838b_jjergz.png', 'c_fill,g_auto,ar_9:16,f_auto,q_auto,w_1200/v1792217194/hf_20261016_193847_e6ef8e03-15a5-46c4-836c-2d66952f3079_u47g4f.png',
+        'c_fill,g_auto,ar_9:16,f_auto,q_auto,w_1200/v1792217188/hf_20261016_193244_d213cb8f-1308-40a8-9a8c-0de2396bf82e_agcirm.png', 'c_fill,g_east,ar_9:16,f_auto,q_auto,w_1200/v1792217197/hf_20261016_194152_9745539e-0410-41a7-b1d3-b3d53f1725ee_wokvxk.png'
       ].map(img)
     }
   ];
