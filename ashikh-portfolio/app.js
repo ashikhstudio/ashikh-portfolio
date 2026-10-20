@@ -237,7 +237,8 @@
     {
       id: '15.', name: 'Social Media Design', category: 'Branding',
       desc: 'Social campaign design for Tatweer and Plug N Go — launch announcements, carousels, and occasion posts',
-      image: img('f_auto,q_auto:good,w_1200/v1792472916/Unified_Inspection_01_mwygbp.png'),
+      image: img('f_auto,q_auto:good,w_1200/v1792474474/SM_Thumbnail_k5df37.png'),
+      heroImage: img('f_auto,q_auto:good,w_2000/v1792474478/SM_Hero_trikhb.png'),
       position: 'object-top',
       vertical: true,
       fit: true,
