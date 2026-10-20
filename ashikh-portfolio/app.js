@@ -240,6 +240,7 @@
       image: img('f_auto,q_auto:good,w_1200/v1792472916/Unified_Inspection_01_mwygbp.png'),
       position: 'object-top',
       vertical: true,
+      fit: true,
       client: 'Tatweer', role: 'Social & Campaign Design', year: '2026',
       overview: 'Ongoing social-media and campaign design across Tatweer and its sub-brands — from product launch announcements and app-feature highlights to multi-slide carousels and branded occasion posts. The work translates each brand\'s visual system into scroll-stopping, platform-ready content that stays consistent across formats while carrying a premium, government-grade identity.',
       challenges: 'Social content has to earn attention in a feed in seconds while staying strictly on-brand across very different formats — tall stories, square posts, and multi-slide carousels — each for a different sub-brand and occasion.',
@@ -247,9 +248,9 @@
       resultsText: 'The result is a body of social content that is immediately recognizable per brand, campaign-ready across formats, and consistent with the premium identity carried through the rest of each client\'s work.',
       resultsStats: [{ value: 'Multi-Brand', label: 'Social System' }, { value: 'Carousel', label: '+ Single Posts' }, { value: 'Campaign', label: 'Ready' }],
       gallery: [
-        'c_pad,b_black,ar_1:1,f_auto,q_auto,w_1200/v1792472916/Unified_Inspection_01_mwygbp.png', 'c_pad,b_black,ar_1:1,f_auto,q_auto,w_1200/v1792472910/Unified_Inspection_02_gzsapu.png',
-        'c_pad,b_black,ar_1:1,f_auto,q_auto,w_1200/v1792472911/Unified_Inspection_03_dq6fbi.png', 'c_pad,b_black,ar_9:16,f_auto,q_auto,w_1200/v1792473408/PlugNGo_01_ql4vel.png',
-        'c_pad,b_black,ar_9:16,f_auto,q_auto,w_1200/v1792473405/PlugNGo_02_zjmdwh.png'
+        'f_auto,q_auto,w_1400/v1792472916/Unified_Inspection_01_mwygbp.png', 'f_auto,q_auto,w_1400/v1792472910/Unified_Inspection_02_gzsapu.png',
+        'f_auto,q_auto,w_1400/v1792472911/Unified_Inspection_03_dq6fbi.png', 'f_auto,q_auto,w_1400/v1792473408/PlugNGo_01_ql4vel.png',
+        'f_auto,q_auto,w_1400/v1792473405/PlugNGo_02_zjmdwh.png'
       ].map(img)
     }
   ];
@@ -512,7 +513,7 @@
     const next = projects[(idx + 1) % projects.length];
     const overview = p.overviewHtml ? p.overviewHtml : esc(p.overview);
     const gallery = p.vertical
-      ? `<div class="gallery-grid">${p.gallery.map((g, i) => `<div><img src="${g}" alt="${esc(p.name)} gallery ${i + 1}" referrerpolicy="no-referrer" loading="lazy"></div>`).join('')}</div>`
+      ? `<div class="gallery-grid${p.fit ? ' gallery-grid--fit' : ''}">${p.gallery.map((g, i) => `<div><img src="${g}" alt="${esc(p.name)} gallery ${i + 1}" referrerpolicy="no-referrer" loading="lazy"></div>`).join('')}</div>`
       : `<div class="gallery-stack">${p.gallery.map((g, i) => `<div class="gallery-item"><div><img src="${g}" alt="${esc(p.name)} gallery ${i + 1}" referrerpolicy="no-referrer" loading="lazy"></div></div>`).join('')}</div>`;
     const video = p.projectVideo
       ? `<div class="project__video"><div class="${p.vertical ? 'vertical' : ''}"><video src="${p.projectVideo}" controls playsinline preload="metadata" poster="${p.image}"></video></div></div>`
