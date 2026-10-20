@@ -247,8 +247,8 @@
       resultsText: 'The result is a body of social content that is immediately recognizable per brand, campaign-ready across formats, and consistent with the premium identity carried through the rest of each client\'s work.',
       resultsStats: [{ value: 'Multi-Brand', label: 'Social System' }, { value: 'Carousel', label: '+ Single Posts' }, { value: 'Campaign', label: 'Ready' }],
       gallery: [
-        'c_pad,b_black,ar_9:16,f_auto,q_auto,w_1200/v1792472916/Unified_Inspection_01_mwygbp.png', 'c_pad,b_black,ar_9:16,f_auto,q_auto,w_1200/v1792472910/Unified_Inspection_02_gzsapu.png',
-        'c_pad,b_black,ar_9:16,f_auto,q_auto,w_1200/v1792472911/Unified_Inspection_03_dq6fbi.png', 'c_pad,b_black,ar_9:16,f_auto,q_auto,w_1200/v1792473408/PlugNGo_01_ql4vel.png',
+        'c_pad,b_black,ar_1:1,f_auto,q_auto,w_1200/v1792472916/Unified_Inspection_01_mwygbp.png', 'c_pad,b_black,ar_1:1,f_auto,q_auto,w_1200/v1792472910/Unified_Inspection_02_gzsapu.png',
+        'c_pad,b_black,ar_1:1,f_auto,q_auto,w_1200/v1792472911/Unified_Inspection_03_dq6fbi.png', 'c_pad,b_black,ar_9:16,f_auto,q_auto,w_1200/v1792473408/PlugNGo_01_ql4vel.png',
         'c_pad,b_black,ar_9:16,f_auto,q_auto,w_1200/v1792473405/PlugNGo_02_zjmdwh.png'
       ].map(img)
     }
