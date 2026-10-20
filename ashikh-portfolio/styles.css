@@ -505,6 +505,8 @@ img { display: block; }
 .gallery-grid { max-width: 80rem; margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: 1fr; gap: 24px; }
 @media (min-width: 768px) { .gallery-grid { padding: 0 48px; grid-template-columns: repeat(3, minmax(0,1fr)); } }
 .gallery-grid > div { aspect-ratio: 9 / 16; }
+.gallery-grid--fit > div { aspect-ratio: auto; align-self: start; }
+.gallery-grid--fit img { width: 100%; height: auto; object-fit: contain; display: block; }
 .project__video { max-width: 80rem; margin: 48px auto 0; padding: 0 24px; }
 @media (min-width: 768px) { .project__video { padding: 0 48px; } }
 .project__video > div { aspect-ratio: 16 / 9; margin: 0 auto; }
