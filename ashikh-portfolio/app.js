@@ -233,6 +233,23 @@
         'c_fill,g_auto,ar_9:16,f_auto,q_auto,w_1200/v1792217196/hf_20261016_192941_e1cfa3de-04ab-4a55-b80b-83301715838b_jjergz.png', 'c_fill,g_auto,ar_9:16,f_auto,q_auto,w_1200/v1792217194/hf_20261016_193847_e6ef8e03-15a5-46c4-836c-2d66952f3079_u47g4f.png',
         'c_fill,g_auto,ar_9:16,f_auto,q_auto,w_1200/v1792217188/hf_20261016_193244_d213cb8f-1308-40a8-9a8c-0de2396bf82e_agcirm.png', 'c_fill,g_auto,ar_9:16,f_auto,q_auto,w_1200/v1792218180/hf_20261016_193357_758f2dde-70fe-4a51-88e8-9d74fa68e597_ieebje.png'
       ].map(img)
+    },
+    {
+      id: '15.', name: 'Social Media Design', category: 'Branding',
+      desc: 'Social campaign design for Tatweer and Plug N Go — launch announcements, carousels, and occasion posts',
+      image: img('f_auto,q_auto:good,w_1200/v1792472916/Unified_Inspection_01_mwygbp.png'),
+      position: 'object-top',
+      client: 'Tatweer', role: 'Social & Campaign Design', year: '2026',
+      overview: 'Ongoing social-media and campaign design across Tatweer and its sub-brands — from product launch announcements and app-feature highlights to multi-slide carousels and branded occasion posts. The work translates each brand\'s visual system into scroll-stopping, platform-ready content that stays consistent across formats while carrying a premium, government-grade identity.',
+      challenges: 'Social content has to earn attention in a feed in seconds while staying strictly on-brand across very different formats — tall stories, square posts, and multi-slide carousels — each for a different sub-brand and occasion.',
+      solutions: 'I built a flexible social design language per brand: a Plug N Go green-energy system for EV launch and station posts, and a Tatweer corporate system for occasion and awareness content. Each piece uses a disciplined type hierarchy, consistent iconography, and strong focal art direction so the set reads as one coherent brand voice.',
+      resultsText: 'The result is a body of social content that is immediately recognizable per brand, campaign-ready across formats, and consistent with the premium identity carried through the rest of each client\'s work.',
+      resultsStats: [{ value: 'Multi-Brand', label: 'Social System' }, { value: 'Carousel', label: '+ Single Posts' }, { value: 'Campaign', label: 'Ready' }],
+      gallery: [
+        'f_auto,q_auto,w_1400/v1792472916/Unified_Inspection_01_mwygbp.png', 'f_auto,q_auto,w_1400/v1792472910/Unified_Inspection_02_gzsapu.png',
+        'f_auto,q_auto,w_1400/v1792472911/Unified_Inspection_03_dq6fbi.png', 'f_auto,q_auto,w_1400/v1792473408/PlugNGo_01_ql4vel.png',
+        'f_auto,q_auto,w_1400/v1792473405/PlugNGo_02_zjmdwh.png'
+      ].map(img)
     }
   ];
 
