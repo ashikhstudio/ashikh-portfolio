@@ -251,7 +251,23 @@
       gallery: [
         'f_auto,q_auto,w_1400/v1792472916/Unified_Inspection_01_mwygbp.png', 'f_auto,q_auto,w_1400/v1792472910/Unified_Inspection_02_gzsapu.png',
         'f_auto,q_auto,w_1400/v1792472911/Unified_Inspection_03_dq6fbi.png', 'f_auto,q_auto,w_1400/v1792473408/PlugNGo_01_ql4vel.png',
-        'f_auto,q_auto,w_1400/v1792473405/PlugNGo_02_zjmdwh.png'
+        'f_auto,q_auto,w_1400/v1792473405/PlugNGo_02_zjmdwh.png', 'f_auto,q_auto,w_1400/v1792474679/Workers_Day_qwfssf.png'
+      ].map(img)
+    },
+    {
+      id: '16.', name: 'Smart Parking Management System', category: 'Branding',
+      desc: 'Connecting parking detection, guidance, and management for Ajman Municipality',
+      image: img('f_auto,q_auto:good,w_1600/v1795047092/Parking_Detection_Vehicle_without_Logo_jb1hpm.png'),
+      position: 'object-center',
+      client: 'Tatweer → Ajman Municipality', role: 'Branding & System Visualization', year: '2026',
+      overview: 'Tatweer\'s Smart Parking Management System for Ajman Municipality uses AI-enabled cameras, inspection technologies, and centralized software to monitor vehicles and parking availability in real time. Designed for off-street facilities such as shopping malls, office buildings, and industrial parks, the system helps drivers locate available spaces while supporting more efficient operations, lower maintenance costs, and increased revenue potential. The work visualizes the full ecosystem — from field detection vehicles to the central management platform — as one connected, branded system.',
+      challenges: 'Operators require accurate visibility into occupancy, vehicle movements, violations, and demand. Managing this information across different facilities requires connected field equipment and centralized operational control — a complex, multi-part system that had to be made clear and credible to municipal stakeholders.',
+      solutions: 'Tatweer connects parking cameras and inspection vehicles with mobile and back-office applications. Information collected in the field is processed and displayed through a central platform, letting operators and inspectors monitor parking activity, review data, and respond to violations. Key capabilities include AI vehicle identification (ANPR for plate, brand, type and color), occupancy and availability detection, real-time entry and exit monitoring, mobile in-vehicle inspection with dual-side scanning, centralized violation alerts and reporting, and predictive parking analytics — with flexible deployment across on-street, off-street, residential, VIP and accessible parking, including weather-resilient, solar-powered field cameras.',
+      resultsText: 'The result is a cohesive, government-grade system identity that presents a complex AI parking ecosystem — detection, guidance, inspection and management — as one connected, credible solution for Ajman Municipality.',
+      resultsStats: [{ value: 'ANPR', label: 'AI Detection' }, { value: 'Real-Time', label: 'Monitoring' }, { value: 'Predictive', label: 'Analytics' }],
+      gallery: [
+        'f_auto,q_auto,w_1600/v1795047092/Parking_Detection_Vehicle_without_Logo_jb1hpm.png', 'f_auto,q_auto,w_1600/v1795047092/Parking_Detection_Vehicle_iys8yk.png',
+        'f_auto,q_auto,w_1600/v1795047092/Night_Mode_kqwsot.png'
       ].map(img)
     }
   ];
