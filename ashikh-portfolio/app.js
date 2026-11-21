@@ -13,6 +13,22 @@
   /* ---------------- DATA ---------------- */
   const projects = [
     {
+      id: '19.', name: 'Pulse', category: 'Ai Video',
+      desc: 'Self-directed AI spec ad — a cinematic product film with packshot',
+      image: img('f_auto,q_auto:good,w_1200/v1795275526/Thumbnail_mlzopk.png'),
+      heroImage: img('f_auto,q_auto:good,w_2000/v1795275526/Hero_background_xpw5jk.png'),
+      client: 'Self-Directed', role: 'AI Motion Designer & Creative Director', year: '2026',
+      overview: 'PULSE — a self-directed AI spec ad for a fictional product, produced end to end with a generative film pipeline. The spot pairs dynamic, energetic motion with a clean hero packshot, showing how AI tools can deliver a punchy, product-led commercial with a consistent, high-energy brand look.',
+      challenges: 'Delivering a high-energy product commercial — fast motion, bold lighting, and a clean hero packshot — fully through generative AI while keeping the product form and brand feel consistent.',
+      solutions: 'I developed an energetic visual system and a matching hero packshot, using precise prompting and style references to keep Pulse coherent across every shot, then edited it into a tight, punchy spec ad.',
+      resultsText: 'The result is a dynamic, product-led spec ad that proves out a complete AI film workflow with a bold, consistent brand identity from first frame to packshot.',
+      resultsStats: [{ value: 'Spec Ad', label: 'Product Film' }, { value: '100%', label: 'AI-Generated' }, { value: 'End-to-End', label: 'Workflow' }],
+      gallery: [
+        'f_auto,q_auto,w_1600/v1795275524/PULSE_packshot_b02uw6.png'
+      ].map(img),
+      projectVideo: vid('v1795275674/PULSE_Spec_Ad_Final_mgfeu4.mp4')
+    },
+    {
       id: '17.', name: 'Lumea', category: 'Ai Video',
       desc: 'Self-directed AI spec ad — a cinematic brand film for a fictional product',
       image: img('f_auto,q_auto:good,w_1200/v1795276123/Thumbnail_bqtqpy.png'),
@@ -43,22 +59,6 @@
         'f_auto,q_auto,w_1600/v1795275698/Hero_banner_vxvf3f.png'
       ].map(img),
       projectVideo: vid('v1795275881/KOPI_SENJA_Spec_Ad_Final_10s_v2_bfjtwp.mp4')
-    },
-    {
-      id: '19.', name: 'Pulse', category: 'Ai Video',
-      desc: 'Self-directed AI spec ad — a cinematic product film with packshot',
-      image: img('f_auto,q_auto:good,w_1200/v1795275526/Thumbnail_mlzopk.png'),
-      heroImage: img('f_auto,q_auto:good,w_2000/v1795275526/Hero_background_xpw5jk.png'),
-      client: 'Self-Directed', role: 'AI Motion Designer & Creative Director', year: '2026',
-      overview: 'PULSE — a self-directed AI spec ad for a fictional product, produced end to end with a generative film pipeline. The spot pairs dynamic, energetic motion with a clean hero packshot, showing how AI tools can deliver a punchy, product-led commercial with a consistent, high-energy brand look.',
-      challenges: 'Delivering a high-energy product commercial — fast motion, bold lighting, and a clean hero packshot — fully through generative AI while keeping the product form and brand feel consistent.',
-      solutions: 'I developed an energetic visual system and a matching hero packshot, using precise prompting and style references to keep Pulse coherent across every shot, then edited it into a tight, punchy spec ad.',
-      resultsText: 'The result is a dynamic, product-led spec ad that proves out a complete AI film workflow with a bold, consistent brand identity from first frame to packshot.',
-      resultsStats: [{ value: 'Spec Ad', label: 'Product Film' }, { value: '100%', label: 'AI-Generated' }, { value: 'End-to-End', label: 'Workflow' }],
-      gallery: [
-        'f_auto,q_auto,w_1600/v1795275524/PULSE_packshot_b02uw6.png'
-      ].map(img),
-      projectVideo: vid('v1795275674/PULSE_Spec_Ad_Final_mgfeu4.mp4')
     },
     {
       id: '01.', name: 'AI Trainer System', category: 'Ai Video',
