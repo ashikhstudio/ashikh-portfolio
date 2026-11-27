@@ -163,6 +163,24 @@
       ].map(img)
     },
     {
+      id: '06b.', name: 'Movera', category: 'Branding',
+      desc: 'Brand identity and guidelines for a smart mobility system',
+      image: img('f_auto,q_auto:good,w_1600/v1795752470/MOVERA_Brand_Guidelines_Page_1_xjgysp.jpg'),
+      position: 'object-center',
+      client: 'Tatweer', role: 'Brand & Identity Designer', year: '2026',
+      overview: 'A complete brand identity and guidelines system for Movera — a smart mobility brand that turns mobility into a connected, intelligent system moving people and goods with less friction. The work covers the full visual identity, from a custom "M" logo mark built on a modular pixel grid through to colour, bilingual-ready typography and real-world applications across digital, print, vehicle livery and signage.',
+      challenges: 'The brand needed to feel high-tech and systematic while staying clean and approachable — a mark that reads instantly at every size, from a 16px favicon to large vehicle livery, and a system a whole team could apply consistently.',
+      solutions: 'I designed the M mark on a precise 12×12 modular grid with four pixel squares that signal movement and data, defined approved logo versions (primary, reversed, black, navy and horizontal), a Movera Blue-led palette and a Space Grotesk type system. Everything is documented with construction rules, clear space, minimum sizes and misuse guidance so the identity holds together across every touchpoint.',
+      resultsText: 'The result is a cohesive, system-ready brand identity that carries Movera\'s smart-mobility positioning consistently from logo construction through to colour, type and application across the digital and physical world.',
+      resultsStats: [{ value: 'Full', label: 'Brand System' }, { value: 'Modular', label: 'Logo Grid' }, { value: 'Multi-Format', label: 'Applications' }],
+      gallery: [
+        'f_auto,q_auto,w_1600/v1795752470/MOVERA_Brand_Guidelines_Page_1_xjgysp.jpg', 'f_auto,q_auto,w_1600/v1795752470/MOVERA_Brand_Guidelines_Page_2_fv0f7b.jpg',
+        'f_auto,q_auto,w_1600/v1795752469/MOVERA_Brand_Guidelines_Page_3_gglnvi.jpg', 'f_auto,q_auto,w_1600/v1795752469/MOVERA_Brand_Guidelines_Page_4_exfxvl.jpg',
+        'f_auto,q_auto,w_1600/v1795752469/MOVERA_Brand_Guidelines_Page_5_qit2uz.jpg', 'f_auto,q_auto,w_1600/v1795752469/MOVERA_Brand_Guidelines_Page_6_phjnge.jpg',
+        'f_auto,q_auto,w_1600/v1795752469/MOVERA_Brand_Guidelines_Page_7_bzgcer.jpg', 'f_auto,q_auto,w_1600/v1795752469/MOVERA_Brand_Guidelines_Page_8_dfok2g.jpg'
+      ].map(img)
+    },
+    {
       id: '07.', name: 'SDTS', category: 'Motion Graphics',
       desc: 'AI-powered driver licensing and evaluation system',
       image: img('v1775379354/Screenshot_2026-04-05_at_12.12.16_PM_aq3yxq.png'),
