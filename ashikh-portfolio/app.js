@@ -165,7 +165,7 @@
     {
       id: '06b.', name: 'Movera', category: 'Branding',
       desc: 'Brand identity and guidelines for a smart mobility system',
-      image: img('f_auto,q_auto:good,w_1600/v1795752470/MOVERA_Brand_Guidelines_Page_1_xjgysp.jpg'),
+      image: img('f_auto,q_auto:good,w_1200/v1795753374/Movera_Cover_WhiteOnNavy_vyrukd.jpg'),
       position: 'object-center',
       client: 'Tatweer', role: 'Brand & Identity Designer', year: '2026',
       overview: 'A complete brand identity and guidelines system for Movera — a smart mobility brand that turns mobility into a connected, intelligent system moving people and goods with less friction. The work covers the full visual identity, from a custom "M" logo mark built on a modular pixel grid through to colour, bilingual-ready typography and real-world applications across digital, print, vehicle livery and signage.',
@@ -174,10 +174,10 @@
       resultsText: 'The result is a cohesive, system-ready brand identity that carries Movera\'s smart-mobility positioning consistently from logo construction through to colour, type and application across the digital and physical world.',
       resultsStats: [{ value: 'Full', label: 'Brand System' }, { value: 'Modular', label: 'Logo Grid' }, { value: 'Multi-Format', label: 'Applications' }],
       gallery: [
-        'f_auto,q_auto,w_1600/v1795752470/MOVERA_Brand_Guidelines_Page_1_xjgysp.jpg', 'f_auto,q_auto,w_1600/v1795752470/MOVERA_Brand_Guidelines_Page_2_fv0f7b.jpg',
-        'f_auto,q_auto,w_1600/v1795752469/MOVERA_Brand_Guidelines_Page_3_gglnvi.jpg', 'f_auto,q_auto,w_1600/v1795752469/MOVERA_Brand_Guidelines_Page_4_exfxvl.jpg',
-        'f_auto,q_auto,w_1600/v1795752469/MOVERA_Brand_Guidelines_Page_5_qit2uz.jpg', 'f_auto,q_auto,w_1600/v1795752469/MOVERA_Brand_Guidelines_Page_6_phjnge.jpg',
-        'f_auto,q_auto,w_1600/v1795752469/MOVERA_Brand_Guidelines_Page_7_bzgcer.jpg', 'f_auto,q_auto,w_1600/v1795752469/MOVERA_Brand_Guidelines_Page_8_dfok2g.jpg'
+        'f_auto,q_auto,w_1600/v1795753134/MOVERA_Brand_Guidelines_Page_1_ssw5h0.png', 'f_auto,q_auto,w_1600/v1795753130/MOVERA_Brand_Guidelines_Page_2_wkvpfr.png',
+        'f_auto,q_auto,w_1600/v1795753129/MOVERA_Brand_Guidelines_Page_3_ayqh2l.png', 'f_auto,q_auto,w_1600/v1795753155/MOVERA_Brand_Guidelines_Page_4_ldwwfx.png',
+        'f_auto,q_auto,w_1600/v1795753136/MOVERA_Brand_Guidelines_Page_5_lneexn.png', 'f_auto,q_auto,w_1600/v1795753138/MOVERA_Brand_Guidelines_Page_6_sj1ddy.png',
+        'f_auto,q_auto,w_1600/v1795753134/MOVERA_Brand_Guidelines_Page_7_fwpr1j.png', 'f_auto,q_auto,w_1600/v1795753153/MOVERA_Brand_Guidelines_Page_8_advinm.png'
       ].map(img)
     },
     {
