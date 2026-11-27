@@ -166,6 +166,7 @@
       id: '06b.', name: 'Movera', category: 'Branding',
       desc: 'Brand identity and guidelines for a smart mobility system',
       image: img('f_auto,q_auto:good,w_1200/v1795753374/Movera_Cover_WhiteOnNavy_vyrukd.jpg'),
+      heroImage: img('f_auto,q_auto:good,w_2000/v1795753718/Movera_Hero_Blue_gpz7yl.jpg'),
       position: 'object-center',
       client: 'Tatweer', role: 'Brand & Identity Designer', year: '2026',
       overview: 'A complete brand identity and guidelines system for Movera — a smart mobility brand that turns mobility into a connected, intelligent system moving people and goods with less friction. The work covers the full visual identity, from a custom "M" logo mark built on a modular pixel grid through to colour, bilingual-ready typography and real-world applications across digital, print, vehicle livery and signage.',
